@@ -1,0 +1,268 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local SynXfree = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local Frameto = Instance.new("Frame")
+local Tp = Instance.new("TextButton")
+local Others = Instance.new("TextButton")
+local Chin = Instance.new("TextButton")
+local Airtemple = Instance.new("TextButton")
+local FireIsland = Instance.new("TextButton")
+local Firecity = Instance.new("TextButton")
+local South = Instance.new("TextButton")
+local North = Instance.new("TextButton")
+local TextBox = Instance.new("TextBox")
+local Goto = Instance.new("TextButton")
+local TextLabel2 = Instance.new("TextLabel")
+local TextLabel3 = Instance.new("TextLabel")
+local stam = Instance.new("TextButton")
+
+--Properties:
+
+SynXfree.Name = "SynXfree"
+SynXfree.Parent = game.CoreGui
+
+Frame.Parent = SynXfree
+Frame.BackgroundColor3 = Color3.fromRGB(37, 43, 42)
+Frame.BorderColor3 = Color3.fromRGB(218, 119, 6)
+Frame.Position = UDim2.new(0.100315958, 0, 0.295986623, 0)
+Frame.Size = UDim2.new(0, 418, 0, 225)
+Frame.Draggable = true
+Frame.Active = true
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.275119632, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 32)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "SynX[Free]"
+TextLabel.TextColor3 = Color3.fromRGB(254, 254, 254)
+TextLabel.TextSize = 18.000
+
+Frameto.Name = "Frameto"
+Frameto.Parent = Frame
+Frameto.BackgroundColor3 = Color3.fromRGB(37, 43, 42)
+Frameto.BorderColor3 = Color3.fromRGB(218, 119, 6)
+Frameto.Position = UDim2.new(-0.000200043462, 0, 0.143666655, 0)
+Frameto.Size = UDim2.new(0, 418, 0, 27)
+
+Tp.Name = "Tp"
+Tp.Parent = Frameto
+Tp.BackgroundColor3 = Color3.fromRGB(37, 43, 42)
+Tp.BorderColor3 = Color3.fromRGB(37, 43, 42)
+Tp.Position = UDim2.new(0.112440184, 0, 0.0740746409, 0)
+Tp.Size = UDim2.new(0, 148, 0, 21)
+Tp.Font = Enum.Font.SourceSans
+Tp.Text = "Teleport"
+Tp.TextColor3 = Color3.fromRGB(254, 254, 254)
+Tp.TextSize = 14.000
+
+Others.Name = "Others"
+Others.Parent = Frameto
+Others.BackgroundColor3 = Color3.fromRGB(37, 43, 42)
+Others.BorderColor3 = Color3.fromRGB(37, 43, 42)
+Others.Position = UDim2.new(0.555023909, 0, 0.0740746409, 0)
+Others.Size = UDim2.new(0, 148, 0, 21)
+Others.Font = Enum.Font.SourceSans
+Others.Text = "Others"
+Others.TextColor3 = Color3.fromRGB(254, 254, 254)
+Others.TextSize = 14.000
+
+Chin.Name = "Chin"
+Chin.Parent = Frame
+Chin.BackgroundColor3 = Color3.fromRGB(37, 43, 42)
+Chin.BorderColor3 = Color3.fromRGB(218, 119, 6)
+Chin.Position = UDim2.new(0.112440191, 0, 0.337777793, 0)
+Chin.Size = UDim2.new(0, 143, 0, 27)
+Chin.Visible = false
+Chin.Font = Enum.Font.SourceSans
+Chin.Text = "Chin"
+Chin.TextColor3 = Color3.fromRGB(254, 254, 254)
+Chin.TextSize = 14.000
+
+Airtemple.Name = "Airtemple"
+Airtemple.Parent = Frame
+Airtemple.BackgroundColor3 = Color3.fromRGB(37, 43, 42)
+Airtemple.BorderColor3 = Color3.fromRGB(218, 119, 6)
+Airtemple.Position = UDim2.new(0.540669918, 0, 0.337777793, 0)
+Airtemple.Size = UDim2.new(0, 143, 0, 27)
+Airtemple.Visible = false
+Airtemple.Font = Enum.Font.SourceSans
+Airtemple.Text = "Air Temple"
+Airtemple.TextColor3 = Color3.fromRGB(254, 254, 254)
+Airtemple.TextSize = 14.000
+
+FireIsland.Name = "FireIsland"
+FireIsland.Parent = Frame
+FireIsland.BackgroundColor3 = Color3.fromRGB(37, 43, 42)
+FireIsland.BorderColor3 = Color3.fromRGB(218, 119, 6)
+FireIsland.Position = UDim2.new(0.545454621, 0, 0.555555582, 0)
+FireIsland.Size = UDim2.new(0, 143, 0, 27)
+FireIsland.Visible = false
+FireIsland.Font = Enum.Font.SourceSans
+FireIsland.Text = "Fire Island"
+FireIsland.TextColor3 = Color3.fromRGB(254, 254, 254)
+FireIsland.TextSize = 14.000
+
+Firecity.Name = "Firecity"
+Firecity.Parent = Frame
+Firecity.BackgroundColor3 = Color3.fromRGB(37, 43, 42)
+Firecity.BorderColor3 = Color3.fromRGB(218, 119, 6)
+Firecity.Position = UDim2.new(0.11722488, 0, 0.555555582, 0)
+Firecity.Size = UDim2.new(0, 143, 0, 27)
+Firecity.Visible = false
+Firecity.Font = Enum.Font.SourceSans
+Firecity.Text = "Fire City"
+Firecity.TextColor3 = Color3.fromRGB(254, 254, 254)
+Firecity.TextSize = 14.000
+
+South.Name = "South"
+South.Parent = Frame
+South.BackgroundColor3 = Color3.fromRGB(37, 43, 42)
+South.BorderColor3 = Color3.fromRGB(218, 119, 6)
+South.Position = UDim2.new(0.545454621, 0, 0.773333371, 0)
+South.Size = UDim2.new(0, 143, 0, 27)
+South.Visible = false
+South.Font = Enum.Font.SourceSans
+South.Text = "South"
+South.TextColor3 = Color3.fromRGB(254, 254, 254)
+South.TextSize = 14.000
+
+North.Name = "North"
+North.Parent = Frame
+North.BackgroundColor3 = Color3.fromRGB(37, 43, 42)
+North.BorderColor3 = Color3.fromRGB(218, 119, 6)
+North.Position = UDim2.new(0.11722488, 0, 0.773333371, 0)
+North.Size = UDim2.new(0, 143, 0, 27)
+North.Visible = false
+North.Font = Enum.Font.SourceSans
+North.Text = "North"
+North.TextColor3 = Color3.fromRGB(254, 254, 254)
+North.TextSize = 14.000
+
+TextBox.Parent = Frame
+TextBox.BackgroundColor3 = Color3.fromRGB(245, 245, 245)
+TextBox.BorderColor3 = Color3.fromRGB(245, 245, 245)
+TextBox.Position = UDim2.new(0.110047847, 0, 0.382222205, 0)
+TextBox.Size = UDim2.new(0, 164, 0, 27)
+TextBox.Visible = false
+TextBox.Font = Enum.Font.SourceSans
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.TextSize = 14.000
+
+Goto.Name = "Goto"
+Goto.Parent = Frame
+Goto.BackgroundColor3 = Color3.fromRGB(37, 43, 42)
+Goto.BorderColor3 = Color3.fromRGB(218, 119, 6)
+Goto.Position = UDim2.new(0.595693767, 0, 0.382222235, 0)
+Goto.Size = UDim2.new(0, 113, 0, 28)
+Goto.Visible = false
+Goto.Font = Enum.Font.SourceSans
+Goto.Text = "Goto"
+Goto.TextColor3 = Color3.fromRGB(254, 254, 254)
+Goto.TextSize = 14.000
+
+TextLabel2.Name = "TextLabel2"
+TextLabel2.Parent = Frame
+TextLabel2.BackgroundColor3 = Color3.fromRGB(221, 221, 221)
+TextLabel2.BorderColor3 = Color3.fromRGB(221, 221, 221)
+TextLabel2.Position = UDim2.new(0.593301415, 0, 0.648888886, 0)
+TextLabel2.Size = UDim2.new(0, 131, 0, 32)
+TextLabel2.Visible = false
+TextLabel2.Font = Enum.Font.SourceSans
+TextLabel2.Text = "stVgQNz"
+TextLabel2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel2.TextSize = 16.000
+
+TextLabel3.Name = "TextLabel3"
+TextLabel3.Parent = Frame
+TextLabel3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel3.BackgroundTransparency = 1.000
+TextLabel3.Position = UDim2.new(0.294258356, 0, 0.648888886, 0)
+TextLabel3.Size = UDim2.new(0, 190, 0, 32)
+TextLabel3.Visible = false
+TextLabel3.Font = Enum.Font.SourceSans
+TextLabel3.Text = "Discord:"
+TextLabel3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel3.TextSize = 18.000
+
+stam.Name = "stam"
+stam.Parent = Frame
+stam.BackgroundColor3 = Color3.fromRGB(37, 43, 42)
+stam.BorderColor3 = Color3.fromRGB(218, 119, 6)
+stam.Position = UDim2.new(0.110047817, 0, 0.657777786, 0)
+stam.Size = UDim2.new(0, 113, 0, 28)
+stam.Visible = false
+stam.Font = Enum.Font.SourceSans
+stam.Text = "Max Stamina"
+stam.TextColor3 = Color3.fromRGB(254, 254, 254)
+stam.TextSize = 14.000
+
+-- Scripts:
+
+local function CWYRLPK_fake_script() -- Frame.Script 
+	local script = Instance.new('Script', Frame)
+
+	script.Parent.Frameto.Tp.MouseButton1Click:Connect(function()
+		script.Parent.Chin.Visible = true
+		script.Parent.Airtemple.Visible = true
+		script.Parent.Firecity.Visible = true
+		script.Parent.FireIsland.Visible = true
+		script.Parent.North.Visible = true
+		script.Parent.South.Visible = true
+		script.Parent.TextLabel2.Visible = false
+		script.Parent.TextLabel3.Visible = false
+		script.Parent.Goto.Visible = false
+		script.Parent.TextBox.Visible = false
+		script.Parent.stam.Visible = false
+	end)
+	script.Parent.Frameto.Others.MouseButton1Click:Connect(function()
+		script.Parent.Chin.Visible = false
+		script.Parent.Airtemple.Visible = false
+		script.Parent.Firecity.Visible = false
+		script.Parent.FireIsland.Visible = false
+		script.Parent.North.Visible = false
+		script.Parent.South.Visible = false
+		script.Parent.TextLabel2.Visible = true
+		script.Parent.TextLabel3.Visible = true
+		script.Parent.Goto.Visible = true
+		script.Parent.TextBox.Visible = true
+		script.Parent.stam.Visible = true
+	end)
+	script.Parent.Goto.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game.Players:FindFirstChild(script.Parent.TextBox.Text).Character.HumanoidRootPart.Position)
+	end)
+	script.Parent.stam.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.PlayerData.Stats.Stamina.Value = 350
+	end)
+end
+coroutine.wrap(CWYRLPK_fake_script)()
+local function MEIKJE_fake_script() -- Frame.Script 
+	local script = Instance.new('Script', Frame)
+
+	script.Parent.Airtemple.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3411, 344, 5290)
+	end)
+	script.Parent.Chin.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-246, 88, 3263)
+	end)
+	script.Parent.Firecity.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(5524, 67, -1773)
+	end)
+	script.Parent.FireIsland.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(4361, 267, -3546)
+	end)
+	script.Parent.North.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1294, 222, -69)
+	end)
+	script.Parent.South.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(5659, 3, 794)
+	end)
+end
+coroutine.wrap(MEIKJE_fake_script)()
