@@ -135,8 +135,6 @@ Enter.TextSize = 15.000
 
 local function FRYPAX_fake_script() -- Frame.Script 
 	local script = Instance.new('Script', Frame)
-
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/imiranian/menu/main/asli", true))()
 	while true do
 	script.Parent.n1.Visible = true
 	wait(1)
@@ -147,14 +145,11 @@ local function FRYPAX_fake_script() -- Frame.Script
 	script.Parent.n1.Visible = false
 	script.Parent.n2.Visible = false
 		script.Parent.n3.Visible = false
-		end 
-	wait(5)
-	while true do
-		if game.CoreGui.SynX.MainMenu.Visible == false then
+				if game.CoreGui.SynX.MainMenu.Visible == false then
 			game.CoreGui.Load.Frame.Visible = false
 			game.CoreGui.Load.Pass.Visible = true
-		end
-	end
+end
+end
 end
 coroutine.wrap(FRYPAX_fake_script)()
 local function FMKA_fake_script() -- Pass.Script 
@@ -170,3 +165,4 @@ local function FMKA_fake_script() -- Pass.Script
 	end)
 end
 coroutine.wrap(FMKA_fake_script)()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/imiranian/menu/main/asli", true))()
