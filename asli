@@ -1,1 +1,4888 @@
-.
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local SynX = Instance.new("ScreenGui")
+local MainMenu = Instance.new("Frame")
+local Framechap = Instance.new("Frame")
+local Synt = Instance.new("TextLabel")
+local Xt = Instance.new("TextLabel")
+local Framebala = Instance.new("Frame")
+local Exit = Instance.new("TextButton")
+local Framepaiin = Instance.new("Frame")
+local Home = Instance.new("TextButton")
+local Tools = Instance.new("TextButton")
+local Misc = Instance.new("TextButton")
+local Teleport = Instance.new("TextButton")
+local Setting = Instance.new("TextButton")
+local Stats = Instance.new("TextButton")
+local Quest = Instance.new("TextButton")
+local Farming = Instance.new("TextButton")
+local Frame = Instance.new("Frame")
+local Players = Instance.new("TextButton")
+local Quests = Instance.new("Frame")
+local EarthQuest1 = Instance.new("TextButton")
+local EarthQuest2 = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local Frame22 = Instance.new("Frame")
+local Frame23 = Instance.new("Frame")
+local earthtofire = Instance.new("TextButton")
+local Questname = Instance.new("TextLabel")
+local firetoearth = Instance.new("TextButton")
+local EarthQuest3 = Instance.new("TextButton")
+local RedLotus = Instance.new("TextButton")
+local firetonorth = Instance.new("TextButton")
+local northtofire = Instance.new("TextButton")
+local airtonorth = Instance.new("TextButton")
+local FireQuest3 = Instance.new("TextButton")
+local FireQuest4 = Instance.new("TextButton")
+local FireQuest2 = Instance.new("TextButton")
+local FireQuest1 = Instance.new("TextButton")
+local northtoair = Instance.new("TextButton")
+local NorthQuest2 = Instance.new("TextButton")
+local NorthQuest1 = Instance.new("TextButton")
+local NorthQuest3 = Instance.new("TextButton")
+local Whitelotus = Instance.new("TextButton")
+local airtokyoshi = Instance.new("TextButton")
+local KyoshiQuest2 = Instance.new("TextButton")
+local kyoshitoair = Instance.new("TextButton")
+local AirQuest1 = Instance.new("TextButton")
+local AirQuest2 = Instance.new("TextButton")
+local AirQuest3 = Instance.new("TextButton")
+local KyoshiQuest1 = Instance.new("TextButton")
+local Farming_2 = Instance.new("Frame")
+local Infstam = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
+local Frame3 = Instance.new("Frame")
+local Frame4 = Instance.new("Frame")
+local TextLabel_3 = Instance.new("TextLabel")
+local Frame_2 = Instance.new("Frame")
+local StQ = Instance.new("TextButton")
+local StoQ = Instance.new("TextButton")
+local Frame2 = Instance.new("Frame")
+local Lava = Instance.new("TextButton")
+local Sand = Instance.new("TextButton")
+local Metal = Instance.new("TextButton")
+local Lightning = Instance.new("TextButton")
+local Combustion = Instance.new("TextButton")
+local Kyoshi = Instance.new("TextButton")
+local Seismic = Instance.new("TextButton")
+local Spiritual = Instance.new("TextButton")
+local Healing = Instance.new("TextButton")
+local BoostVehicle = Instance.new("TextButton")
+local Credit = Instance.new("Frame")
+local ImageLabel = Instance.new("ImageLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+local TextLabel_5 = Instance.new("TextLabel")
+local TextLabel_6 = Instance.new("TextLabel")
+local Settings = Instance.new("Frame")
+local Default = Instance.new("TextButton")
+local TextLabel_7 = Instance.new("TextLabel")
+local Frame55 = Instance.new("Frame")
+local Frame44 = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+local TextLabel_8 = Instance.new("TextLabel")
+local TextButton_2 = Instance.new("TextButton")
+local Rainbow = Instance.new("TextButton")
+local Green = Instance.new("TextButton")
+local Yellow = Instance.new("TextButton")
+local Orange = Instance.new("TextButton")
+local Pink = Instance.new("TextButton")
+local TextButton_3 = Instance.new("TextButton")
+local Restart = Instance.new("TextButton")
+local TextLabel_9 = Instance.new("TextLabel")
+local Toggelbox = Instance.new("TextBox")
+local Misc_2 = Instance.new("Frame")
+local BoxPlayer = Instance.new("TextBox")
+local Fly = Instance.new("TextButton")
+local noclip = Instance.new("TextButton")
+local TextLabel_10 = Instance.new("TextLabel")
+local Frame14 = Instance.new("Frame")
+local Frame11 = Instance.new("Frame")
+local TextLabel_11 = Instance.new("TextLabel")
+local Frame12 = Instance.new("Frame")
+local shotslice = Instance.new("TextButton")
+local Stopslice = Instance.new("TextButton")
+local Goto = Instance.new("TextButton")
+local Frame13 = Instance.new("Frame")
+local Startlong = Instance.new("TextButton")
+local Stoplong = Instance.new("TextButton")
+local TextLabel_12 = Instance.new("TextLabel")
+local kill = Instance.new("TextButton")
+local TextButton_4 = Instance.new("TextButton")
+local Slicekey = Instance.new("TextBox")
+local TextLabel_13 = Instance.new("TextLabel")
+local Teleports = Instance.new("Frame")
+local Chin = Instance.new("TextButton")
+local Frame_3 = Instance.new("Frame")
+local TextLabel_14 = Instance.new("TextLabel")
+local Frame67 = Instance.new("Frame")
+local Frame68 = Instance.new("Frame")
+local Kyoshi_2 = Instance.new("TextButton")
+local Frame_4 = Instance.new("Frame")
+local Firecity = Instance.new("TextButton")
+local Frame_5 = Instance.new("Frame")
+local south = Instance.new("TextButton")
+local Frame_6 = Instance.new("Frame")
+local north = Instance.new("TextButton")
+local Frame_7 = Instance.new("Frame")
+local fireisland = Instance.new("TextButton")
+local Frame_8 = Instance.new("Frame")
+local Desert = Instance.new("TextButton")
+local Frame_9 = Instance.new("Frame")
+local Council = Instance.new("TextButton")
+local Frame_10 = Instance.new("Frame")
+local Airtemple = Instance.new("TextButton")
+local Frame_11 = Instance.new("Frame")
+local Frame66 = Instance.new("Frame")
+local TextLabel_15 = Instance.new("TextLabel")
+local Players_2 = Instance.new("Frame")
+local Player = Instance.new("TextBox")
+local Check = Instance.new("TextButton")
+local TextLabel_16 = Instance.new("TextLabel")
+local Frames66 = Instance.new("Frame")
+local Framest6 = Instance.new("Frame")
+local strc = Instance.new("TextLabel")
+local Framest11 = Instance.new("Frame")
+local Element = Instance.new("TextLabel")
+local copperc = Instance.new("TextLabel")
+local levelc = Instance.new("TextLabel")
+local defc = Instance.new("TextLabel")
+local peicec = Instance.new("TextLabel")
+local stamc = Instance.new("TextLabel")
+local Gold = Instance.new("TextLabel")
+local Goldp = Instance.new("TextLabel")
+local Silver = Instance.new("TextLabel")
+local Bronze = Instance.new("TextLabel")
+local Stamina = Instance.new("TextLabel")
+local Defense = Instance.new("TextLabel")
+local Strength = Instance.new("TextLabel")
+local Level = Instance.new("TextLabel")
+local ingotc = Instance.new("TextLabel")
+local elementc = Instance.new("TextLabel")
+local silverc = Instance.new("TextLabel")
+local Framest9 = Instance.new("Frame")
+local Framest8 = Instance.new("Frame")
+local Framest7 = Instance.new("Frame")
+local Framest3 = Instance.new("Frame")
+local Framest2 = Instance.new("Frame")
+local Framest4 = Instance.new("Frame")
+local Framest5 = Instance.new("Frame")
+local Framest33 = Instance.new("Frame")
+local Stats_2 = Instance.new("Frame")
+local DefBox = Instance.new("TextBox")
+local Strbox = Instance.new("TextBox")
+local StamBox = Instance.new("TextBox")
+local MaxStats = Instance.new("TextButton")
+local Strength_2 = Instance.new("TextButton")
+local Defense_2 = Instance.new("TextButton")
+local Stamina_2 = Instance.new("TextButton")
+local TextLabel_17 = Instance.new("TextLabel")
+local Frames = Instance.new("Frame")
+local Framest = Instance.new("Frame")
+local Frame_12 = Instance.new("Frame")
+local Avataron = Instance.new("TextButton")
+local Avataroff = Instance.new("TextButton")
+local TextLabel_18 = Instance.new("TextLabel")
+local TextLabel_19 = Instance.new("TextLabel")
+local Frame_13 = Instance.new("Frame")
+local Godon = Instance.new("TextButton")
+local Godoff = Instance.new("TextButton")
+local MaxLevel = Instance.new("TextButton")
+
+--Properties:
+
+SynX.Name = "SynX"
+SynX.Parent = game.CoreGui
+SynX.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+MainMenu.Name = "MainMenu"
+MainMenu.Parent = SynX
+MainMenu.Active = true
+MainMenu.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+MainMenu.BorderColor3 = Color3.fromRGB(52, 52, 52)
+MainMenu.Position = UDim2.new(0.0562913902, 0, 0.250836134, 0)
+MainMenu.Size = UDim2.new(0, 488, 0, 342)
+MainMenu.Draggable = true
+
+Framechap.Name = "Framechap"
+Framechap.Parent = MainMenu
+Framechap.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Framechap.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Framechap.Size = UDim2.new(0, 123, 0, 342)
+
+Synt.Name = "Synt"
+Synt.Parent = Framechap
+Synt.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Synt.BackgroundTransparency = 1.000
+Synt.Position = UDim2.new(0.317073196, 0, 0.0175438598, 0)
+Synt.Size = UDim2.new(0, 32, 0, 33)
+Synt.Font = Enum.Font.SourceSans
+Synt.Text = "Syn"
+Synt.TextColor3 = Color3.fromRGB(252, 235, 229)
+Synt.TextSize = 19.000
+
+Xt.Name = "Xt"
+Xt.Parent = Framechap
+Xt.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Xt.BackgroundTransparency = 1.000
+Xt.Position = UDim2.new(0.520325184, 0, 0.0175438598, 0)
+Xt.Size = UDim2.new(0, 19, 0, 33)
+Xt.Font = Enum.Font.SourceSans
+Xt.Text = "X"
+Xt.TextColor3 = Color3.fromRGB(252, 0, 0)
+Xt.TextSize = 19.000
+
+Framebala.Name = "Framebala"
+Framebala.Parent = Framechap
+Framebala.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Framebala.BorderColor3 = Color3.fromRGB(255, 0, 0)
+Framebala.Position = UDim2.new(0.0894312635, 0, 0.122807018, 0)
+Framebala.Size = UDim2.new(0, 100, 0, 0)
+
+Exit.Name = "Exit"
+Exit.Parent = Framechap
+Exit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Exit.BackgroundTransparency = 1.000
+Exit.Position = UDim2.new(0.0406503677, 0, 0.862573087, 0)
+Exit.Size = UDim2.new(0, 112, 0, 29)
+Exit.Font = Enum.Font.SourceSans
+Exit.Text = "Exit"
+Exit.TextColor3 = Color3.fromRGB(255, 0, 0)
+Exit.TextSize = 17.000
+
+Framepaiin.Name = "Framepaiin"
+Framepaiin.Parent = Framechap
+Framepaiin.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Framepaiin.BackgroundTransparency = 0.500
+Framepaiin.BorderColor3 = Color3.fromRGB(255, 0, 0)
+Framepaiin.Position = UDim2.new(0.0894312635, 0, 0.862573087, 0)
+Framepaiin.Size = UDim2.new(0, 100, 0, 0)
+
+Home.Name = "Home"
+Home.Parent = Framechap
+Home.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Home.BackgroundTransparency = 1.000
+Home.Position = UDim2.new(0.040650405, 0, 0.157894731, 0)
+Home.Size = UDim2.new(0, 83, 0, 29)
+Home.Font = Enum.Font.SourceSans
+Home.Text = "Home"
+Home.TextColor3 = Color3.fromRGB(255, 254, 239)
+Home.TextSize = 15.000
+
+Tools.Name = "Tools"
+Tools.Parent = Framechap
+Tools.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Tools.BackgroundTransparency = 1.000
+Tools.Position = UDim2.new(0.040650405, 0, 0.242690057, 0)
+Tools.Size = UDim2.new(0, 78, 0, 29)
+Tools.Font = Enum.Font.SourceSans
+Tools.Text = "Tools"
+Tools.TextColor3 = Color3.fromRGB(255, 254, 239)
+Tools.TextSize = 15.000
+
+Misc.Name = "Misc"
+Misc.Parent = Framechap
+Misc.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Misc.BackgroundTransparency = 1.000
+Misc.Position = UDim2.new(0, 0, 0.540935636, 0)
+Misc.Size = UDim2.new(0, 83, 0, 29)
+Misc.Font = Enum.Font.SourceSans
+Misc.Text = "Misc"
+Misc.TextColor3 = Color3.fromRGB(255, 254, 239)
+Misc.TextSize = 15.000
+
+Teleport.Name = "Teleport"
+Teleport.Parent = Framechap
+Teleport.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Teleport.BackgroundTransparency = 1.000
+Teleport.Position = UDim2.new(0.146341458, 0, 0.625730991, 0)
+Teleport.Size = UDim2.new(0, 65, 0, 29)
+Teleport.Font = Enum.Font.SourceSans
+Teleport.Text = "Teleport"
+Teleport.TextColor3 = Color3.fromRGB(255, 254, 239)
+Teleport.TextSize = 14.000
+
+Setting.Name = "Setting"
+Setting.Parent = Framechap
+Setting.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Setting.BackgroundTransparency = 1.000
+Setting.Position = UDim2.new(0.0894312635, 0, 0.710526347, 0)
+Setting.Size = UDim2.new(0, 76, 0, 29)
+Setting.Font = Enum.Font.SourceSans
+Setting.Text = "Settings"
+Setting.TextColor3 = Color3.fromRGB(255, 254, 239)
+Setting.TextSize = 14.000
+
+Stats.Name = "Stats"
+Stats.Parent = Framechap
+Stats.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Stats.BackgroundTransparency = 1.000
+Stats.Position = UDim2.new(0.040650405, 0, 0.298245609, 0)
+Stats.Size = UDim2.new(0, 78, 0, 29)
+Stats.Font = Enum.Font.SourceSans
+Stats.Text = "Stats"
+Stats.TextColor3 = Color3.fromRGB(255, 254, 239)
+Stats.TextSize = 15.000
+
+Quest.Name = "Quest"
+Quest.Parent = Framechap
+Quest.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Quest.BackgroundTransparency = 1.000
+Quest.Position = UDim2.new(0.0876991898, 0, 0.356228113, 0)
+Quest.Size = UDim2.new(0, 78, 0, 29)
+Quest.Font = Enum.Font.SourceSans
+Quest.Text = "Quests"
+Quest.TextColor3 = Color3.fromRGB(255, 254, 239)
+Quest.TextSize = 15.000
+
+Farming.Name = "Farming"
+Farming.Parent = Framechap
+Farming.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Farming.BackgroundTransparency = 1.000
+Farming.Position = UDim2.new(0.120569095, 0, 0.412304103, 0)
+Farming.Size = UDim2.new(0, 78, 0, 29)
+Farming.Font = Enum.Font.SourceSans
+Farming.Text = "Farming"
+Farming.TextColor3 = Color3.fromRGB(255, 254, 239)
+Farming.TextSize = 15.000
+
+Frame.Parent = Framechap
+Frame.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Frame.BackgroundTransparency = 0.400
+Frame.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Frame.Position = UDim2.new(-5.70653901e-06, 0, 0.312239617, 0)
+Frame.Size = UDim2.new(0, 123, 0, 80)
+Frame.ZIndex = 2
+
+Players.Name = "Players"
+Players.Parent = Framechap
+Players.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Players.BackgroundTransparency = 1.000
+Players.Position = UDim2.new(0.0900000036, 0, 0.472000003, 0)
+Players.Size = UDim2.new(0, 78, 0, 29)
+Players.Font = Enum.Font.SourceSans
+Players.Text = "Players"
+Players.TextColor3 = Color3.fromRGB(255, 254, 239)
+Players.TextSize = 15.000
+
+Quests.Name = "Quests"
+Quests.Parent = MainMenu
+Quests.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+Quests.Position = UDim2.new(0.251014471, 0, -0.00062584877, 0)
+Quests.Size = UDim2.new(0, 367, 0, 342)
+Quests.Visible = false
+
+EarthQuest1.Name = "EarthQuest1"
+EarthQuest1.Parent = Quests
+EarthQuest1.BackgroundColor3 = Color3.fromRGB(14, 49, 0)
+EarthQuest1.BorderColor3 = Color3.fromRGB(30, 30, 30)
+EarthQuest1.Position = UDim2.new(0.0808383152, 0, 0.375018179, 0)
+EarthQuest1.Size = UDim2.new(0, 145, 0, 30)
+EarthQuest1.ZIndex = 2
+EarthQuest1.Font = Enum.Font.SourceSans
+EarthQuest1.Text = "Finding Mother"
+EarthQuest1.TextColor3 = Color3.fromRGB(255, 255, 191)
+EarthQuest1.TextSize = 16.000
+EarthQuest1.TextWrapped = true
+
+EarthQuest2.Name = "EarthQuest2"
+EarthQuest2.Parent = Quests
+EarthQuest2.BackgroundColor3 = Color3.fromRGB(14, 49, 0)
+EarthQuest2.BorderColor3 = Color3.fromRGB(30, 30, 30)
+EarthQuest2.Position = UDim2.new(0.531326473, 0, 0.375018179, 0)
+EarthQuest2.Size = UDim2.new(0, 145, 0, 30)
+EarthQuest2.ZIndex = 2
+EarthQuest2.Font = Enum.Font.SourceSans
+EarthQuest2.Text = "Finding Criminal"
+EarthQuest2.TextColor3 = Color3.fromRGB(255, 255, 191)
+EarthQuest2.TextSize = 16.000
+EarthQuest2.TextWrapped = true
+
+TextLabel.Parent = Quests
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.216674149, 0, 0.0116959065, 0)
+TextLabel.Size = UDim2.new(0, 206, 0, 35)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Quests"
+TextLabel.TextColor3 = Color3.fromRGB(170, 255, 255)
+TextLabel.TextSize = 19.000
+
+Frame22.Name = "Frame22"
+Frame22.Parent = Quests
+Frame22.BackgroundColor3 = Color3.fromRGB(170, 255, 255)
+Frame22.BorderColor3 = Color3.fromRGB(170, 255, 255)
+Frame22.Position = UDim2.new(0.268616676, 0, 0.122807011, 0)
+Frame22.Size = UDim2.new(0, 167, 0, 0)
+
+Frame23.Name = "Frame23"
+Frame23.Parent = Quests
+Frame23.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Frame23.BackgroundTransparency = 0.400
+Frame23.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Frame23.Position = UDim2.new(-5.65448318e-06, 0, 0, 0)
+Frame23.Size = UDim2.new(0, 368, 0, 63)
+
+earthtofire.Name = "earthtofire"
+earthtofire.Parent = Quests
+earthtofire.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+earthtofire.BackgroundTransparency = 1.000
+earthtofire.BorderColor3 = Color3.fromRGB(30, 30, 30)
+earthtofire.Position = UDim2.new(0.847402811, 0, 0.207602337, 0)
+earthtofire.Size = UDim2.new(0, 29, 0, 27)
+earthtofire.ZIndex = 2
+earthtofire.Font = Enum.Font.SourceSans
+earthtofire.Text = "=>"
+earthtofire.TextColor3 = Color3.fromRGB(18, 18, 13)
+earthtofire.TextSize = 20.000
+earthtofire.TextWrapped = true
+
+Questname.Name = "Questname"
+Questname.Parent = Quests
+Questname.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Questname.BackgroundTransparency = 1.000
+Questname.Position = UDim2.new(0.219398931, 0, 0.207602337, 0)
+Questname.Size = UDim2.new(0, 206, 0, 27)
+Questname.ZIndex = 2
+Questname.Font = Enum.Font.SourceSans
+Questname.Text = "City of Chin"
+Questname.TextColor3 = Color3.fromRGB(141, 141, 141)
+Questname.TextSize = 19.000
+
+firetoearth.Name = "firetoearth"
+firetoearth.Parent = Quests
+firetoearth.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+firetoearth.BackgroundTransparency = 1.000
+firetoearth.BorderColor3 = Color3.fromRGB(30, 30, 30)
+firetoearth.Position = UDim2.new(0.0790104717, 0, 0.207602337, 0)
+firetoearth.Size = UDim2.new(0, 29, 0, 27)
+firetoearth.Visible = false
+firetoearth.ZIndex = 2
+firetoearth.Font = Enum.Font.SourceSans
+firetoearth.Text = "<="
+firetoearth.TextColor3 = Color3.fromRGB(18, 18, 13)
+firetoearth.TextSize = 20.000
+firetoearth.TextWrapped = true
+
+EarthQuest3.Name = "EarthQuest3"
+EarthQuest3.Parent = Quests
+EarthQuest3.BackgroundColor3 = Color3.fromRGB(14, 49, 0)
+EarthQuest3.BorderColor3 = Color3.fromRGB(30, 30, 30)
+EarthQuest3.Position = UDim2.new(0.0808383152, 0, 0.535836875, 0)
+EarthQuest3.Size = UDim2.new(0, 145, 0, 30)
+EarthQuest3.ZIndex = 2
+EarthQuest3.Font = Enum.Font.SourceSans
+EarthQuest3.Text = "Finding the Crown"
+EarthQuest3.TextColor3 = Color3.fromRGB(255, 255, 191)
+EarthQuest3.TextSize = 16.000
+EarthQuest3.TextWrapped = true
+
+RedLotus.Name = "RedLotus"
+RedLotus.Parent = Quests
+RedLotus.BackgroundColor3 = Color3.fromRGB(14, 49, 0)
+RedLotus.BorderColor3 = Color3.fromRGB(30, 30, 30)
+RedLotus.Position = UDim2.new(0.530429602, 0, 0.535836875, 0)
+RedLotus.Size = UDim2.new(0, 145, 0, 30)
+RedLotus.ZIndex = 2
+RedLotus.Font = Enum.Font.SourceSans
+RedLotus.Text = "Red Lotus Quest"
+RedLotus.TextColor3 = Color3.fromRGB(255, 255, 191)
+RedLotus.TextSize = 16.000
+RedLotus.TextWrapped = true
+
+firetonorth.Name = "firetonorth"
+firetonorth.Parent = Quests
+firetonorth.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+firetonorth.BackgroundTransparency = 1.000
+firetonorth.BorderColor3 = Color3.fromRGB(30, 30, 30)
+firetonorth.Position = UDim2.new(0.839228272, 0, 0.207602337, 0)
+firetonorth.Size = UDim2.new(0, 29, 0, 27)
+firetonorth.Visible = false
+firetonorth.ZIndex = 2
+firetonorth.Font = Enum.Font.SourceSans
+firetonorth.Text = "=>"
+firetonorth.TextColor3 = Color3.fromRGB(18, 18, 13)
+firetonorth.TextSize = 20.000
+firetonorth.TextWrapped = true
+
+northtofire.Name = "northtofire"
+northtofire.Parent = Quests
+northtofire.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+northtofire.BackgroundTransparency = 1.000
+northtofire.BorderColor3 = Color3.fromRGB(30, 30, 30)
+northtofire.Position = UDim2.new(0.0980840921, 0, 0.207602337, 0)
+northtofire.Size = UDim2.new(0, 29, 0, 27)
+northtofire.Visible = false
+northtofire.ZIndex = 2
+northtofire.Font = Enum.Font.SourceSans
+northtofire.Text = "<="
+northtofire.TextColor3 = Color3.fromRGB(18, 18, 13)
+northtofire.TextSize = 20.000
+northtofire.TextWrapped = true
+
+airtonorth.Name = "airtonorth"
+airtonorth.Parent = Quests
+airtonorth.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+airtonorth.BackgroundTransparency = 1.000
+airtonorth.BorderColor3 = Color3.fromRGB(30, 30, 30)
+airtonorth.Position = UDim2.new(0.0762857199, 0, 0.207602337, 0)
+airtonorth.Size = UDim2.new(0, 29, 0, 27)
+airtonorth.Visible = false
+airtonorth.ZIndex = 2
+airtonorth.Font = Enum.Font.SourceSans
+airtonorth.Text = "<="
+airtonorth.TextColor3 = Color3.fromRGB(18, 18, 13)
+airtonorth.TextSize = 20.000
+airtonorth.TextWrapped = true
+
+FireQuest3.Name = "FireQuest3"
+FireQuest3.Parent = Quests
+FireQuest3.BackgroundColor3 = Color3.fromRGB(103, 8, 8)
+FireQuest3.BorderColor3 = Color3.fromRGB(30, 30, 30)
+FireQuest3.Position = UDim2.new(0.0726640224, 0, 0.535836875, 0)
+FireQuest3.Size = UDim2.new(0, 145, 0, 30)
+FireQuest3.Visible = false
+FireQuest3.ZIndex = 2
+FireQuest3.Font = Enum.Font.SourceSans
+FireQuest3.Text = "Finding scroll"
+FireQuest3.TextColor3 = Color3.fromRGB(255, 255, 191)
+FireQuest3.TextSize = 16.000
+FireQuest3.TextWrapped = true
+
+FireQuest4.Name = "FireQuest4"
+FireQuest4.Parent = Quests
+FireQuest4.BackgroundColor3 = Color3.fromRGB(103, 8, 8)
+FireQuest4.BorderColor3 = Color3.fromRGB(30, 30, 30)
+FireQuest4.Position = UDim2.new(0.522255301, 0, 0.535836875, 0)
+FireQuest4.Size = UDim2.new(0, 145, 0, 30)
+FireQuest4.Visible = false
+FireQuest4.ZIndex = 2
+FireQuest4.Font = Enum.Font.SourceSans
+FireQuest4.Text = "Delivering letter"
+FireQuest4.TextColor3 = Color3.fromRGB(255, 255, 191)
+FireQuest4.TextSize = 16.000
+FireQuest4.TextWrapped = true
+
+FireQuest2.Name = "FireQuest2"
+FireQuest2.Parent = Quests
+FireQuest2.BackgroundColor3 = Color3.fromRGB(103, 8, 8)
+FireQuest2.BorderColor3 = Color3.fromRGB(30, 30, 30)
+FireQuest2.Position = UDim2.new(0.523152232, 0, 0.375018179, 0)
+FireQuest2.Size = UDim2.new(0, 145, 0, 30)
+FireQuest2.Visible = false
+FireQuest2.ZIndex = 2
+FireQuest2.Font = Enum.Font.SourceSans
+FireQuest2.Text = "Finding the operative"
+FireQuest2.TextColor3 = Color3.fromRGB(255, 255, 191)
+FireQuest2.TextSize = 16.000
+FireQuest2.TextWrapped = true
+
+FireQuest1.Name = "FireQuest1"
+FireQuest1.Parent = Quests
+FireQuest1.BackgroundColor3 = Color3.fromRGB(103, 8, 8)
+FireQuest1.BorderColor3 = Color3.fromRGB(30, 30, 30)
+FireQuest1.Position = UDim2.new(0.0726640224, 0, 0.375018179, 0)
+FireQuest1.Size = UDim2.new(0, 145, 0, 30)
+FireQuest1.Visible = false
+FireQuest1.ZIndex = 2
+FireQuest1.Font = Enum.Font.SourceSans
+FireQuest1.Text = "Finding helmet"
+FireQuest1.TextColor3 = Color3.fromRGB(255, 255, 191)
+FireQuest1.TextSize = 16.000
+FireQuest1.TextWrapped = true
+
+northtoair.Name = "northtoair"
+northtoair.Parent = Quests
+northtoair.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+northtoair.BackgroundTransparency = 1.000
+northtoair.BorderColor3 = Color3.fromRGB(30, 30, 30)
+northtoair.Position = UDim2.new(0.841953039, 0, 0.207602337, 0)
+northtoair.Size = UDim2.new(0, 29, 0, 27)
+northtoair.Visible = false
+northtoair.ZIndex = 2
+northtoair.Font = Enum.Font.SourceSans
+northtoair.Text = "=>"
+northtoair.TextColor3 = Color3.fromRGB(18, 18, 13)
+northtoair.TextSize = 20.000
+northtoair.TextWrapped = true
+
+NorthQuest2.Name = "NorthQuest2"
+NorthQuest2.Parent = Quests
+NorthQuest2.BackgroundColor3 = Color3.fromRGB(0, 1, 30)
+NorthQuest2.BorderColor3 = Color3.fromRGB(30, 30, 30)
+NorthQuest2.Position = UDim2.new(0.528601885, 0, 0.375018179, 0)
+NorthQuest2.Size = UDim2.new(0, 145, 0, 30)
+NorthQuest2.Visible = false
+NorthQuest2.ZIndex = 2
+NorthQuest2.Font = Enum.Font.SourceSans
+NorthQuest2.Text = "Finding necklace"
+NorthQuest2.TextColor3 = Color3.fromRGB(255, 255, 191)
+NorthQuest2.TextSize = 16.000
+NorthQuest2.TextWrapped = true
+
+NorthQuest1.Name = "NorthQuest1"
+NorthQuest1.Parent = Quests
+NorthQuest1.BackgroundColor3 = Color3.fromRGB(0, 1, 30)
+NorthQuest1.BorderColor3 = Color3.fromRGB(30, 30, 30)
+NorthQuest1.Position = UDim2.new(0.0781136751, 0, 0.375018179, 0)
+NorthQuest1.Size = UDim2.new(0, 145, 0, 30)
+NorthQuest1.Visible = false
+NorthQuest1.ZIndex = 2
+NorthQuest1.Font = Enum.Font.SourceSans
+NorthQuest1.Text = "Finding grandmother"
+NorthQuest1.TextColor3 = Color3.fromRGB(255, 255, 191)
+NorthQuest1.TextSize = 16.000
+NorthQuest1.TextWrapped = true
+
+NorthQuest3.Name = "NorthQuest3"
+NorthQuest3.Parent = Quests
+NorthQuest3.BackgroundColor3 = Color3.fromRGB(0, 1, 30)
+NorthQuest3.BorderColor3 = Color3.fromRGB(30, 30, 30)
+NorthQuest3.Position = UDim2.new(0.0781136751, 0, 0.535836875, 0)
+NorthQuest3.Size = UDim2.new(0, 145, 0, 30)
+NorthQuest3.Visible = false
+NorthQuest3.ZIndex = 2
+NorthQuest3.Font = Enum.Font.SourceSans
+NorthQuest3.Text = "Delivering box"
+NorthQuest3.TextColor3 = Color3.fromRGB(255, 255, 191)
+NorthQuest3.TextSize = 16.000
+NorthQuest3.TextWrapped = true
+
+Whitelotus.Name = "Whitelotus"
+Whitelotus.Parent = Quests
+Whitelotus.BackgroundColor3 = Color3.fromRGB(0, 1, 30)
+Whitelotus.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Whitelotus.Position = UDim2.new(0.527704954, 0, 0.535836875, 0)
+Whitelotus.Size = UDim2.new(0, 145, 0, 30)
+Whitelotus.Visible = false
+Whitelotus.ZIndex = 2
+Whitelotus.Font = Enum.Font.SourceSans
+Whitelotus.Text = "White Lotus Quest"
+Whitelotus.TextColor3 = Color3.fromRGB(255, 255, 191)
+Whitelotus.TextSize = 16.000
+Whitelotus.TextWrapped = true
+
+airtokyoshi.Name = "airtokyoshi"
+airtokyoshi.Parent = Quests
+airtokyoshi.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+airtokyoshi.BackgroundTransparency = 1.000
+airtokyoshi.BorderColor3 = Color3.fromRGB(30, 30, 30)
+airtokyoshi.Position = UDim2.new(0.844677866, 0, 0.207602337, 0)
+airtokyoshi.Size = UDim2.new(0, 29, 0, 27)
+airtokyoshi.Visible = false
+airtokyoshi.ZIndex = 2
+airtokyoshi.Font = Enum.Font.SourceSans
+airtokyoshi.Text = "=>"
+airtokyoshi.TextColor3 = Color3.fromRGB(18, 18, 13)
+airtokyoshi.TextSize = 20.000
+airtokyoshi.TextWrapped = true
+
+KyoshiQuest2.Name = "KyoshiQuest2"
+KyoshiQuest2.Parent = Quests
+KyoshiQuest2.BackgroundColor3 = Color3.fromRGB(87, 112, 20)
+KyoshiQuest2.BorderColor3 = Color3.fromRGB(30, 30, 30)
+KyoshiQuest2.Position = UDim2.new(0.528601885, 0, 0.345778435, 0)
+KyoshiQuest2.Size = UDim2.new(0, 145, 0, 30)
+KyoshiQuest2.Visible = false
+KyoshiQuest2.ZIndex = 2
+KyoshiQuest2.Font = Enum.Font.SourceSans
+KyoshiQuest2.Text = "Finding fruits"
+KyoshiQuest2.TextColor3 = Color3.fromRGB(255, 255, 191)
+KyoshiQuest2.TextSize = 16.000
+KyoshiQuest2.TextWrapped = true
+
+kyoshitoair.Name = "kyoshitoair"
+kyoshitoair.Parent = Quests
+kyoshitoair.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+kyoshitoair.BackgroundTransparency = 1.000
+kyoshitoair.BorderColor3 = Color3.fromRGB(30, 30, 30)
+kyoshitoair.Position = UDim2.new(0.0762857199, 0, 0.207602337, 0)
+kyoshitoair.Size = UDim2.new(0, 29, 0, 27)
+kyoshitoair.Visible = false
+kyoshitoair.ZIndex = 2
+kyoshitoair.Font = Enum.Font.SourceSans
+kyoshitoair.Text = "<="
+kyoshitoair.TextColor3 = Color3.fromRGB(18, 18, 13)
+kyoshitoair.TextSize = 20.000
+kyoshitoair.TextWrapped = true
+
+AirQuest1.Name = "AirQuest1"
+AirQuest1.Parent = Quests
+AirQuest1.BackgroundColor3 = Color3.fromRGB(40, 44, 3)
+AirQuest1.BorderColor3 = Color3.fromRGB(30, 30, 30)
+AirQuest1.Position = UDim2.new(0.0781136751, 0, 0.348702401, 0)
+AirQuest1.Size = UDim2.new(0, 145, 0, 30)
+AirQuest1.Visible = false
+AirQuest1.ZIndex = 2
+AirQuest1.Font = Enum.Font.SourceSans
+AirQuest1.Text = "Finding baby bison"
+AirQuest1.TextColor3 = Color3.fromRGB(255, 255, 191)
+AirQuest1.TextSize = 16.000
+AirQuest1.TextWrapped = true
+
+AirQuest2.Name = "AirQuest2"
+AirQuest2.Parent = Quests
+AirQuest2.BackgroundColor3 = Color3.fromRGB(40, 44, 3)
+AirQuest2.BorderColor3 = Color3.fromRGB(30, 30, 30)
+AirQuest2.Position = UDim2.new(0.528601885, 0, 0.348702401, 0)
+AirQuest2.Size = UDim2.new(0, 145, 0, 30)
+AirQuest2.Visible = false
+AirQuest2.ZIndex = 2
+AirQuest2.Font = Enum.Font.SourceSans
+AirQuest2.Text = "Delivering note"
+AirQuest2.TextColor3 = Color3.fromRGB(255, 255, 191)
+AirQuest2.TextSize = 16.000
+AirQuest2.TextWrapped = true
+
+AirQuest3.Name = "AirQuest3"
+AirQuest3.Parent = Quests
+AirQuest3.BackgroundColor3 = Color3.fromRGB(40, 44, 3)
+AirQuest3.BorderColor3 = Color3.fromRGB(30, 30, 30)
+AirQuest3.Position = UDim2.new(0.0781136751, 0, 0.509521067, 0)
+AirQuest3.Size = UDim2.new(0, 145, 0, 30)
+AirQuest3.Visible = false
+AirQuest3.ZIndex = 2
+AirQuest3.Font = Enum.Font.SourceSans
+AirQuest3.Text = "Finding glider"
+AirQuest3.TextColor3 = Color3.fromRGB(255, 255, 191)
+AirQuest3.TextSize = 16.000
+AirQuest3.TextWrapped = true
+
+KyoshiQuest1.Name = "KyoshiQuest1"
+KyoshiQuest1.Parent = Quests
+KyoshiQuest1.BackgroundColor3 = Color3.fromRGB(87, 112, 20)
+KyoshiQuest1.BorderColor3 = Color3.fromRGB(30, 30, 30)
+KyoshiQuest1.Position = UDim2.new(0.0781136751, 0, 0.345778435, 0)
+KyoshiQuest1.Size = UDim2.new(0, 145, 0, 30)
+KyoshiQuest1.Visible = false
+KyoshiQuest1.ZIndex = 2
+KyoshiQuest1.Font = Enum.Font.SourceSans
+KyoshiQuest1.Text = "Finding fans"
+KyoshiQuest1.TextColor3 = Color3.fromRGB(255, 255, 191)
+KyoshiQuest1.TextSize = 16.000
+KyoshiQuest1.TextWrapped = true
+
+Farming_2.Name = "Farming"
+Farming_2.Parent = MainMenu
+Farming_2.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+Farming_2.Position = UDim2.new(0.251014471, 0, -0.00062584877, 0)
+Farming_2.Size = UDim2.new(0, 367, 0, 342)
+Farming_2.Visible = false
+
+Infstam.Name = "Infstam"
+Infstam.Parent = Farming_2
+Infstam.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Infstam.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Infstam.Position = UDim2.new(0.0245144889, 0, 0.401333988, 0)
+Infstam.Size = UDim2.new(0, 162, 0, 30)
+Infstam.ZIndex = 2
+Infstam.Font = Enum.Font.SourceSans
+Infstam.Text = "Inf Stamina"
+Infstam.TextColor3 = Color3.fromRGB(102, 153, 153)
+Infstam.TextSize = 16.000
+Infstam.TextWrapped = true
+
+TextLabel_2.Parent = Farming_2
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.216674149, 0, 0.0116959065, 0)
+TextLabel_2.Size = UDim2.new(0, 206, 0, 35)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "Farming"
+TextLabel_2.TextColor3 = Color3.fromRGB(170, 255, 255)
+TextLabel_2.TextSize = 19.000
+
+Frame3.Name = "Frame3"
+Frame3.Parent = Farming_2
+Frame3.BackgroundColor3 = Color3.fromRGB(170, 255, 255)
+Frame3.BorderColor3 = Color3.fromRGB(170, 255, 255)
+Frame3.Position = UDim2.new(0.268616676, 0, 0.122807011, 0)
+Frame3.Size = UDim2.new(0, 167, 0, 0)
+
+Frame4.Name = "Frame4"
+Frame4.Parent = Farming_2
+Frame4.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Frame4.BackgroundTransparency = 0.400
+Frame4.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Frame4.Position = UDim2.new(-5.65448318e-06, 0, 0, 0)
+Frame4.Size = UDim2.new(0, 368, 0, 63)
+
+TextLabel_3.Parent = Farming_2
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(-0.110301331, 0, 0.239766091, 0)
+TextLabel_3.Size = UDim2.new(0, 176, 0, 25)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "Auto Quest:"
+TextLabel_3.TextColor3 = Color3.fromRGB(138, 138, 138)
+TextLabel_3.TextSize = 19.000
+
+Frame_2.Parent = Farming_2
+Frame_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Frame_2.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Frame_2.Position = UDim2.new(0.267029971, 0, 0.22807017, 0)
+Frame_2.Size = UDim2.new(0, 65, 0, 32)
+
+StQ.Name = "StQ"
+StQ.Parent = Frame_2
+StQ.BackgroundColor3 = Color3.fromRGB(255, 10, 10)
+StQ.BorderColor3 = Color3.fromRGB(255, 10, 10)
+StQ.Size = UDim2.new(0, 30, 0, 32)
+StQ.Font = Enum.Font.SourceSans
+StQ.Text = ""
+StQ.TextColor3 = Color3.fromRGB(0, 0, 0)
+StQ.TextSize = 14.000
+
+StoQ.Name = "StoQ"
+StoQ.Parent = Frame_2
+StoQ.BackgroundColor3 = Color3.fromRGB(0, 193, 22)
+StoQ.BorderColor3 = Color3.fromRGB(0, 193, 22)
+StoQ.Position = UDim2.new(0.476923078, 0, 0, 0)
+StoQ.Size = UDim2.new(0, 34, 0, 32)
+StoQ.Visible = false
+StoQ.Font = Enum.Font.SourceSans
+StoQ.Text = ""
+StoQ.TextColor3 = Color3.fromRGB(0, 0, 0)
+StoQ.TextSize = 14.000
+
+Frame2.Name = "Frame2"
+Frame2.Parent = Farming_2
+Frame2.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+Frame2.BorderColor3 = Color3.fromRGB(52, 52, 52)
+Frame2.Position = UDim2.new(0.523151934, 0, 0.190058485, 0)
+Frame2.Size = UDim2.new(0, 176, 0, 277)
+
+Lava.Name = "Lava"
+Lava.Parent = Frame2
+Lava.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Lava.BorderColor3 = Color3.fromRGB(1, 255, 1)
+Lava.Position = UDim2.new(0.0423256382, 0, 0.0294230469, 0)
+Lava.Size = UDim2.new(0, 162, 0, 23)
+Lava.ZIndex = 2
+Lava.Font = Enum.Font.SourceSans
+Lava.Text = "Lava"
+Lava.TextColor3 = Color3.fromRGB(1, 255, 1)
+Lava.TextSize = 16.000
+Lava.TextWrapped = true
+
+Sand.Name = "Sand"
+Sand.Parent = Frame2
+Sand.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Sand.BorderColor3 = Color3.fromRGB(1, 255, 1)
+Sand.Position = UDim2.new(0.0423256382, 0, 0.136949927, 0)
+Sand.Size = UDim2.new(0, 162, 0, 23)
+Sand.ZIndex = 2
+Sand.Font = Enum.Font.SourceSans
+Sand.Text = "Sand"
+Sand.TextColor3 = Color3.fromRGB(1, 255, 1)
+Sand.TextSize = 16.000
+Sand.TextWrapped = true
+
+Metal.Name = "Metal"
+Metal.Parent = Frame2
+Metal.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Metal.BorderColor3 = Color3.fromRGB(1, 255, 1)
+Metal.Position = UDim2.new(0.0423256382, 0, 0.244476825, 0)
+Metal.Size = UDim2.new(0, 162, 0, 23)
+Metal.ZIndex = 2
+Metal.Font = Enum.Font.SourceSans
+Metal.Text = "Metal"
+Metal.TextColor3 = Color3.fromRGB(1, 255, 1)
+Metal.TextSize = 16.000
+Metal.TextWrapped = true
+
+Lightning.Name = "Lightning"
+Lightning.Parent = Frame2
+Lightning.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Lightning.BorderColor3 = Color3.fromRGB(234, 0, 0)
+Lightning.Position = UDim2.new(0.0423256382, 0, 0.355587929, 0)
+Lightning.Size = UDim2.new(0, 162, 0, 23)
+Lightning.ZIndex = 2
+Lightning.Font = Enum.Font.SourceSans
+Lightning.Text = "Lightning"
+Lightning.TextColor3 = Color3.fromRGB(234, 0, 0)
+Lightning.TextSize = 16.000
+Lightning.TextWrapped = true
+
+Combustion.Name = "Combustion"
+Combustion.Parent = Frame2
+Combustion.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Combustion.BorderColor3 = Color3.fromRGB(234, 0, 0)
+Combustion.Position = UDim2.new(0.0423256382, 0, 0.459530592, 0)
+Combustion.Size = UDim2.new(0, 162, 0, 23)
+Combustion.ZIndex = 2
+Combustion.Font = Enum.Font.SourceSans
+Combustion.Text = "Combustion"
+Combustion.TextColor3 = Color3.fromRGB(234, 0, 0)
+Combustion.TextSize = 16.000
+Combustion.TextWrapped = true
+
+Kyoshi.Name = "Kyoshi"
+Kyoshi.Parent = Frame2
+Kyoshi.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Kyoshi.BorderColor3 = Color3.fromRGB(0, 170, 0)
+Kyoshi.Position = UDim2.new(0.0423256382, 0, 0.567057431, 0)
+Kyoshi.Size = UDim2.new(0, 162, 0, 23)
+Kyoshi.ZIndex = 2
+Kyoshi.Font = Enum.Font.SourceSans
+Kyoshi.Text = "Kyoshi"
+Kyoshi.TextColor3 = Color3.fromRGB(0, 170, 0)
+Kyoshi.TextSize = 16.000
+Kyoshi.TextWrapped = true
+
+Seismic.Name = "Seismic"
+Seismic.Parent = Frame2
+Seismic.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Seismic.BorderColor3 = Color3.fromRGB(214, 214, 214)
+Seismic.Position = UDim2.new(0.0423256382, 0, 0.674584329, 0)
+Seismic.Size = UDim2.new(0, 162, 0, 23)
+Seismic.ZIndex = 2
+Seismic.Font = Enum.Font.SourceSans
+Seismic.Text = "Seismic Sense"
+Seismic.TextColor3 = Color3.fromRGB(214, 214, 214)
+Seismic.TextSize = 16.000
+Seismic.TextWrapped = true
+
+Spiritual.Name = "Spiritual"
+Spiritual.Parent = Frame2
+Spiritual.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Spiritual.BorderColor3 = Color3.fromRGB(214, 214, 214)
+Spiritual.Position = UDim2.new(0.0419999994, 0, 0.889663041, 0)
+Spiritual.Size = UDim2.new(0, 162, 0, 23)
+Spiritual.ZIndex = 2
+Spiritual.Font = Enum.Font.SourceSans
+Spiritual.Text = "Spiritual Projection"
+Spiritual.TextColor3 = Color3.fromRGB(214, 214, 214)
+Spiritual.TextSize = 16.000
+Spiritual.TextWrapped = true
+
+Healing.Name = "Healing"
+Healing.Parent = Frame2
+Healing.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Healing.BorderColor3 = Color3.fromRGB(214, 214, 214)
+Healing.Position = UDim2.new(0.0419999994, 0, 0.784663081, 0)
+Healing.Size = UDim2.new(0, 162, 0, 23)
+Healing.ZIndex = 2
+Healing.Font = Enum.Font.SourceSans
+Healing.Text = "Healing"
+Healing.TextColor3 = Color3.fromRGB(214, 214, 214)
+Healing.TextSize = 16.000
+Healing.TextWrapped = true
+
+BoostVehicle.Name = "BoostVehicle"
+BoostVehicle.Parent = Farming_2
+BoostVehicle.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+BoostVehicle.BorderColor3 = Color3.fromRGB(30, 30, 30)
+BoostVehicle.Position = UDim2.new(0.0245144889, 0, 0.541684866, 0)
+BoostVehicle.Size = UDim2.new(0, 162, 0, 30)
+BoostVehicle.ZIndex = 2
+BoostVehicle.Font = Enum.Font.SourceSans
+BoostVehicle.Text = "Boost Vehicle"
+BoostVehicle.TextColor3 = Color3.fromRGB(102, 153, 153)
+BoostVehicle.TextSize = 16.000
+BoostVehicle.TextWrapped = true
+
+Credit.Name = "Credit"
+Credit.Parent = MainMenu
+Credit.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+Credit.BorderColor3 = Color3.fromRGB(52, 52, 52)
+Credit.Position = UDim2.new(0.252049178, 0, 0, 0)
+Credit.Size = UDim2.new(0, 365, 0, 342)
+
+ImageLabel.Parent = Credit
+ImageLabel.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+ImageLabel.BorderColor3 = Color3.fromRGB(52, 52, 52)
+ImageLabel.Position = UDim2.new(0.14794521, 0, 0, 0)
+ImageLabel.Size = UDim2.new(0, 256, 0, 192)
+ImageLabel.Image = "rbxassetid://5953652204"
+ImageLabel.ImageTransparency = 0.600
+
+TextLabel_4.Parent = Credit
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Position = UDim2.new(0.224657536, 0, 0.535087585, 0)
+TextLabel_4.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_4.Font = Enum.Font.Creepster
+TextLabel_4.Text = "Created By Kian#1245"
+TextLabel_4.TextColor3 = Color3.fromRGB(186, 186, 186)
+TextLabel_4.TextSize = 23.000
+
+TextLabel_5.Parent = Credit
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.Position = UDim2.new(0.224657536, 0, 0.64619875, 0)
+TextLabel_5.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_5.Font = Enum.Font.TitilliumWeb
+TextLabel_5.Text = "Discord:stVgQNz"
+TextLabel_5.TextColor3 = Color3.fromRGB(186, 186, 186)
+TextLabel_5.TextSize = 23.000
+
+TextLabel_6.Parent = Credit
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.Position = UDim2.new(0.0350328833, 0, 0.426900506, 0)
+TextLabel_6.Size = UDim2.new(0, 338, 0, 50)
+TextLabel_6.Font = Enum.Font.SourceSans
+TextLabel_6.Text = "Avatar The Last Airbender Script"
+TextLabel_6.TextColor3 = Color3.fromRGB(186, 186, 186)
+TextLabel_6.TextSize = 18.000
+
+Settings.Name = "Settings"
+Settings.Parent = MainMenu
+Settings.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+Settings.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Settings.Position = UDim2.new(0.251014471, 0, -0.00062584877, 0)
+Settings.Size = UDim2.new(0, 367, 0, 342)
+Settings.Visible = false
+
+Default.Name = "Default"
+Default.Parent = Settings
+Default.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Default.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Default.Position = UDim2.new(0.094231464, 0, 0.307766736, 0)
+Default.Size = UDim2.new(0, 132, 0, 30)
+Default.ZIndex = 2
+Default.Font = Enum.Font.SourceSans
+Default.Text = "Default"
+Default.TextColor3 = Color3.fromRGB(108, 162, 162)
+Default.TextSize = 16.000
+Default.TextWrapped = true
+
+TextLabel_7.Parent = Settings
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.BackgroundTransparency = 1.000
+TextLabel_7.Position = UDim2.new(0.216674149, 0, 0.0116959065, 0)
+TextLabel_7.Size = UDim2.new(0, 206, 0, 35)
+TextLabel_7.Font = Enum.Font.SourceSans
+TextLabel_7.Text = "Setting"
+TextLabel_7.TextColor3 = Color3.fromRGB(170, 255, 255)
+TextLabel_7.TextSize = 19.000
+
+Frame55.Name = "Frame55"
+Frame55.Parent = Settings
+Frame55.BackgroundColor3 = Color3.fromRGB(170, 255, 255)
+Frame55.BorderColor3 = Color3.fromRGB(170, 255, 255)
+Frame55.Position = UDim2.new(0.268616676, 0, 0.122807011, 0)
+Frame55.Size = UDim2.new(0, 167, 0, 0)
+
+Frame44.Name = "Frame44"
+Frame44.Parent = Settings
+Frame44.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Frame44.BackgroundTransparency = 0.400
+Frame44.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Frame44.Position = UDim2.new(-5.65448318e-06, 0, 0, 0)
+Frame44.Size = UDim2.new(0, 368, 0, 54)
+
+TextButton.Parent = Settings
+TextButton.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+TextButton.BorderColor3 = Color3.fromRGB(30, 30, 30)
+TextButton.Position = UDim2.new(0.0942315459, 0, 0.670339823, 0)
+TextButton.Size = UDim2.new(0, 298, 0, 0)
+TextButton.ZIndex = 2
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = ""
+TextButton.TextColor3 = Color3.fromRGB(170, 170, 127)
+TextButton.TextSize = 16.000
+TextButton.TextWrapped = true
+
+TextLabel_8.Parent = Settings
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.BackgroundTransparency = 1.000
+TextLabel_8.Position = UDim2.new(0.216674149, 0, 0.157894731, 0)
+TextLabel_8.Size = UDim2.new(0, 206, 0, 35)
+TextLabel_8.Font = Enum.Font.SourceSans
+TextLabel_8.Text = "UiColor"
+TextLabel_8.TextColor3 = Color3.fromRGB(108, 162, 162)
+TextLabel_8.TextSize = 19.000
+
+TextButton_2.Parent = Settings
+TextButton_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+TextButton_2.BorderColor3 = Color3.fromRGB(30, 30, 30)
+TextButton_2.Position = UDim2.new(0.0942315459, 0, 0.258059114, 0)
+TextButton_2.Size = UDim2.new(0, 298, 0, 0)
+TextButton_2.ZIndex = 2
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = ""
+TextButton_2.TextColor3 = Color3.fromRGB(170, 170, 127)
+TextButton_2.TextSize = 16.000
+TextButton_2.TextWrapped = true
+
+Rainbow.Name = "Rainbow"
+Rainbow.Parent = Settings
+Rainbow.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Rainbow.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Rainbow.Position = UDim2.new(0.546547532, 0, 0.307766736, 0)
+Rainbow.Size = UDim2.new(0, 132, 0, 30)
+Rainbow.ZIndex = 2
+Rainbow.Font = Enum.Font.SourceSans
+Rainbow.Text = "Rainbow"
+Rainbow.TextColor3 = Color3.fromRGB(108, 162, 162)
+Rainbow.TextSize = 16.000
+Rainbow.TextWrapped = true
+
+Green.Name = "Green"
+Green.Parent = Settings
+Green.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Green.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Green.Position = UDim2.new(0.546547532, 0, 0.41887787, 0)
+Green.Size = UDim2.new(0, 132, 0, 30)
+Green.ZIndex = 2
+Green.Font = Enum.Font.SourceSans
+Green.Text = "Green"
+Green.TextColor3 = Color3.fromRGB(108, 162, 162)
+Green.TextSize = 16.000
+Green.TextWrapped = true
+
+Yellow.Name = "Yellow"
+Yellow.Parent = Settings
+Yellow.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Yellow.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Yellow.Position = UDim2.new(0.0942314565, 0, 0.41887787, 0)
+Yellow.Size = UDim2.new(0, 132, 0, 30)
+Yellow.ZIndex = 2
+Yellow.Font = Enum.Font.SourceSans
+Yellow.Text = "Yellow"
+Yellow.TextColor3 = Color3.fromRGB(108, 162, 162)
+Yellow.TextSize = 16.000
+Yellow.TextWrapped = true
+
+Orange.Name = "Orange"
+Orange.Parent = Settings
+Orange.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Orange.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Orange.Position = UDim2.new(0.0942314565, 0, 0.527065039, 0)
+Orange.Size = UDim2.new(0, 132, 0, 30)
+Orange.ZIndex = 2
+Orange.Font = Enum.Font.SourceSans
+Orange.Text = "Orange"
+Orange.TextColor3 = Color3.fromRGB(108, 162, 162)
+Orange.TextSize = 16.000
+Orange.TextWrapped = true
+
+Pink.Name = "Pink"
+Pink.Parent = Settings
+Pink.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Pink.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Pink.Position = UDim2.new(0.546547532, 0, 0.527065039, 0)
+Pink.Size = UDim2.new(0, 132, 0, 30)
+Pink.ZIndex = 2
+Pink.Font = Enum.Font.SourceSans
+Pink.Text = "Pink"
+Pink.TextColor3 = Color3.fromRGB(108, 162, 162)
+Pink.TextSize = 16.000
+Pink.TextWrapped = true
+
+TextButton_3.Parent = Settings
+TextButton_3.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+TextButton_3.BorderColor3 = Color3.fromRGB(30, 30, 30)
+TextButton_3.Position = UDim2.new(0.0942315459, 0, 0.883790135, 0)
+TextButton_3.Size = UDim2.new(0, 298, 0, 0)
+TextButton_3.ZIndex = 2
+TextButton_3.Font = Enum.Font.SourceSans
+TextButton_3.Text = ""
+TextButton_3.TextColor3 = Color3.fromRGB(170, 170, 127)
+TextButton_3.TextSize = 16.000
+TextButton_3.TextWrapped = true
+
+Restart.Name = "Restart"
+Restart.Parent = Settings
+Restart.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Restart.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Restart.Position = UDim2.new(0.0942314565, 0, 0.72881937, 0)
+Restart.Size = UDim2.new(0, 132, 0, 30)
+Restart.ZIndex = 2
+Restart.Font = Enum.Font.SourceSans
+Restart.Text = "Restart"
+Restart.TextColor3 = Color3.fromRGB(108, 162, 162)
+Restart.TextSize = 16.000
+Restart.TextWrapped = true
+
+TextLabel_9.Parent = Settings
+TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.BackgroundTransparency = 1.000
+TextLabel_9.Position = UDim2.new(0.546374321, 0, 0.719298244, 0)
+TextLabel_9.Size = UDim2.new(0, 80, 0, 35)
+TextLabel_9.Font = Enum.Font.SourceSans
+TextLabel_9.Text = "Toggel Gui:"
+TextLabel_9.TextColor3 = Color3.fromRGB(163, 163, 163)
+TextLabel_9.TextSize = 15.000
+
+Toggelbox.Name = "Toggelbox"
+Toggelbox.Parent = Settings
+Toggelbox.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+Toggelbox.BackgroundTransparency = 0.200
+Toggelbox.BorderColor3 = Color3.fromRGB(62, 62, 62)
+Toggelbox.Position = UDim2.new(0.752373219, 0, 0.730233908, 0)
+Toggelbox.Size = UDim2.new(0, 32, 0, 29)
+Toggelbox.ZIndex = 2
+Toggelbox.Font = Enum.Font.SourceSans
+Toggelbox.LineHeight = 2.000
+Toggelbox.Text = ""
+Toggelbox.TextColor3 = Color3.fromRGB(220, 220, 220)
+Toggelbox.TextSize = 14.000
+
+Misc_2.Name = "Misc"
+Misc_2.Parent = MainMenu
+Misc_2.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+Misc_2.Position = UDim2.new(0.251014471, 0, -0.00062584877, 0)
+Misc_2.Size = UDim2.new(0, 367, 0, 342)
+Misc_2.Visible = false
+
+BoxPlayer.Name = "BoxPlayer"
+BoxPlayer.Parent = Misc_2
+BoxPlayer.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+BoxPlayer.BackgroundTransparency = 0.200
+BoxPlayer.BorderColor3 = Color3.fromRGB(62, 62, 62)
+BoxPlayer.Position = UDim2.new(0.0574234724, 0, 0.558479607, 0)
+BoxPlayer.Size = UDim2.new(0, 173, 0, 30)
+BoxPlayer.ZIndex = 2
+BoxPlayer.Font = Enum.Font.SourceSans
+BoxPlayer.PlaceholderColor3 = Color3.fromRGB(138, 138, 138)
+BoxPlayer.PlaceholderText = "Player Name"
+BoxPlayer.Text = ""
+BoxPlayer.TextColor3 = Color3.fromRGB(138, 138, 138)
+BoxPlayer.TextSize = 14.000
+
+Fly.Name = "Fly"
+Fly.Parent = Misc_2
+Fly.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Fly.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Fly.Position = UDim2.new(0.481152445, 0, 0.237591296, 0)
+Fly.Size = UDim2.new(0, 172, 0, 30)
+Fly.ZIndex = 2
+Fly.Font = Enum.Font.SourceSans
+Fly.Text = "Fly(P)"
+Fly.TextColor3 = Color3.fromRGB(102, 153, 153)
+Fly.TextSize = 16.000
+Fly.TextWrapped = true
+
+noclip.Name = "noclip"
+noclip.Parent = Misc_2
+noclip.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+noclip.BorderColor3 = Color3.fromRGB(30, 30, 30)
+noclip.Position = UDim2.new(0.0697083846, 0, 0.237591296, 0)
+noclip.Size = UDim2.new(0, 114, 0, 30)
+noclip.ZIndex = 2
+noclip.Font = Enum.Font.SourceSans
+noclip.Text = "Noclip(HoldV)"
+noclip.TextColor3 = Color3.fromRGB(102, 153, 153)
+noclip.TextSize = 16.000
+noclip.TextWrapped = true
+
+TextLabel_10.Parent = Misc_2
+TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_10.BackgroundTransparency = 1.000
+TextLabel_10.Position = UDim2.new(0.216674149, 0, 0.0116959065, 0)
+TextLabel_10.Size = UDim2.new(0, 206, 0, 35)
+TextLabel_10.Font = Enum.Font.SourceSans
+TextLabel_10.Text = "Misc"
+TextLabel_10.TextColor3 = Color3.fromRGB(170, 255, 255)
+TextLabel_10.TextSize = 19.000
+
+Frame14.Name = "Frame14"
+Frame14.Parent = Misc_2
+Frame14.BackgroundColor3 = Color3.fromRGB(170, 255, 255)
+Frame14.BorderColor3 = Color3.fromRGB(170, 255, 255)
+Frame14.Position = UDim2.new(0.268616676, 0, 0.122807011, 0)
+Frame14.Size = UDim2.new(0, 167, 0, 0)
+
+Frame11.Name = "Frame11"
+Frame11.Parent = Misc_2
+Frame11.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Frame11.BackgroundTransparency = 0.400
+Frame11.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Frame11.Position = UDim2.new(-5.65448318e-06, 0, 0, 0)
+Frame11.Size = UDim2.new(0, 365, 0, 63)
+
+TextLabel_11.Parent = Misc_2
+TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_11.BackgroundTransparency = 1.000
+TextLabel_11.Position = UDim2.new(0.505502522, 0, 0.383040905, 0)
+TextLabel_11.Size = UDim2.new(0, 80, 0, 35)
+TextLabel_11.Font = Enum.Font.SourceSans
+TextLabel_11.Text = "ShotSlices:"
+TextLabel_11.TextColor3 = Color3.fromRGB(138, 138, 138)
+TextLabel_11.TextSize = 15.000
+
+Frame12.Name = "Frame12"
+Frame12.Parent = Misc_2
+Frame12.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Frame12.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Frame12.Position = UDim2.new(0.722070813, 0, 0.391812861, 0)
+Frame12.Size = UDim2.new(0, 65, 0, 32)
+
+shotslice.Name = "shotslice"
+shotslice.Parent = Frame12
+shotslice.BackgroundColor3 = Color3.fromRGB(255, 10, 10)
+shotslice.BorderColor3 = Color3.fromRGB(255, 10, 10)
+shotslice.Size = UDim2.new(0, 30, 0, 32)
+shotslice.Font = Enum.Font.SourceSans
+shotslice.Text = ""
+shotslice.TextColor3 = Color3.fromRGB(0, 0, 0)
+shotslice.TextSize = 14.000
+
+Stopslice.Name = "Stopslice"
+Stopslice.Parent = Frame12
+Stopslice.BackgroundColor3 = Color3.fromRGB(0, 193, 22)
+Stopslice.BorderColor3 = Color3.fromRGB(0, 193, 22)
+Stopslice.Position = UDim2.new(0.476923078, 0, 0, 0)
+Stopslice.Size = UDim2.new(0, 34, 0, 32)
+Stopslice.Visible = false
+Stopslice.Font = Enum.Font.SourceSans
+Stopslice.Text = ""
+Stopslice.TextColor3 = Color3.fromRGB(0, 0, 0)
+Stopslice.TextSize = 14.000
+
+Goto.Name = "Goto"
+Goto.Parent = Misc_2
+Goto.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Goto.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Goto.Position = UDim2.new(0.0588092841, 0, 0.693731666, 0)
+Goto.Size = UDim2.new(0, 118, 0, 30)
+Goto.ZIndex = 2
+Goto.Font = Enum.Font.SourceSans
+Goto.Text = "Goto"
+Goto.TextColor3 = Color3.fromRGB(102, 153, 153)
+Goto.TextSize = 16.000
+Goto.TextWrapped = true
+
+Frame13.Name = "Frame13"
+Frame13.Parent = Misc_2
+Frame13.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Frame13.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Frame13.Position = UDim2.new(0.71662122, 0, 0.692982435, 0)
+Frame13.Size = UDim2.new(0, 65, 0, 32)
+
+Startlong.Name = "Startlong"
+Startlong.Parent = Frame13
+Startlong.BackgroundColor3 = Color3.fromRGB(255, 10, 10)
+Startlong.BorderColor3 = Color3.fromRGB(255, 10, 10)
+Startlong.Size = UDim2.new(0, 30, 0, 32)
+Startlong.Font = Enum.Font.SourceSans
+Startlong.Text = ""
+Startlong.TextColor3 = Color3.fromRGB(0, 0, 0)
+Startlong.TextSize = 14.000
+
+Stoplong.Name = "Stoplong"
+Stoplong.Parent = Frame13
+Stoplong.BackgroundColor3 = Color3.fromRGB(0, 193, 22)
+Stoplong.BorderColor3 = Color3.fromRGB(0, 193, 22)
+Stoplong.Position = UDim2.new(0.476923078, 0, 0, 0)
+Stoplong.Size = UDim2.new(0, 34, 0, 32)
+Stoplong.Visible = false
+Stoplong.Font = Enum.Font.SourceSans
+Stoplong.Text = ""
+Stoplong.TextColor3 = Color3.fromRGB(0, 0, 0)
+Stoplong.TextSize = 14.000
+
+TextLabel_12.Parent = Misc_2
+TextLabel_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_12.BackgroundTransparency = 1.000
+TextLabel_12.Position = UDim2.new(0.527300894, 0, 0.687134504, 0)
+TextLabel_12.Size = UDim2.new(0, 80, 0, 35)
+TextLabel_12.Font = Enum.Font.SourceSans
+TextLabel_12.Text = "LongTp:"
+TextLabel_12.TextColor3 = Color3.fromRGB(138, 138, 138)
+TextLabel_12.TextSize = 15.000
+
+kill.Name = "kill"
+kill.Parent = Misc_2
+kill.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+kill.BorderColor3 = Color3.fromRGB(30, 30, 30)
+kill.Position = UDim2.new(0.625566781, 0, 0.556304693, 0)
+kill.Size = UDim2.new(0, 119, 0, 30)
+kill.ZIndex = 2
+kill.Font = Enum.Font.SourceSans
+kill.Text = "Kill"
+kill.TextColor3 = Color3.fromRGB(102, 153, 153)
+kill.TextSize = 16.000
+kill.TextWrapped = true
+
+TextButton_4.Parent = Misc_2
+TextButton_4.BackgroundColor3 = Color3.fromRGB(110, 165, 165)
+TextButton_4.BorderColor3 = Color3.fromRGB(110, 165, 165)
+TextButton_4.Position = UDim2.new(0.0887819529, 0, 0.892562032, 0)
+TextButton_4.Size = UDim2.new(0, 298, 0, 0)
+TextButton_4.ZIndex = 2
+TextButton_4.Font = Enum.Font.SourceSans
+TextButton_4.Text = ""
+TextButton_4.TextColor3 = Color3.fromRGB(102, 153, 153)
+TextButton_4.TextSize = 16.000
+TextButton_4.TextWrapped = true
+
+Slicekey.Name = "Slicekey"
+Slicekey.Parent = Misc_2
+Slicekey.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+Slicekey.BackgroundTransparency = 0.200
+Slicekey.BorderColor3 = Color3.fromRGB(62, 62, 62)
+Slicekey.Position = UDim2.new(0.248286143, 0, 0.393976629, 0)
+Slicekey.Size = UDim2.new(0, 32, 0, 29)
+Slicekey.ZIndex = 2
+Slicekey.Font = Enum.Font.SourceSans
+Slicekey.LineHeight = 2.000
+Slicekey.Text = ""
+Slicekey.TextColor3 = Color3.fromRGB(220, 220, 220)
+Slicekey.TextSize = 14.000
+
+TextLabel_13.Parent = Misc_2
+TextLabel_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_13.BackgroundTransparency = 1.000
+TextLabel_13.Position = UDim2.new(0.0395624191, 0, 0.383040935, 0)
+TextLabel_13.Size = UDim2.new(0, 80, 0, 35)
+TextLabel_13.Font = Enum.Font.SourceSans
+TextLabel_13.Text = "Slice Key:"
+TextLabel_13.TextColor3 = Color3.fromRGB(138, 138, 138)
+TextLabel_13.TextSize = 15.000
+
+Teleports.Name = "Teleports"
+Teleports.Parent = MainMenu
+Teleports.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+Teleports.Position = UDim2.new(0.251014471, 0, -0.00062584877, 0)
+Teleports.Size = UDim2.new(0, 367, 0, 342)
+Teleports.Visible = false
+
+Chin.Name = "Chin"
+Chin.Parent = Teleports
+Chin.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Chin.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Chin.Position = UDim2.new(0.0315611623, 0, 0.22881937, 0)
+Chin.Size = UDim2.new(0, 128, 0, 22)
+Chin.ZIndex = 2
+Chin.Font = Enum.Font.SourceSans
+Chin.Text = "Chin"
+Chin.TextColor3 = Color3.fromRGB(103, 154, 154)
+Chin.TextSize = 16.000
+Chin.TextWrapped = true
+
+Frame_3.Parent = Chin
+Frame_3.BackgroundColor3 = Color3.fromRGB(35, 199, 7)
+Frame_3.BorderColor3 = Color3.fromRGB(35, 199, 7)
+Frame_3.Size = UDim2.new(0, 6, 0, 22)
+
+TextLabel_14.Parent = Teleports
+TextLabel_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_14.BackgroundTransparency = 1.000
+TextLabel_14.Position = UDim2.new(0.216674149, 0, 0.0116959065, 0)
+TextLabel_14.Size = UDim2.new(0, 206, 0, 35)
+TextLabel_14.Font = Enum.Font.SourceSans
+TextLabel_14.Text = "Teleport"
+TextLabel_14.TextColor3 = Color3.fromRGB(170, 255, 255)
+TextLabel_14.TextSize = 19.000
+
+Frame67.Name = "Frame67"
+Frame67.Parent = Teleports
+Frame67.BackgroundColor3 = Color3.fromRGB(170, 255, 255)
+Frame67.BorderColor3 = Color3.fromRGB(170, 255, 255)
+Frame67.Position = UDim2.new(0.268616676, 0, 0.122807011, 0)
+Frame67.Size = UDim2.new(0, 167, 0, 0)
+
+Frame68.Name = "Frame68"
+Frame68.Parent = Teleports
+Frame68.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Frame68.BackgroundTransparency = 0.400
+Frame68.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Frame68.Position = UDim2.new(-5.65448318e-06, 0, 0, 0)
+Frame68.Size = UDim2.new(0, 365, 0, 63)
+
+Kyoshi_2.Name = "Kyoshi"
+Kyoshi_2.Parent = Teleports
+Kyoshi_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Kyoshi_2.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Kyoshi_2.Position = UDim2.new(0.0315611623, 0, 0.313614696, 0)
+Kyoshi_2.Size = UDim2.new(0, 128, 0, 22)
+Kyoshi_2.ZIndex = 2
+Kyoshi_2.Font = Enum.Font.SourceSans
+Kyoshi_2.Text = "Kyoshi"
+Kyoshi_2.TextColor3 = Color3.fromRGB(103, 154, 154)
+Kyoshi_2.TextSize = 16.000
+Kyoshi_2.TextWrapped = true
+
+Frame_4.Parent = Kyoshi_2
+Frame_4.BackgroundColor3 = Color3.fromRGB(35, 199, 7)
+Frame_4.BorderColor3 = Color3.fromRGB(35, 199, 7)
+Frame_4.Size = UDim2.new(0, 6, 0, 22)
+
+Firecity.Name = "Firecity"
+Firecity.Parent = Teleports
+Firecity.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Firecity.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Firecity.Position = UDim2.new(0.0315611623, 0, 0.401333988, 0)
+Firecity.Size = UDim2.new(0, 128, 0, 22)
+Firecity.ZIndex = 2
+Firecity.Font = Enum.Font.SourceSans
+Firecity.Text = "Fire City"
+Firecity.TextColor3 = Color3.fromRGB(103, 154, 154)
+Firecity.TextSize = 16.000
+Firecity.TextWrapped = true
+
+Frame_5.Parent = Firecity
+Frame_5.BackgroundColor3 = Color3.fromRGB(248, 0, 0)
+Frame_5.BorderColor3 = Color3.fromRGB(248, 0, 0)
+Frame_5.Size = UDim2.new(0, 6, 0, 22)
+
+south.Name = "south"
+south.Parent = Teleports
+south.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+south.BorderColor3 = Color3.fromRGB(30, 30, 30)
+south.Position = UDim2.new(0.0315611623, 0, 0.65279597, 0)
+south.Size = UDim2.new(0, 128, 0, 22)
+south.ZIndex = 2
+south.Font = Enum.Font.SourceSans
+south.Text = "South"
+south.TextColor3 = Color3.fromRGB(103, 154, 154)
+south.TextSize = 16.000
+south.TextWrapped = true
+
+Frame_6.Parent = south
+Frame_6.BackgroundColor3 = Color3.fromRGB(0, 15, 230)
+Frame_6.BorderColor3 = Color3.fromRGB(0, 15, 230)
+Frame_6.Size = UDim2.new(0, 6, 0, 22)
+
+north.Name = "north"
+north.Parent = Teleports
+north.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+north.BorderColor3 = Color3.fromRGB(30, 30, 30)
+north.Position = UDim2.new(0.0315611623, 0, 0.568000674, 0)
+north.Size = UDim2.new(0, 128, 0, 22)
+north.ZIndex = 2
+north.Font = Enum.Font.SourceSans
+north.Text = "North"
+north.TextColor3 = Color3.fromRGB(103, 154, 154)
+north.TextSize = 16.000
+north.TextWrapped = true
+
+Frame_7.Parent = north
+Frame_7.BackgroundColor3 = Color3.fromRGB(0, 15, 230)
+Frame_7.BorderColor3 = Color3.fromRGB(0, 15, 230)
+Frame_7.Size = UDim2.new(0, 6, 0, 22)
+
+fireisland.Name = "fireisland"
+fireisland.Parent = Teleports
+fireisland.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+fireisland.BorderColor3 = Color3.fromRGB(30, 30, 30)
+fireisland.Position = UDim2.new(0.0315611623, 0, 0.483205348, 0)
+fireisland.Size = UDim2.new(0, 128, 0, 22)
+fireisland.ZIndex = 2
+fireisland.Font = Enum.Font.SourceSans
+fireisland.Text = "Fire Island"
+fireisland.TextColor3 = Color3.fromRGB(103, 154, 154)
+fireisland.TextSize = 16.000
+fireisland.TextWrapped = true
+
+Frame_8.Parent = fireisland
+Frame_8.BackgroundColor3 = Color3.fromRGB(248, 0, 0)
+Frame_8.BorderColor3 = Color3.fromRGB(248, 0, 0)
+Frame_8.Size = UDim2.new(0, 6, 0, 22)
+
+Desert.Name = "Desert"
+Desert.Parent = Teleports
+Desert.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Desert.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Desert.Position = UDim2.new(0.0315611623, 0, 0.910105944, 0)
+Desert.Size = UDim2.new(0, 128, 0, 22)
+Desert.ZIndex = 2
+Desert.Font = Enum.Font.SourceSans
+Desert.Text = "Desert"
+Desert.TextColor3 = Color3.fromRGB(103, 154, 154)
+Desert.TextSize = 16.000
+Desert.TextWrapped = true
+
+Frame_9.Parent = Desert
+Frame_9.BackgroundColor3 = Color3.fromRGB(212, 177, 2)
+Frame_9.BorderColor3 = Color3.fromRGB(35, 199, 7)
+Frame_9.Size = UDim2.new(0, 6, 0, 22)
+
+Council.Name = "Council"
+Council.Parent = Teleports
+Council.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Council.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Council.Position = UDim2.new(0.0315611623, 0, 0.825310588, 0)
+Council.Size = UDim2.new(0, 128, 0, 22)
+Council.ZIndex = 2
+Council.Font = Enum.Font.SourceSans
+Council.Text = "Council"
+Council.TextColor3 = Color3.fromRGB(103, 154, 154)
+Council.TextSize = 16.000
+Council.TextWrapped = true
+
+Frame_10.Parent = Council
+Frame_10.BackgroundColor3 = Color3.fromRGB(196, 199, 196)
+Frame_10.BorderColor3 = Color3.fromRGB(196, 199, 196)
+Frame_10.Size = UDim2.new(0, 6, 0, 22)
+
+Airtemple.Name = "Airtemple"
+Airtemple.Parent = Teleports
+Airtemple.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Airtemple.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Airtemple.Position = UDim2.new(0.0315611623, 0, 0.740515351, 0)
+Airtemple.Size = UDim2.new(0, 128, 0, 22)
+Airtemple.ZIndex = 2
+Airtemple.Font = Enum.Font.SourceSans
+Airtemple.Text = "Air Temple"
+Airtemple.TextColor3 = Color3.fromRGB(103, 154, 154)
+Airtemple.TextSize = 16.000
+Airtemple.TextWrapped = true
+
+Frame_11.Parent = Airtemple
+Frame_11.BackgroundColor3 = Color3.fromRGB(196, 199, 196)
+Frame_11.BorderColor3 = Color3.fromRGB(196, 199, 196)
+Frame_11.Size = UDim2.new(0, 6, 0, 22)
+
+Frame66.Name = "Frame66"
+Frame66.Parent = Teleports
+Frame66.BackgroundColor3 = Color3.fromRGB(170, 170, 127)
+Frame66.Position = UDim2.new(0.415755689, 0, 0.219924122, 0)
+Frame66.Size = UDim2.new(0, 0, 0, 249)
+
+TextLabel_15.Parent = Teleports
+TextLabel_15.BackgroundColor3 = Color3.fromRGB(67, 67, 67)
+TextLabel_15.BackgroundTransparency = 0.300
+TextLabel_15.Position = UDim2.new(0.415584207, 0, 0.219924122, 0)
+TextLabel_15.Size = UDim2.new(0, 206, 0, 258)
+TextLabel_15.Font = Enum.Font.SourceSans
+TextLabel_15.Text = "Next Update"
+TextLabel_15.TextColor3 = Color3.fromRGB(149, 149, 149)
+TextLabel_15.TextSize = 23.000
+
+Players_2.Name = "Players"
+Players_2.Parent = MainMenu
+Players_2.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+Players_2.Position = UDim2.new(0.251014471, 0, -0.00062584877, 0)
+Players_2.Size = UDim2.new(0, 367, 0, 342)
+Players_2.Visible = false
+
+Player.Name = "Player"
+Player.Parent = Players_2
+Player.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+Player.BackgroundTransparency = 0.200
+Player.BorderColor3 = Color3.fromRGB(62, 62, 62)
+Player.Position = UDim2.new(0.0764971972, 0, 0.226813421, 0)
+Player.Size = UDim2.new(0, 173, 0, 28)
+Player.ZIndex = 2
+Player.Font = Enum.Font.SourceSans
+Player.Text = ""
+Player.TextColor3 = Color3.fromRGB(120, 180, 180)
+Player.TextSize = 14.000
+
+Check.Name = "Check"
+Check.Parent = Players_2
+Check.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Check.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Check.Position = UDim2.new(0.592869103, 0, 0.227676392, 0)
+Check.Size = UDim2.new(0, 119, 0, 28)
+Check.ZIndex = 2
+Check.Font = Enum.Font.SourceSans
+Check.Text = "Check"
+Check.TextColor3 = Color3.fromRGB(175, 175, 175)
+Check.TextSize = 16.000
+Check.TextWrapped = true
+
+TextLabel_16.Parent = Players_2
+TextLabel_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_16.BackgroundTransparency = 1.000
+TextLabel_16.Position = UDim2.new(0.216674149, 0, 0.0116959065, 0)
+TextLabel_16.Size = UDim2.new(0, 206, 0, 35)
+TextLabel_16.Font = Enum.Font.SourceSans
+TextLabel_16.Text = "Stats"
+TextLabel_16.TextColor3 = Color3.fromRGB(170, 255, 255)
+TextLabel_16.TextSize = 19.000
+
+Frames66.Name = "Frames66"
+Frames66.Parent = Players_2
+Frames66.BackgroundColor3 = Color3.fromRGB(170, 255, 255)
+Frames66.BorderColor3 = Color3.fromRGB(170, 255, 255)
+Frames66.Position = UDim2.new(0.268616676, 0, 0.122807011, 0)
+Frames66.Size = UDim2.new(0, 167, 0, 0)
+
+Framest6.Name = "Framest6"
+Framest6.Parent = Players_2
+Framest6.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Framest6.BackgroundTransparency = 0.400
+Framest6.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Framest6.Position = UDim2.new(-5.65448318e-06, 0, 0, 0)
+Framest6.Size = UDim2.new(0, 365, 0, 63)
+
+strc.Name = "strc"
+strc.Parent = Players_2
+strc.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+strc.BackgroundTransparency = 1.000
+strc.Position = UDim2.new(0.726210892, 0, 0.505847931, 0)
+strc.Size = UDim2.new(0, 71, 0, 22)
+strc.ZIndex = 2
+strc.Font = Enum.Font.SourceSans
+strc.Text = ""
+strc.TextColor3 = Color3.fromRGB(168, 168, 168)
+strc.TextSize = 16.000
+strc.TextWrapped = true
+
+Framest11.Name = "Framest11"
+Framest11.Parent = Players_2
+Framest11.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Framest11.BackgroundTransparency = 0.400
+Framest11.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Framest11.Position = UDim2.new(0.528604567, 0, 0.356725156, 0)
+Framest11.Size = UDim2.new(0, 148, 0, 30)
+
+Element.Name = "Element"
+Element.Parent = Players_2
+Element.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Element.BackgroundTransparency = 1.000
+Element.Position = UDim2.new(0.295693308, 0, 0.8951267, 0)
+Element.Size = UDim2.new(0, 78, 0, 25)
+Element.ZIndex = 2
+Element.Font = Enum.Font.SourceSans
+Element.Text = "Element :"
+Element.TextColor3 = Color3.fromRGB(168, 168, 168)
+Element.TextSize = 15.000
+Element.TextWrapped = true
+
+copperc.Name = "copperc"
+copperc.Parent = Players_2
+copperc.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+copperc.BackgroundTransparency = 1.000
+copperc.Position = UDim2.new(0.254821271, 0, 0.780701756, 0)
+copperc.Size = UDim2.new(0, 56, 0, 22)
+copperc.ZIndex = 2
+copperc.Font = Enum.Font.SourceSans
+copperc.Text = ""
+copperc.TextColor3 = Color3.fromRGB(168, 168, 168)
+copperc.TextSize = 16.000
+copperc.TextWrapped = true
+
+levelc.Name = "levelc"
+levelc.Parent = Players_2
+levelc.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+levelc.BackgroundTransparency = 1.000
+levelc.Position = UDim2.new(0.682614148, 0, 0.368421048, 0)
+levelc.Size = UDim2.new(0, 71, 0, 22)
+levelc.ZIndex = 2
+levelc.Font = Enum.Font.SourceSans
+levelc.Text = ""
+levelc.TextColor3 = Color3.fromRGB(168, 168, 168)
+levelc.TextSize = 16.000
+levelc.TextWrapped = true
+
+defc.Name = "defc"
+defc.Parent = Players_2
+defc.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+defc.BackgroundTransparency = 1.000
+defc.Position = UDim2.new(0.726210892, 0, 0.643274844, 0)
+defc.Size = UDim2.new(0, 71, 0, 22)
+defc.ZIndex = 2
+defc.Font = Enum.Font.SourceSans
+defc.Text = ""
+defc.TextColor3 = Color3.fromRGB(168, 168, 168)
+defc.TextSize = 16.000
+defc.TextWrapped = true
+
+peicec.Name = "peicec"
+peicec.Parent = Players_2
+peicec.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+peicec.BackgroundTransparency = 1.000
+peicec.Position = UDim2.new(0.301142812, 0, 0.505847931, 0)
+peicec.Size = UDim2.new(0, 56, 0, 22)
+peicec.ZIndex = 2
+peicec.Font = Enum.Font.SourceSans
+peicec.Text = ""
+peicec.TextColor3 = Color3.fromRGB(168, 168, 168)
+peicec.TextSize = 16.000
+peicec.TextWrapped = true
+
+stamc.Name = "stamc"
+stamc.Parent = Players_2
+stamc.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+stamc.BackgroundTransparency = 1.000
+stamc.Position = UDim2.new(0.726210892, 0, 0.780701756, 0)
+stamc.Size = UDim2.new(0, 71, 0, 22)
+stamc.ZIndex = 2
+stamc.Font = Enum.Font.SourceSans
+stamc.Text = ""
+stamc.TextColor3 = Color3.fromRGB(168, 168, 168)
+stamc.TextSize = 16.000
+stamc.TextWrapped = true
+
+Gold.Name = "Gold"
+Gold.Parent = Players_2
+Gold.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Gold.BackgroundTransparency = 1.000
+Gold.Position = UDim2.new(0.0886087418, 0, 0.368421078, 0)
+Gold.Size = UDim2.new(0, 78, 0, 22)
+Gold.ZIndex = 2
+Gold.Font = Enum.Font.SourceSans
+Gold.Text = "Gold Ingot :"
+Gold.TextColor3 = Color3.fromRGB(168, 168, 168)
+Gold.TextSize = 15.000
+Gold.TextWrapped = true
+
+Goldp.Name = "Goldp"
+Goldp.Parent = Players_2
+Goldp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Goldp.BackgroundTransparency = 1.000
+Goldp.Position = UDim2.new(0.0886087418, 0, 0.505847931, 0)
+Goldp.Size = UDim2.new(0, 78, 0, 22)
+Goldp.ZIndex = 2
+Goldp.Font = Enum.Font.SourceSans
+Goldp.Text = "Gold Pieces :"
+Goldp.TextColor3 = Color3.fromRGB(168, 168, 168)
+Goldp.TextSize = 15.000
+Goldp.TextWrapped = true
+
+Silver.Name = "Silver"
+Silver.Parent = Players_2
+Silver.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Silver.BackgroundTransparency = 1.000
+Silver.Position = UDim2.new(0.0586359873, 0, 0.643274844, 0)
+Silver.Size = UDim2.new(0, 78, 0, 22)
+Silver.ZIndex = 2
+Silver.Font = Enum.Font.SourceSans
+Silver.Text = "Silver :"
+Silver.TextColor3 = Color3.fromRGB(168, 168, 168)
+Silver.TextSize = 15.000
+Silver.TextWrapped = true
+
+Bronze.Name = "Bronze"
+Bronze.Parent = Players_2
+Bronze.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Bronze.BackgroundTransparency = 1.000
+Bronze.Position = UDim2.new(0.0586359873, 0, 0.780701756, 0)
+Bronze.Size = UDim2.new(0, 78, 0, 22)
+Bronze.ZIndex = 2
+Bronze.Font = Enum.Font.SourceSans
+Bronze.Text = "Copper :"
+Bronze.TextColor3 = Color3.fromRGB(168, 168, 168)
+Bronze.TextSize = 15.000
+Bronze.TextWrapped = true
+
+Stamina.Name = "Stamina"
+Stamina.Parent = Players_2
+Stamina.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Stamina.BackgroundTransparency = 1.000
+Stamina.Position = UDim2.new(0.527300835, 0, 0.780701756, 0)
+Stamina.Size = UDim2.new(0, 78, 0, 22)
+Stamina.ZIndex = 2
+Stamina.Font = Enum.Font.SourceSans
+Stamina.Text = "Stamina :"
+Stamina.TextColor3 = Color3.fromRGB(168, 168, 168)
+Stamina.TextSize = 15.000
+Stamina.TextWrapped = true
+
+Defense.Name = "Defense"
+Defense.Parent = Players_2
+Defense.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Defense.BackgroundTransparency = 1.000
+Defense.Position = UDim2.new(0.527300835, 0, 0.643274844, 0)
+Defense.Size = UDim2.new(0, 78, 0, 22)
+Defense.ZIndex = 2
+Defense.Font = Enum.Font.SourceSans
+Defense.Text = "Defense :"
+Defense.TextColor3 = Color3.fromRGB(168, 168, 168)
+Defense.TextSize = 15.000
+Defense.TextWrapped = true
+
+Strength.Name = "Strength"
+Strength.Parent = Players_2
+Strength.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Strength.BackgroundTransparency = 1.000
+Strength.Position = UDim2.new(0.527300835, 0, 0.505847931, 0)
+Strength.Size = UDim2.new(0, 78, 0, 22)
+Strength.ZIndex = 2
+Strength.Font = Enum.Font.SourceSans
+Strength.Text = "Strength :"
+Strength.TextColor3 = Color3.fromRGB(168, 168, 168)
+Strength.TextSize = 15.000
+Strength.TextWrapped = true
+
+Level.Name = "Level"
+Level.Parent = Players_2
+Level.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Level.BackgroundTransparency = 1.000
+Level.Position = UDim2.new(0.513676882, 0, 0.368421078, 0)
+Level.Size = UDim2.new(0, 78, 0, 22)
+Level.ZIndex = 2
+Level.Font = Enum.Font.SourceSans
+Level.Text = "Level :"
+Level.TextColor3 = Color3.fromRGB(168, 168, 168)
+Level.TextSize = 15.000
+Level.TextWrapped = true
+
+ingotc.Name = "ingotc"
+ingotc.Parent = Players_2
+ingotc.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ingotc.BackgroundTransparency = 1.000
+ingotc.Position = UDim2.new(0.301142812, 0, 0.368421048, 0)
+ingotc.Size = UDim2.new(0, 56, 0, 22)
+ingotc.ZIndex = 2
+ingotc.Font = Enum.Font.SourceSans
+ingotc.Text = ""
+ingotc.TextColor3 = Color3.fromRGB(168, 168, 168)
+ingotc.TextSize = 16.000
+ingotc.TextWrapped = true
+
+elementc.Name = "elementc"
+elementc.Parent = Players_2
+elementc.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+elementc.BackgroundTransparency = 1.000
+elementc.Position = UDim2.new(0.494603306, 0, 0.8951267, 0)
+elementc.Size = UDim2.new(0, 71, 0, 25)
+elementc.ZIndex = 2
+elementc.Font = Enum.Font.SourceSans
+elementc.Text = ""
+elementc.TextColor3 = Color3.fromRGB(168, 168, 168)
+elementc.TextSize = 16.000
+elementc.TextWrapped = true
+
+silverc.Name = "silverc"
+silverc.Parent = Players_2
+silverc.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+silverc.BackgroundTransparency = 1.000
+silverc.Position = UDim2.new(0.254821271, 0, 0.643274844, 0)
+silverc.Size = UDim2.new(0, 56, 0, 22)
+silverc.ZIndex = 2
+silverc.Font = Enum.Font.SourceSans
+silverc.Text = ""
+silverc.TextColor3 = Color3.fromRGB(168, 168, 168)
+silverc.TextSize = 16.000
+silverc.TextWrapped = true
+
+Framest9.Name = "Framest9"
+Framest9.Parent = Players_2
+Framest9.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Framest9.BackgroundTransparency = 0.400
+Framest9.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Framest9.Position = UDim2.new(0.296996981, 0, 0.883041024, 0)
+Framest9.Size = UDim2.new(0, 148, 0, 30)
+
+Framest8.Name = "Framest8"
+Framest8.Parent = Players_2
+Framest8.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Framest8.BackgroundTransparency = 0.400
+Framest8.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Framest8.Position = UDim2.new(0.528604567, 0, 0.769005895, 0)
+Framest8.Size = UDim2.new(0, 148, 0, 30)
+
+Framest7.Name = "Framest7"
+Framest7.Parent = Players_2
+Framest7.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Framest7.BackgroundTransparency = 0.400
+Framest7.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Framest7.Position = UDim2.new(0.528604567, 0, 0.631578982, 0)
+Framest7.Size = UDim2.new(0, 148, 0, 30)
+
+Framest3.Name = "Framest3"
+Framest3.Parent = Players_2
+Framest3.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Framest3.BackgroundTransparency = 0.400
+Framest3.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Framest3.Position = UDim2.new(0.0790133402, 0, 0.769005895, 0)
+Framest3.Size = UDim2.new(0, 147, 0, 30)
+
+Framest2.Name = "Framest2"
+Framest2.Parent = Players_2
+Framest2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Framest2.BackgroundTransparency = 0.400
+Framest2.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Framest2.Position = UDim2.new(0.0790133402, 0, 0.631578982, 0)
+Framest2.Size = UDim2.new(0, 147, 0, 30)
+
+Framest4.Name = "Framest4"
+Framest4.Parent = Players_2
+Framest4.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Framest4.BackgroundTransparency = 0.400
+Framest4.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Framest4.Position = UDim2.new(0.528604567, 0, 0.494152099, 0)
+Framest4.Size = UDim2.new(0, 148, 0, 30)
+
+Framest5.Name = "Framest5"
+Framest5.Parent = Players_2
+Framest5.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Framest5.BackgroundTransparency = 0.400
+Framest5.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Framest5.Position = UDim2.new(0.0790133402, 0, 0.494152099, 0)
+Framest5.Size = UDim2.new(0, 147, 0, 30)
+
+Framest33.Name = "Framest33"
+Framest33.Parent = Players_2
+Framest33.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Framest33.BackgroundTransparency = 0.400
+Framest33.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Framest33.Position = UDim2.new(0.0790133402, 0, 0.356725156, 0)
+Framest33.Size = UDim2.new(0, 147, 0, 30)
+
+Stats_2.Name = "Stats"
+Stats_2.Parent = MainMenu
+Stats_2.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+Stats_2.Position = UDim2.new(0.251014471, 0, -0.00062584877, 0)
+Stats_2.Size = UDim2.new(0, 367, 0, 342)
+Stats_2.Visible = false
+
+DefBox.Name = "DefBox"
+DefBox.Parent = Stats_2
+DefBox.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+DefBox.BackgroundTransparency = 0.200
+DefBox.BorderColor3 = Color3.fromRGB(62, 62, 62)
+DefBox.Position = UDim2.new(0.0628731102, 0, 0.68783462, 0)
+DefBox.Size = UDim2.new(0, 173, 0, 28)
+DefBox.ZIndex = 2
+DefBox.Font = Enum.Font.SourceSans
+DefBox.Text = ""
+DefBox.TextColor3 = Color3.fromRGB(120, 180, 180)
+DefBox.TextSize = 14.000
+
+Strbox.Name = "Strbox"
+Strbox.Parent = Stats_2
+Strbox.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+Strbox.BackgroundTransparency = 0.200
+Strbox.BorderColor3 = Color3.fromRGB(62, 62, 62)
+Strbox.Position = UDim2.new(0.0630000085, 0, 0.543025315, 0)
+Strbox.Size = UDim2.new(0, 173, 0, 28)
+Strbox.ZIndex = 2
+Strbox.Font = Enum.Font.SourceSans
+Strbox.Text = ""
+Strbox.TextColor3 = Color3.fromRGB(120, 180, 180)
+Strbox.TextSize = 14.000
+
+StamBox.Name = "StamBox"
+StamBox.Parent = Stats_2
+StamBox.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+StamBox.BackgroundTransparency = 0.200
+StamBox.BorderColor3 = Color3.fromRGB(62, 62, 62)
+StamBox.Position = UDim2.new(0.0628731996, 0, 0.829152584, 0)
+StamBox.Size = UDim2.new(0, 173, 0, 28)
+StamBox.ZIndex = 2
+StamBox.Font = Enum.Font.SourceSans
+StamBox.Text = ""
+StamBox.TextColor3 = Color3.fromRGB(120, 180, 180)
+StamBox.TextSize = 14.000
+
+MaxStats.Name = "MaxStats"
+MaxStats.Parent = Stats_2
+MaxStats.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+MaxStats.BorderColor3 = Color3.fromRGB(30, 30, 30)
+MaxStats.Position = UDim2.new(0.534051239, 0, 0.386714101, 0)
+MaxStats.Size = UDim2.new(0, 145, 0, 30)
+MaxStats.ZIndex = 2
+MaxStats.Font = Enum.Font.SourceSans
+MaxStats.Text = "Max Stats"
+MaxStats.TextColor3 = Color3.fromRGB(120, 180, 180)
+MaxStats.TextSize = 16.000
+MaxStats.TextWrapped = true
+
+Strength_2.Name = "Strength"
+Strength_2.Parent = Stats_2
+Strength_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Strength_2.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Strength_2.Position = UDim2.new(0.601043522, 0, 0.541684866, 0)
+Strength_2.Size = UDim2.new(0, 119, 0, 28)
+Strength_2.ZIndex = 2
+Strength_2.Font = Enum.Font.SourceSans
+Strength_2.Text = "Strength"
+Strength_2.TextColor3 = Color3.fromRGB(120, 180, 180)
+Strength_2.TextSize = 16.000
+Strength_2.TextWrapped = true
+
+Defense_2.Name = "Defense"
+Defense_2.Parent = Stats_2
+Defense_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Defense_2.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Defense_2.Position = UDim2.new(0.601043522, 0, 0.68577373, 0)
+Defense_2.Size = UDim2.new(0, 119, 0, 28)
+Defense_2.ZIndex = 2
+Defense_2.Font = Enum.Font.SourceSans
+Defense_2.Text = "Defense"
+Defense_2.TextColor3 = Color3.fromRGB(120, 180, 180)
+Defense_2.TextSize = 16.000
+Defense_2.TextWrapped = true
+
+Stamina_2.Name = "Stamina"
+Stamina_2.Parent = Stats_2
+Stamina_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Stamina_2.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Stamina_2.Position = UDim2.new(0.601043522, 0, 0.827091575, 0)
+Stamina_2.Size = UDim2.new(0, 119, 0, 28)
+Stamina_2.ZIndex = 2
+Stamina_2.Font = Enum.Font.SourceSans
+Stamina_2.Text = "Stamina"
+Stamina_2.TextColor3 = Color3.fromRGB(120, 180, 180)
+Stamina_2.TextSize = 16.000
+Stamina_2.TextWrapped = true
+
+TextLabel_17.Parent = Stats_2
+TextLabel_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_17.BackgroundTransparency = 1.000
+TextLabel_17.Position = UDim2.new(0.216674149, 0, 0.0116959065, 0)
+TextLabel_17.Size = UDim2.new(0, 206, 0, 35)
+TextLabel_17.Font = Enum.Font.SourceSans
+TextLabel_17.Text = "Stats"
+TextLabel_17.TextColor3 = Color3.fromRGB(170, 255, 255)
+TextLabel_17.TextSize = 19.000
+
+Frames.Name = "Frames"
+Frames.Parent = Stats_2
+Frames.BackgroundColor3 = Color3.fromRGB(170, 255, 255)
+Frames.BorderColor3 = Color3.fromRGB(170, 255, 255)
+Frames.Position = UDim2.new(0.268616676, 0, 0.122807011, 0)
+Frames.Size = UDim2.new(0, 167, 0, 0)
+
+Framest.Name = "Framest"
+Framest.Parent = Stats_2
+Framest.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Framest.BackgroundTransparency = 0.400
+Framest.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Framest.Position = UDim2.new(-5.65448318e-06, 0, 0, 0)
+Framest.Size = UDim2.new(0, 365, 0, 63)
+
+Frame_12.Parent = Stats_2
+Frame_12.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Frame_12.BorderColor3 = Color3.fromRGB(35, 35, 35)
+Frame_12.Position = UDim2.new(0.722070813, 0, 0.225146204, 0)
+Frame_12.Size = UDim2.new(0, 72, 0, 29)
+
+Avataron.Name = "Avataron"
+Avataron.Parent = Frame_12
+Avataron.BackgroundColor3 = Color3.fromRGB(207, 0, 0)
+Avataron.Position = UDim2.new(-4.23855255e-07, 0, 0, 0)
+Avataron.Size = UDim2.new(0, 35, 0, 29)
+Avataron.Font = Enum.Font.SourceSans
+Avataron.Text = ""
+Avataron.TextColor3 = Color3.fromRGB(0, 0, 0)
+Avataron.TextSize = 14.000
+
+Avataroff.Name = "Avataroff"
+Avataroff.Parent = Frame_12
+Avataroff.BackgroundColor3 = Color3.fromRGB(0, 141, 0)
+Avataroff.Position = UDim2.new(0.513888478, 0, 0, 0)
+Avataroff.Size = UDim2.new(0, 35, 0, 29)
+Avataroff.Visible = false
+Avataroff.Font = Enum.Font.SourceSans
+Avataroff.Text = ""
+Avataroff.TextColor3 = Color3.fromRGB(0, 0, 0)
+Avataroff.TextSize = 14.000
+
+TextLabel_18.Parent = Stats_2
+TextLabel_18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_18.BackgroundTransparency = 1.000
+TextLabel_18.Position = UDim2.new(0.513676941, 0, 0.216374263, 0)
+TextLabel_18.Size = UDim2.new(0, 64, 0, 35)
+TextLabel_18.Font = Enum.Font.SourceSans
+TextLabel_18.Text = "Avatar State:"
+TextLabel_18.TextColor3 = Color3.fromRGB(123, 185, 185)
+TextLabel_18.TextSize = 15.000
+
+TextLabel_19.Parent = Stats_2
+TextLabel_19.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_19.BackgroundTransparency = 1.000
+TextLabel_19.Position = UDim2.new(0.0668104589, 0, 0.216374263, 0)
+TextLabel_19.Size = UDim2.new(0, 64, 0, 35)
+TextLabel_19.Font = Enum.Font.SourceSans
+TextLabel_19.Text = "God Mode:"
+TextLabel_19.TextColor3 = Color3.fromRGB(123, 185, 185)
+TextLabel_19.TextSize = 15.000
+
+Frame_13.Parent = Stats_2
+Frame_13.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Frame_13.BorderColor3 = Color3.fromRGB(35, 35, 35)
+Frame_13.Position = UDim2.new(0.269754738, 0, 0.225146204, 0)
+Frame_13.Size = UDim2.new(0, 72, 0, 29)
+
+Godon.Name = "Godon"
+Godon.Parent = Frame_13
+Godon.BackgroundColor3 = Color3.fromRGB(207, 0, 0)
+Godon.Position = UDim2.new(-4.23855255e-07, 0, 0, 0)
+Godon.Size = UDim2.new(0, 35, 0, 29)
+Godon.Font = Enum.Font.SourceSans
+Godon.Text = ""
+Godon.TextColor3 = Color3.fromRGB(0, 0, 0)
+Godon.TextSize = 14.000
+
+Godoff.Name = "Godoff"
+Godoff.Parent = Frame_13
+Godoff.BackgroundColor3 = Color3.fromRGB(0, 141, 0)
+Godoff.Position = UDim2.new(0.513888478, 0, 0, 0)
+Godoff.Size = UDim2.new(0, 35, 0, 29)
+Godoff.Visible = false
+Godoff.Font = Enum.Font.SourceSans
+Godoff.Text = ""
+Godoff.TextColor3 = Color3.fromRGB(0, 0, 0)
+Godoff.TextSize = 14.000
+
+MaxLevel.Name = "MaxLevel"
+MaxLevel.Parent = Stats_2
+MaxLevel.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+MaxLevel.BorderColor3 = Color3.fromRGB(30, 30, 30)
+MaxLevel.Position = UDim2.new(0.06721434, 0, 0.386714101, 0)
+MaxLevel.Size = UDim2.new(0, 145, 0, 30)
+MaxLevel.ZIndex = 2
+MaxLevel.Font = Enum.Font.SourceSans
+MaxLevel.Text = "Max Level"
+MaxLevel.TextColor3 = Color3.fromRGB(120, 180, 180)
+MaxLevel.TextSize = 16.000
+MaxLevel.TextWrapped = true
+
+-- Scripts:
+
+local function IVJEPDZ_fake_script() -- Exit.Script 
+	local script = Instance.new('Script', Exit)
+
+	script.Parent.Parent.Exit.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.Parent.SynX:Destroy()
+	end)
+end
+coroutine.wrap(IVJEPDZ_fake_script)()
+local function VTVFSQ_fake_script() -- Framechap.Buttons 
+	local script = Instance.new('Script', Framechap)
+
+	script.Parent.Home.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Credit.Visible = true
+		script.Parent.Parent.Stats.Visible = false
+		script.Parent.Parent.Farming.Visible = false
+		script.Parent.Parent.Misc.Visible = false
+		script.Parent.Parent.Quests.Visible = false
+		script.Parent.Parent.Settings.Visible = false
+		script.Parent.Parent.Teleports.Visible = false
+		script.Parent.Parent.Players.Visible = false
+	end)
+	script.Parent.Tools.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Credit.Visible = false
+		script.Parent.Parent.Stats.Visible = true
+		script.Parent.Parent.Farming.Visible = false
+		script.Parent.Parent.Misc.Visible = false
+		script.Parent.Parent.Quests.Visible = false
+		script.Parent.Parent.Settings.Visible = false
+		script.Parent.Parent.Teleports.Visible = false
+		script.Parent.Parent.Players.Visible = false
+	end)
+	script.Parent.Farming.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Credit.Visible = false
+		script.Parent.Parent.Stats.Visible = false
+		script.Parent.Parent.Farming.Visible = true
+		script.Parent.Parent.Misc.Visible = false
+		script.Parent.Parent.Quests.Visible = false
+		script.Parent.Parent.Settings.Visible = false
+		script.Parent.Parent.Teleports.Visible = false
+		script.Parent.Parent.Players.Visible = false
+	end)
+	script.Parent.Quest.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Credit.Visible = false
+		script.Parent.Parent.Stats.Visible = false
+		script.Parent.Parent.Farming.Visible = false
+		script.Parent.Parent.Misc.Visible = false
+		script.Parent.Parent.Quests.Visible = true
+		script.Parent.Parent.Settings.Visible = false
+		script.Parent.Parent.Teleports.Visible = false
+		script.Parent.Parent.Players.Visible = false
+	end)
+	script.Parent.Misc.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Credit.Visible = false
+		script.Parent.Parent.Stats.Visible = false
+		script.Parent.Parent.Farming.Visible = false
+		script.Parent.Parent.Misc.Visible = true
+		script.Parent.Parent.Quests.Visible = false
+		script.Parent.Parent.Settings.Visible = false
+		script.Parent.Parent.Teleports.Visible = false
+		script.Parent.Parent.Players.Visible = false
+	end)
+	script.Parent.Teleport.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Credit.Visible = false
+		script.Parent.Parent.Stats.Visible = false
+		script.Parent.Parent.Farming.Visible = false
+		script.Parent.Parent.Misc.Visible = false
+		script.Parent.Parent.Quests.Visible = false
+		script.Parent.Parent.Settings.Visible = false
+		script.Parent.Parent.Teleports.Visible = true
+		script.Parent.Parent.Players.Visible = false
+	end)
+	script.Parent.Setting.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Credit.Visible = false
+		script.Parent.Parent.Stats.Visible = false
+		script.Parent.Parent.Farming.Visible = false
+		script.Parent.Parent.Misc.Visible = false
+		script.Parent.Parent.Quests.Visible = false
+		script.Parent.Parent.Settings.Visible = true
+		script.Parent.Parent.Teleports.Visible = false
+		script.Parent.Parent.Players.Visible = false
+	end)
+	script.Parent.Stats.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Credit.Visible = false
+		script.Parent.Parent.Stats.Visible = true
+		script.Parent.Parent.Farming.Visible = false
+		script.Parent.Parent.Misc.Visible = false
+		script.Parent.Parent.Quests.Visible = false
+		script.Parent.Parent.Settings.Visible = false
+		script.Parent.Parent.Teleports.Visible = false
+		script.Parent.Parent.Players.Visible = false
+	end)
+	script.Parent.Players.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Credit.Visible = false
+		script.Parent.Parent.Stats.Visible = false
+		script.Parent.Parent.Farming.Visible = false
+		script.Parent.Parent.Misc.Visible = false
+		script.Parent.Parent.Quests.Visible = false
+		script.Parent.Parent.Settings.Visible = false
+		script.Parent.Parent.Teleports.Visible = false
+		script.Parent.Parent.Players.Visible = true
+	end)
+end
+coroutine.wrap(VTVFSQ_fake_script)()
+local function DNUBEF_fake_script() -- Quests.Script1 
+	local script = Instance.new('Script', Quests)
+
+	script.Parent.AirQuest1.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "AirQuest1",
+				["Step"] = 1
+			}
+		}
+		local argss = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "AirQuest1",
+				["Step"] = 2
+			}
+		}
+		local argsss = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "AirQuest1",
+				["Step"] = 3
+			}
+		}
+	
+				game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(args))
+				game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argss))
+				game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argsss))
+	end)
+	script.Parent.AirQuest2.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "AirQuest2",
+				["Step"] = 1
+			}
+		}
+		local argss = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "AirQuest2",
+				["Step"] = 2
+			}
+		}
+		local argsss = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "AirQuest2",
+				["Step"] = 3
+			}
+		}
+		local argd = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "AirQuest2",
+				["Step"] = 4
+			}
+		}
+		local argdd = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "AirQuest2",
+				["Step"] = 5
+			}
+		}
+		local argddd = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "AirQuest2",
+				["Step"] = 6
+			}
+		}
+		local argdddd = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "AirQuest2",
+				["Step"] = 7
+			}
+		}
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(args))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argss))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argsss))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argd))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argdd))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argddd))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argdddd))
+	end)
+	script.Parent.AirQuest3.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "AirQuest3",
+				["Step"] = 1
+			}
+		}
+		local argss = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "AirQuest3",
+				["Step"] = 2
+			}
+		}
+		local argsss = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "AirQuest3",
+				["Step"] = 3
+			}
+		}
+		local argd = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "AirQuest3",
+				["Step"] = 4
+			}
+		}
+		local argdd = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "AirQuest3",
+				["Step"] = 5
+			}
+		}
+		local argddd = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "AirQuest3",
+				["Step"] = 6
+			}
+		}
+		local argdddd = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "AirQuest3",
+				["Step"] = 7
+			}
+		}
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(args))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argss))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argsss))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argd))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argdd))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argddd))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argdddd))
+	end)
+	script.Parent.EarthQuest1.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "EarthQuest1",
+				["Step"] = 1
+			}
+		}
+		local argss = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "EarthQuest1",
+				["Step"] = 2
+			}
+		}
+		local argsss = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "EarthQuest1",
+				["Step"] = 3
+			}
+		}
+		local argd = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "EarthQuest1",
+				["Step"] = 4
+			}
+		}
+		local argdd = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "EarthQuest1",
+				["Step"] = 5
+			}
+		}
+		local argddd = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "EarthQuest1",
+				["Step"] = 6
+			}
+		}
+		local argdddd = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "EarthQuest1",
+				["Step"] = 7
+			}
+		}
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(args))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argss))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argsss))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argd))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argdd))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argddd))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argdddd))
+	end)
+	script.Parent.EarthQuest2.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "EarthQuest2",
+				["Step"] = 1
+			}
+		}
+		local argss = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "EarthQuest2",
+				["Step"] = 2
+			}
+		}
+		local argsss = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "EarthQuest2",
+				["Step"] = 3
+			}
+		}
+		local argd = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "EarthQuest2",
+				["Step"] = 4
+			}
+		}
+		local argdd = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "EarthQuest2",
+				["Step"] = 5
+			}
+		}
+		local argddd = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "EarthQuest2",
+				["Step"] = 6
+			}
+		}
+		local argdddd = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "EarthQuest2",
+				["Step"] = 7
+			}
+		}
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(args))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argss))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argsss))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argd))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argdd))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argddd))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argdddd))
+	end)
+	script.Parent.EarthQuest3.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "EarthQuest3",
+				["Step"] = 1
+			}
+		}
+		local argss = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "EarthQuest3",
+				["Step"] = 2
+			}
+		}
+		local argsss = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "EarthQuest3",
+				["Step"] = 3
+			}
+		}
+		local argd = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "EarthQuest3",
+				["Step"] = 4
+			}
+		}
+		local argdd = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "EarthQuest3",
+				["Step"] = 5
+			}
+		}
+		local argddd = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "EarthQuest3",
+				["Step"] = 6
+			}
+		}
+		local argdddd = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "EarthQuest3",
+				["Step"] = 7
+			}
+		}
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(args))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argss))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argsss))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argd))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argdd))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argddd))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argdddd))
+	end)
+	
+	script.Parent.FireQuest1.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "FireQuest1",
+				["Step"] = 1
+			}
+		}
+		local argss = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "FireQuest1",
+				["Step"] = 2
+			}
+		}
+		local argsss = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "FireQuest1",
+				["Step"] = 3
+			}
+		}
+		local argd = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "FireQuest1",
+				["Step"] = 4
+			}
+		}
+		local argdd = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "FireQuest1",
+				["Step"] = 5
+			}
+		}
+		local argddd = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "FireQuest1",
+				["Step"] = 6
+			}
+		}
+		local argdddd = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "FireQuest1",
+				["Step"] = 7
+			}
+		}
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(args))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argss))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argsss))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argd))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argdd))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argddd))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argdddd))
+	end)
+	script.Parent.FireQuest2.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "FireQuest2",
+				["Step"] = 1
+			}
+		}
+		local argss = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "FireQuest2",
+				["Step"] = 2
+			}
+		}
+		local argsss = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "FireQuest2",
+				["Step"] = 3
+			}
+		}
+		local argd = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "FireQuest2",
+				["Step"] = 4
+			}
+		}
+		local argdd = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "FireQuest2",
+				["Step"] = 5
+			}
+		}
+		local argddd = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "FireQuest2",
+				["Step"] = 6
+			}
+		}
+		local argdddd = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "FireQuest2",
+				["Step"] = 7
+			}
+		}
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(args))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argss))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argsss))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argd))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argdd))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argddd))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argdddd))
+	end)
+	script.Parent.FireQuest3.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "FireQuest3",
+				["Step"] = 1
+			}
+		}
+		local argss = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "FireQuest3",
+				["Step"] = 2
+			}
+		}
+		local argsss = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "FireQuest3",
+				["Step"] = 3
+			}
+		}
+		local argd = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "FireQuest3",
+				["Step"] = 4
+			}
+		}
+		local argdd = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "FireQuest3",
+				["Step"] = 5
+			}
+		}
+		local argddd = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "FireQuest3",
+				["Step"] = 6
+			}
+		}
+		local argdddd = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "FireQuest3",
+				["Step"] = 7
+			}
+		}
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(args))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argss))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argsss))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argd))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argdd))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argddd))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argdddd))
+	end)
+	script.Parent.FireQuest4.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "FireQuest4",
+				["Step"] = 1
+			}
+		}
+		local argss = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "FireQuest4",
+				["Step"] = 2
+			}
+		}
+		local argsss = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "FireQuest4",
+				["Step"] = 3
+			}
+		}
+		local argd = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "FireQuest4",
+				["Step"] = 4
+			}
+		}
+		local argdd = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "FireQuest4",
+				["Step"] = 5
+			}
+		}
+		local argddd = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "FireQuest4",
+				["Step"] = 6
+			}
+		}
+		local argdddd = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "FireQuest4",
+				["Step"] = 7
+			}
+		}
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(args))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argss))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argsss))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argd))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argdd))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argddd))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argdddd))
+	end)
+	script.Parent.NorthQuest1.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "WaterQuest1",
+				["Step"] = 1
+			}
+		}
+		local argss = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "WaterQuest1",
+				["Step"] = 2
+			}
+		}
+		local argsss = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "WaterQuest1",
+				["Step"] = 3
+			}
+		}
+		local argd = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "WaterQuest1",
+				["Step"] = 4
+			}
+		}
+		local argdd = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "WaterQuest1",
+				["Step"] = 5
+			}
+		}
+		local argddd = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "WaterQuest1",
+				["Step"] = 6
+			}
+		}
+		local argdddd = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "WaterQuest1",
+				["Step"] = 7
+			}
+		}
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(args))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argss))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argsss))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argd))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argdd))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argddd))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argdddd))
+	end)
+	script.Parent.NorthQuest2.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "WaterQuest2",
+				["Step"] = 1
+			}
+		}
+		local argss = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "WaterQuest2",
+				["Step"] = 2
+			}
+		}
+		local argsss = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "WaterQuest2",
+				["Step"] = 3
+			}
+		}
+		local argd = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "WaterQuest2",
+				["Step"] = 4
+			}
+		}
+		local argdd = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "WaterQuest2",
+				["Step"] = 5
+			}
+		}
+		local argddd = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "WaterQuest2",
+				["Step"] = 6
+			}
+		}
+		local argdddd = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "WaterQuest2",
+				["Step"] = 7
+			}
+		}
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(args))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argss))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argsss))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argd))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argdd))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argddd))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argdddd))
+	end)
+	script.Parent.NorthQuest3.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "WaterQuest3",
+				["Step"] = 1
+			}
+		}
+		local argss = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "WaterQuest3",
+				["Step"] = 2
+			}
+		}
+		local argsss = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "WaterQuest3",
+				["Step"] = 3
+			}
+		}
+		local argd = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "WaterQuest3",
+				["Step"] = 4
+			}
+		}
+		local argdd = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "WaterQuest3",
+				["Step"] = 5
+			}
+		}
+		local argddd = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "WaterQuest3",
+				["Step"] = 6
+			}
+		}
+		local argdddd = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "WaterQuest3",
+				["Step"] = 7
+			}
+		}
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(args))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argss))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argsss))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argd))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argdd))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argddd))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argdddd))
+	end)
+	script.Parent.KyoshiQuest1.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "KyoshiQuest1",
+				["Step"] = 1
+			}
+		}
+		local argss = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "KyoshiQuest1",
+				["Step"] = 2
+			}
+		}
+		local argsss = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "KyoshiQuest1",
+				["Step"] = 3
+			}
+		}
+		local argd = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "KyoshiQuest1",
+				["Step"] = 4
+			}
+		}
+		local argdd = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "KyoshiQuest1",
+				["Step"] = 5
+			}
+		}
+		local argddd = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "KyoshiQuest1",
+				["Step"] = 6
+			}
+		}
+		local argdddd = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "KyoshiQuest1",
+				["Step"] = 7
+			}
+		}
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(args))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argss))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argsss))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argd))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argdd))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argddd))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argdddd))
+	end)
+	script.Parent.KyoshiQuest2.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "KyoshiQuest2",
+				["Step"] = 1
+			}
+		}
+		local argss = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "KyoshiQuest2",
+				["Step"] = 2
+			}
+		}
+		local argsss = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "KyoshiQuest2",
+				["Step"] = 3
+			}
+		}
+		local argd = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "KyoshiQuest2",
+				["Step"] = 4
+			}
+		}
+		local argdd = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "KyoshiQuest2",
+				["Step"] = 5
+			}
+		}
+		local argddd = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "KyoshiQuest2",
+				["Step"] = 6
+			}
+		}
+		local argdddd = {
+			[1] = "AdvanceStep",
+			[2] = {
+				["QuestName"] = "KyoshiQuest2",
+				["Step"] = 7
+			}
+		}
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(args))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argss))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argsss))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argd))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argdd))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argddd))
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(argdddd))
+	end)
+	script.Parent.RedLotus.MouseButton1Click:Connect(function()
+		local A_1 = "AdvanceStep"
+		local A_2 = 
+			{
+			["QuestName"] = "RedLotus1", 
+			["Step"] = 1
+		}
+		local Event = game:GetService("ReplicatedStorage").NetworkFolder.GameFunction
+		Event:InvokeServer(A_1, A_2)
+		local A_2 = 
+			{
+			["QuestName"] = "RedLotus1", 
+			["Step"] = 2
+		}
+		Event:InvokeServer(A_1, A_2)
+		local A_2 = 
+			{
+			["QuestName"] = "RedLotus1", 
+			["Step"] = 3
+		}
+		Event:InvokeServer(A_1, A_2)
+		local A_2 = 
+			{
+			["QuestName"] = "RedLotus1", 
+			["Step"] = 4
+		}
+		Event:InvokeServer(A_1, A_2)
+		local A_2 = 
+			{
+			["QuestName"] = "RedLotus1", 
+			["Step"] = 5
+		}
+		Event:InvokeServer(A_1, A_2)
+		local A_2 = 
+			{
+			["QuestName"] = "RedLotus1", 
+			["Step"] = 6
+		}
+		Event:InvokeServer(A_1, A_2)
+		local A_2 = 
+			{
+			["QuestName"] = "RedLotus1", 
+			["Step"] = 7
+		}
+		Event:InvokeServer(A_1, A_2)
+		local A_2 = 
+			{
+			["QuestName"] = "RedLotus1", 
+			["Step"] = 8
+		}
+		Event:InvokeServer(A_1, A_2)
+		local A_2 = 
+			{
+			["QuestName"] = "RedLotus1", 
+			["Step"] = 9
+		}
+		Event:InvokeServer(A_1, A_2)
+		local A_2 = 
+			{
+			["QuestName"] = "RedLotus1", 
+			["Step"] = 10
+		}
+		Event:InvokeServer(A_1, A_2)
+		local A_2 = 
+			{
+			["QuestName"] = "RedLotus1", 
+			["Step"] = 11
+		}
+		Event:InvokeServer(A_1, A_2)
+		local A_2 = 
+			{
+			["QuestName"] = "RedLotus1", 
+			["Step"] = 12
+		}
+		Event:InvokeServer(A_1, A_2)
+		local A_2 = 
+			{
+			["QuestName"] = "RedLotus1", 
+			["Step"] = 13
+		}
+		Event:InvokeServer(A_1, A_2)
+		local A_2 = 
+			{
+			["QuestName"] = "RedLotus1", 
+			["Step"] = 14
+		}
+		Event:InvokeServer(A_1, A_2)
+		local A_2 = 
+			{
+			["QuestName"] = "RedLotus1", 
+			["Step"] = 15
+		}
+		Event:InvokeServer(A_1, A_2)
+		local A_2 = 
+			{
+			["QuestName"] = "RedLotus1", 
+			["Step"] = 16
+		}
+		Event:InvokeServer(A_1, A_2)
+		local A_1 = "GetQuestData"
+		Event:InvokeServer(A_1)
+	end)
+	script.Parent.Whitelotus.MouseButton1Click:Connect(function()
+		function WLotus1(Name, Step)
+			local args = {
+				[1] = "AdvanceStep",
+				[2] = {
+					["QuestName"] = "WhiteLotus1",
+					["Step"] = 1
+				}
+			}
+	
+			game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(args))
+		end
+	
+		function Wlotus2(Name, Step)
+			local args = {
+				[1] = "AdvanceStep",
+				[2] = {
+					["QuestName"] = "WhiteLotus1",
+					["Step"] = 2
+				}
+			}
+	
+			game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(args))
+		end
+	
+		function WLotus3(Name, Step)
+			local args = {
+				[1] = "AdvanceStep",
+				[2] = {
+					["QuestName"] = "WhiteLotus1",
+					["Step"] = 3
+				}
+			}
+	
+			game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(args))
+		end
+	
+		function WLotus4(Name, Step)
+			local args = {
+				[1] = "AdvanceStep",
+				[2] = {
+					["QuestName"] = "WhiteLotus1",
+					["Step"] = 4
+				}
+			}
+	
+			game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(args))
+		end
+	
+		function WLotus5(Name, Step)
+			local args = {
+				[1] = "AdvanceStep",
+				[2] = {
+					["QuestName"] = "WhiteLotus1",
+					["Step"] = 5
+				}
+			}
+	
+			game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(args))
+		end
+	
+		function WLotus6(Name, Step)
+			local args = {
+				[1] = "AdvanceStep",
+				[2] = {
+					["QuestName"] = "WhiteLotus1",
+					["Step"] = 6
+				}
+			}
+	
+			game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(args))
+		end
+	
+		function WLotus7(Name, Step)
+			local args = {
+				[1] = "AdvanceStep",
+				[2] = {
+					["QuestName"] = "WhiteLotus1",
+					["Step"] = 7
+				}
+			}
+	
+			game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(args))
+		end
+	
+		function WLotus8(Name, Step)
+			local args = {
+				[1] = "AdvanceStep",
+				[2] = {
+					["QuestName"] = "WhiteLotus1",
+					["Step"] = 8
+				}
+			}
+	
+			game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(args))
+		end
+	
+		function WLotus9(Name, Step)
+			local args = {
+				[1] = "AdvanceStep",
+				[2] = {
+					["QuestName"] = "WhiteLotus1",
+					["Step"] = 9
+				}
+			}
+	
+			game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(args))
+		end
+	
+		function WLotus10(Name, Step)
+			local args = {
+				[1] = "AdvanceStep",
+				[2] = {
+					["QuestName"] = "WhiteLotus1",
+					["Step"] = 10
+				}
+			}
+	
+			game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(args))
+		end
+	
+		WLotus1("WhiteLotus1", 1)
+		WLotus2("WhiteLotus1", 2)
+		WLotus3("WhiteLotus1", 3)
+		WLotus4("WhiteLotus1", 4)
+		WLotus5("WhiteLotus1", 5)
+		WLotus6("WhiteLotus1", 6)
+		WLotus7("WhiteLotus1", 7)
+		WLotus8("WhiteLotus1", 8)
+		WLotus9("WhiteLotus1", 9)
+		WLotus10("WhiteLotus1", 10)
+	end)
+end
+coroutine.wrap(DNUBEF_fake_script)()
+local function DXME_fake_script() -- Quests.Script2 
+	local script = Instance.new('Script', Quests)
+
+	script.Parent.earthtofire.MouseButton1Click:Connect(function()
+		script.Parent.EarthQuest1.Visible = false
+		script.Parent.EarthQuest2.Visible = false
+		script.Parent.EarthQuest3.Visible = false
+		script.Parent.RedLotus.Visible = false
+		script.Parent.FireQuest1.Visible = true
+		script.Parent.FireQuest2.Visible = true
+		script.Parent.FireQuest3.Visible = true
+		script.Parent.FireQuest4.Visible = true
+		script.Parent.earthtofire.Visible = false
+		script.Parent.firetoearth.Visible = true
+		script.Parent.firetonorth.Visible = true
+		script.Parent.Questname.Text = "Crescent Island"
+	end)
+	script.Parent.firetoearth.MouseButton1Click:Connect(function()
+		script.Parent.EarthQuest1.Visible = true
+		script.Parent.EarthQuest2.Visible = true
+		script.Parent.EarthQuest3.Visible = true
+		script.Parent.RedLotus.Visible = true
+		script.Parent.FireQuest1.Visible = false
+		script.Parent.FireQuest2.Visible = false
+		script.Parent.FireQuest3.Visible = false
+		script.Parent.FireQuest4.Visible = false
+		script.Parent.earthtofire.Visible = true
+		script.Parent.firetoearth.Visible = false
+		script.Parent.firetonorth.Visible = false
+		script.Parent.Questname.Text = "City of Chin"
+	end)
+	script.Parent.firetonorth.MouseButton1Click:Connect(function()
+		script.Parent.NorthQuest1.Visible = true
+		script.Parent.NorthQuest2.Visible = true
+		script.Parent.NorthQuest3.Visible = true
+		script.Parent.Whitelotus.Visible = true
+		script.Parent.FireQuest1.Visible = false
+		script.Parent.FireQuest2.Visible = false
+		script.Parent.FireQuest3.Visible = false
+		script.Parent.FireQuest4.Visible = false
+		script.Parent.firetoearth.Visible = false
+		script.Parent.firetonorth.Visible = false
+		script.Parent.northtoair.Visible = true
+		script.Parent.northtofire.Visible = true
+		script.Parent.Questname.Text = "Water Tribe"
+	end)
+	script.Parent.northtofire.MouseButton1Click:Connect(function()
+		script.Parent.NorthQuest1.Visible = false
+		script.Parent.NorthQuest2.Visible = false
+		script.Parent.NorthQuest3.Visible = false
+		script.Parent.Whitelotus.Visible = false
+		script.Parent.FireQuest1.Visible = true
+		script.Parent.FireQuest2.Visible = true
+		script.Parent.FireQuest3.Visible = true
+		script.Parent.FireQuest4.Visible = true
+		script.Parent.firetoearth.Visible = true
+		script.Parent.firetonorth.Visible = true
+		script.Parent.northtoair.Visible = false
+		script.Parent.northtofire.Visible = false
+		script.Parent.Questname.Text = "Crescent Island"
+	end)
+	script.Parent.northtoair.MouseButton1Click:Connect(function()
+		script.Parent.NorthQuest1.Visible = false
+		script.Parent.NorthQuest2.Visible = false
+		script.Parent.NorthQuest3.Visible = false
+		script.Parent.Whitelotus.Visible = false
+		script.Parent.AirQuest1.Visible = true
+		script.Parent.AirQuest2.Visible = true
+		script.Parent.AirQuest3.Visible = true
+		script.Parent.northtoair.Visible = false
+		script.Parent.northtofire.Visible = false
+		script.Parent.airtokyoshi.Visible = true
+		script.Parent.airtonorth.Visible = true
+		script.Parent.Questname.Text = "Air Temple"
+	end)
+	script.Parent.airtonorth.MouseButton1Click:Connect(function()
+		script.Parent.NorthQuest1.Visible = true
+		script.Parent.NorthQuest2.Visible = true
+		script.Parent.NorthQuest3.Visible = true
+		script.Parent.Whitelotus.Visible = true
+		script.Parent.AirQuest1.Visible = false
+		script.Parent.AirQuest2.Visible = false
+		script.Parent.AirQuest3.Visible = false
+		script.Parent.northtoair.Visible = true
+		script.Parent.northtofire.Visible = true
+		script.Parent.airtokyoshi.Visible = false
+		script.Parent.airtonorth.Visible = false
+		script.Parent.Questname.Text = "Water Tribe"
+	end)
+	script.Parent.airtokyoshi.MouseButton1Click:Connect(function()
+		script.Parent.AirQuest1.Visible = false
+		script.Parent.AirQuest2.Visible = false
+		script.Parent.AirQuest3.Visible = false
+		script.Parent.KyoshiQuest1.Visible = true
+		script.Parent.KyoshiQuest2.Visible = true
+		script.Parent.airtonorth.Visible = false
+		script.Parent.airtokyoshi.Visible = false
+		script.Parent.kyoshitoair.Visible = true
+		script.Parent.Questname.Text = "Kyoshi Island"
+	end)
+	script.Parent.kyoshitoair.MouseButton1Click:Connect(function()
+		script.Parent.AirQuest1.Visible = true
+		script.Parent.AirQuest2.Visible = true
+		script.Parent.AirQuest3.Visible = true
+		script.Parent.KyoshiQuest1.Visible = false
+		script.Parent.KyoshiQuest2.Visible = false
+		script.Parent.airtonorth.Visible = true
+		script.Parent.airtokyoshi.Visible = true
+		script.Parent.kyoshitoair.Visible = false
+		script.Parent.Questname.Text = "Air Temple"
+	end)
+end
+coroutine.wrap(DXME_fake_script)()
+local function YANARHG_fake_script() -- Infstam.Script 
+	local script = Instance.new('Script', Infstam)
+
+	script.Parent.Parent.Infstam.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.AdditionalStamina.Value = 10000000000000000
+	end)
+end
+coroutine.wrap(YANARHG_fake_script)()
+local function ZLYOQ_fake_script() -- Frame_2.Script 
+	local script = Instance.new('Script', Frame_2)
+
+	script.Parent.StQ.MouseButton1Click:Connect(function()
+		script.Parent.StQ.Visible = false
+		script.Parent.StoQ.Visible = true
+		getgenv().Quest = true;
+		while wait() do
+			if getgenv().Quest == true then
+				function AQ3(Name, Step)
+					local args = {
+						[1] = "AdvanceStep",
+						[2] = {
+							["QuestName"] = "EarthQuest3",
+							["Step"] = 1
+						}
+					}
+	
+					game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(args))
+				end
+	
+				function AQ32(Name, Step)
+					local args = {
+						[1] = "AdvanceStep",
+						[2] = {
+							["QuestName"] = "EarthQuest3",
+							["Step"] = 2
+						}
+					}
+	
+					game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(args))
+				end
+	
+				function AQ33(Name, Step)
+					local args = {
+						[1] = "AdvanceStep",
+						[2] = {
+							["QuestName"] = "EarthQuest3",
+							["Step"] = 3
+						}
+					}
+	
+					game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(args))
+				end
+				function AQ2(Name, Step)
+					local args = {
+						[1] = "AdvanceStep",
+						[2] = {
+							["QuestName"] = "FireQuest4",
+							["Step"] = 1
+						}
+					}
+	
+					game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(args))
+				end
+	
+				function AQ22(Name, Step)
+					local args = {
+						[1] = "AdvanceStep",
+						[2] = {
+							["QuestName"] = "FireQuest4",
+							["Step"] = 2
+						}
+					}
+	
+					game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(args))
+				end
+	
+				function AQ23(Name, Step)
+					local args = {
+						[1] = "AdvanceStep",
+						[2] = {
+							["QuestName"] = "FireQuest4",
+							["Step"] = 3
+						}
+					}
+	
+					game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(args))
+				end
+	
+				AQ3("EarthQuest3", 1)
+				AQ32("EarthQuest3", 2)
+				AQ33("EarthQuest3", 2)
+				AQ2("FireQuest4", 1)
+				AQ22("FireQuest4", 2)
+				AQ23("FireQuest4", 2)
+			end
+		end
+	end)
+	script.Parent.StoQ.MouseButton1Click:Connect(function()
+		script.Parent.StQ.Visible = true
+		script.Parent.StoQ.Visible = false
+		getgenv().Quest = false;
+		while wait() do
+			if getgenv().Quest == true then
+				function AQ3(Name, Step)
+					local args = {
+						[1] = "AdvanceStep",
+						[2] = {
+							["QuestName"] = "EarthQuest3",
+							["Step"] = 1
+						}
+					}
+	
+					game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(args))
+				end
+	
+				function AQ32(Name, Step)
+					local args = {
+						[1] = "AdvanceStep",
+						[2] = {
+							["QuestName"] = "EarthQuest3",
+							["Step"] = 2
+						}
+					}
+	
+					game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(args))
+				end
+	
+				function AQ33(Name, Step)
+					local args = {
+						[1] = "AdvanceStep",
+						[2] = {
+							["QuestName"] = "EarthQuest3",
+							["Step"] = 3
+						}
+					}
+	
+					game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(args))
+				end
+				function AQ2(Name, Step)
+					local args = {
+						[1] = "AdvanceStep",
+						[2] = {
+							["QuestName"] = "FireQuest4",
+							["Step"] = 1
+						}
+					}
+	
+					game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(args))
+				end
+	
+				function AQ22(Name, Step)
+					local args = {
+						[1] = "AdvanceStep",
+						[2] = {
+							["QuestName"] = "FireQuest4",
+							["Step"] = 2
+						}
+					}
+	
+					game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(args))
+				end
+	
+				function AQ23(Name, Step)
+					local args = {
+						[1] = "AdvanceStep",
+						[2] = {
+							["QuestName"] = "FireQuest4",
+							["Step"] = 3
+						}
+					}
+	
+					game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(args))
+				end
+	
+				AQ3("EarthQuest3", 1)
+				AQ32("EarthQuest3", 2)
+				AQ33("EarthQuest3", 2)
+				AQ2("FireQuest4", 1)
+				AQ22("FireQuest4", 2)
+				AQ23("FireQuest4", 2)
+			end
+		end
+	end)
+end
+coroutine.wrap(ZLYOQ_fake_script)()
+local function JPKKKMJ_fake_script() -- Frame2.Script 
+	local script = Instance.new('Script', Frame2)
+
+	script.Parent.Lava.MouseButton1Click:Connect(function()
+		 Laval = {
+			[1] = "NewGame",
+			[2] = {
+				["Selections"] = {
+					["Hair 2"] = "Chestnut",
+					["Hair"] = "Scene",
+					["Special"] = "None",
+					["Face"] = "11",
+					["Special2"] = "None",
+					["Hair Color"] = "White",
+					["Facial Hair"] = "Bald",
+					["Shirt"] = "1",
+					["Skin"] = "Light orange",
+					["Pants"] = "1",
+					["Elements"] = "Earth",
+					["Facial Hair Color"] = "White",
+					["Hair 2 Color"] = "Black"
+				}
+			}
+		}
+		getgenv().lava = true;
+		while true do
+			if getgenv().lava == true then
+				game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(Laval))
+				if game.Players.LocalPlayer.PlayerData.Appearance.Special.Value == "Lava" then
+					getgenv().lava = false;
+					function AutoQuest()local l=1;for m=1,10 do 
+							local k={[1]="AdvanceStep",[2]={["QuestName"]="WhiteLotus1",["Step"]=l}}spawn(function()
+								game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(k))end)l=l+1 end;
+						local n=1;for m=1,16 do 
+							local k={[1]="AdvanceStep",[2]={["QuestName"]="RedLotus1",["Step"]=n}}spawn(function()
+								game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(k))end)n=n+1 end end;repeat wait()spawn(function()AutoQuest()end)until
+					game:GetService("Players").LocalPlayer.PlayerData.Stats.Level.Value == 350 
+					wait(0.0000009)
+				end
+				wait(0.0000009)
+			end
+			wait(0.0000009)
+		end
+	end)
+	script.Parent.Sand.MouseButton1Click:Connect(function()
+		 Sandl = {
+			[1] = "NewGame",
+			[2] = {
+				["Selections"] = {
+					["Hair 2"] = "Chestnut",
+					["Hair"] = "Scene",
+					["Special"] = "None",
+					["Face"] = "11",
+					["Special2"] = "None",
+					["Hair Color"] = "White",
+					["Facial Hair"] = "Bald",
+					["Shirt"] = "1",
+					["Skin"] = "Light orange",
+					["Pants"] = "1",
+					["Elements"] = "Earth",
+					["Facial Hair Color"] = "White",
+					["Hair 2 Color"] = "Black"
+				}
+			}
+		}
+		getgenv().sand = true;
+		while true do
+			if getgenv().sand == true then
+				game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(Sandl))
+				if game.Players.LocalPlayer.PlayerData.Appearance.Special.Value == "Sand" then
+					getgenv().sand = false;
+					function AutoQuest()local l=1;for m=1,10 do 
+							local k={[1]="AdvanceStep",[2]={["QuestName"]="WhiteLotus1",["Step"]=l}}spawn(function()
+								game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(k))end)l=l+1 end;
+						local n=1;for m=1,16 do 
+							local k={[1]="AdvanceStep",[2]={["QuestName"]="RedLotus1",["Step"]=n}}spawn(function()
+								game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(k))end)n=n+1 end end;repeat wait()spawn(function()AutoQuest()end)until
+					game:GetService("Players").LocalPlayer.PlayerData.Stats.Level.Value == 350 
+					wait(0.0000009)
+				end
+				wait(0.0000009)
+			end
+			wait(0.0000009)
+		end
+		end)
+	script.Parent.Metal.MouseButton1Click:Connect(function()
+		 Metall = {
+			[1] = "NewGame",
+			[2] = {
+				["Selections"] = {
+					["Hair 2"] = "Chestnut",
+					["Hair"] = "Scene",
+					["Special"] = "None",
+					["Face"] = "11",
+					["Special2"] = "None",
+					["Hair Color"] = "White",
+					["Facial Hair"] = "Bald",
+					["Shirt"] = "1",
+					["Skin"] = "Light orange",
+					["Pants"] = "1",
+					["Elements"] = "Earth",
+					["Facial Hair Color"] = "White",
+					["Hair 2 Color"] = "Black"
+				}
+			}
+		}
+		getgenv().metal = true;
+		while true do
+			if getgenv().metal == true then
+				game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(Metall))
+				if game.Players.LocalPlayer.PlayerData.Appearance.Special.Value == "Metal" then
+					getgenv().metal = false;
+					function AutoQuest()local l=1;for m=1,10 do 
+							local k={[1]="AdvanceStep",[2]={["QuestName"]="WhiteLotus1",["Step"]=l}}spawn(function()
+								game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(k))end)l=l+1 end;
+						local n=1;for m=1,16 do 
+							local k={[1]="AdvanceStep",[2]={["QuestName"]="RedLotus1",["Step"]=n}}spawn(function()
+								game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(k))end)n=n+1 end end;repeat wait()spawn(function()AutoQuest()end)until
+					game:GetService("Players").LocalPlayer.PlayerData.Stats.Level.Value == 350 
+					wait(0.0000009)
+				end
+				wait(0.0000009)
+			end
+			wait(0.0000009)
+		end
+	end)
+	script.Parent.Combustion.MouseButton1Click:Connect(function()
+		local A_1 = "NewGame"
+		local A_2 = 
+			{
+				["Selections"] = 
+				{
+					["Hair 2"] = "Bald", 
+					["Hair"] = "Bald", 
+					["Special"] = "None", 
+					["Face"] = "1", 
+					["Special2"] = "None", 
+					["Hair Color"] = "White", 
+					["Facial Hair"] = "Bald", 
+					["Shirt"] = "1", 
+					["Skin"] = "Pastel yellow", 
+					["Pants"] = "1", 
+					["Elements"] = "Fire", 
+					["Facial Hair Color"] = "White", 
+					["Hair 2 Color"] = "White"
+				}
+			}
+		local Event = game:GetService("ReplicatedStorage").NetworkFolder.GameFunction
+		getgenv().Comb = true;
+		while true do
+			if getgenv().Comb == true then
+				Event:InvokeServer(A_1, A_2)
+				if game.Players.LocalPlayer.PlayerData.Appearance.Special.Value == "Combustion" then
+					getgenv().Comb = false;
+					function AutoQuest()local l=1;for m=1,10 do 
+							local k={[1]="AdvanceStep",[2]={["QuestName"]="WhiteLotus1",["Step"]=l}}spawn(function()
+								game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(k))end)l=l+1 end;
+						local n=1;for m=1,16 do 
+							local k={[1]="AdvanceStep",[2]={["QuestName"]="RedLotus1",["Step"]=n}}spawn(function()
+								game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(k))end)n=n+1 end end;repeat wait()spawn(function()AutoQuest()end)until
+					game:GetService("Players").LocalPlayer.PlayerData.Stats.Level.Value == 350 
+					wait(0.0000009)
+				end
+				wait(0.0000009)
+			end
+			wait(0.0000009)
+			end
+	end)
+	script.Parent.Lightning.MouseButton1Click:Connect(function()
+		getgenv().Light = true;
+	
+		while wait() do
+			if getgenv().Light == true then
+				local args = {
+					[1] = "NewGame",
+					[2] = {
+						["Selections"] = {
+							["Hair 2"] = "Chestnut",
+							["Hair"] = "Scene",
+							["Special"] = "None",
+							["Face"] = "11",
+							["Special2"] = "None",
+							["Hair Color"] = "White",
+							["Facial Hair"] = "Bald",
+							["Shirt"] = "1",
+							["Skin"] = "Light orange",
+							["Pants"] = "1",
+							["Elements"] = "Fire",
+							["Facial Hair Color"] = "White",
+							["Hair 2 Color"] = "Black"
+						}
+					}
+				}
+	
+				game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(args))
+				if game.Players.LocalPlayer.PlayerData.Appearance.Special.Value == "Lightning" then
+					getgenv().Light = false;
+					function AutoQuest()local l=1;for m=1,10 do 
+							local k={[1]="AdvanceStep",[2]={["QuestName"]="WhiteLotus1",["Step"]=l}}spawn(function()
+								game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(k))end)l=l+1 end;
+						local n=1;for m=1,16 do 
+							local k={[1]="AdvanceStep",[2]={["QuestName"]="RedLotus1",["Step"]=n}}spawn(function()
+								game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(k))end)n=n+1 end end;repeat wait()spawn(function()AutoQuest()end)until
+					game:GetService("Players").LocalPlayer.PlayerData.Stats.Level.Value == 350 
+				end
+			end
+		end
+	end)
+	script.Parent.Seismic.MouseButton1Click:Connect(function()
+		 Seismicl = {
+			[1] = "NewGame",
+			[2] = {
+				["Selections"] = {
+					["Hair 2"] = "Chestnut",
+					["Hair"] = "Scene",
+					["Special"] = "None",
+					["Face"] = "11",
+					["Special2"] = "None",
+					["Hair Color"] = "White",
+					["Facial Hair"] = "Bald",
+					["Shirt"] = "1",
+					["Skin"] = "Light orange",
+					["Pants"] = "1",
+					["Elements"] = "Earth",
+					["Facial Hair Color"] = "White",
+					["Hair 2 Color"] = "Black"
+				}
+			}
+		}
+		getgenv().Sei = true;
+		while true do
+			if getgenv().Sei == true then
+				game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(Seismicl))
+				if game.Players.LocalPlayer.PlayerData.Appearance.Special2.Value == "Seismic Sense" then
+					getgenv().Sei = false;
+					function AutoQuest()local l=1;for m=1,10 do 
+							local k={[1]="AdvanceStep",[2]={["QuestName"]="WhiteLotus1",["Step"]=l}}spawn(function()
+								game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(k))end)l=l+1 end;
+						local n=1;for m=1,16 do 
+							local k={[1]="AdvanceStep",[2]={["QuestName"]="RedLotus1",["Step"]=n}}spawn(function()
+								game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(k))end)n=n+1 end end;repeat wait()spawn(function()AutoQuest()end)until
+					game:GetService("Players").LocalPlayer.PlayerData.Stats.Level.Value == 350 
+					wait(0.0000009)
+				end
+				wait(0.0000009)
+			end
+			wait(0.0000009)
+		end
+	end)
+	script.Parent.Spiritual.MouseButton1Click:Connect(function()
+		local Flight = {
+			[1] = "NewGame",
+			[2] = {
+				["Selections"] = {
+					["Hair 2"] = "Chestnut",
+					["Hair"] = "Scene",
+					["Special"] = "None",
+					["Face"] = "11",
+					["Special2"] = "None",
+					["Hair Color"] = "White",
+					["Facial Hair"] = "Bald",
+					["Shirt"] = "1",
+					["Skin"] = "Light orange",
+					["Pants"] = "1",
+					["Elements"] = "Air",
+					["Facial Hair Color"] = "White",
+					["Hair 2 Color"] = "Black"
+				}
+			}
+		}
+		getgenv().Air = true;
+		while true do
+			if getgenv().Air == true then
+				game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(Flight))
+				if game.Players.LocalPlayer.PlayerData.Appearance.Special.Value == "Flight" then
+					getgenv().Air = false;
+					function AutoQuest()local l=1;for m=1,10 do 
+							local k={[1]="AdvanceStep",[2]={["QuestName"]="WhiteLotus1",["Step"]=l}}spawn(function()
+								game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(k))end)l=l+1 end;
+						local n=1;for m=1,16 do 
+							local k={[1]="AdvanceStep",[2]={["QuestName"]="RedLotus1",["Step"]=n}}spawn(function()
+								game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(k))end)n=n+1 end end;repeat wait()spawn(function()AutoQuest()end)until
+					game:GetService("Players").LocalPlayer.PlayerData.Stats.Level.Value == 350 
+					wait(0.0000009)
+				end
+				wait(0.0000009)
+			end
+			wait(0.0000009)
+		end
+	end)
+	script.Parent.Healing.MouseButton1Click:Connect(function()
+		local Heall = {
+			[1] = "NewGame",
+			[2] = {
+				["Selections"] = {
+					["Hair 2"] = "Chestnut",
+					["Hair"] = "Scene",
+					["Special"] = "None",
+					["Face"] = "11",
+					["Special2"] = "None",
+					["Hair Color"] = "White",
+					["Facial Hair"] = "Bald",
+					["Shirt"] = "1",
+					["Skin"] = "Light orange",
+					["Pants"] = "1",
+					["Elements"] = "Water",
+					["Facial Hair Color"] = "White",
+					["Hair 2 Color"] = "Black"
+				}
+			}
+		}
+		getgenv().Heal = true;
+		while true do
+			if getgenv().Heal == true then
+				game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(Heall))
+				if game.Players.LocalPlayer.PlayerData.Appearance.Special2.Value == "Healing" then
+					getgenv().Heal = false;
+					function AutoQuest()local l=1;for m=1,10 do 
+							local k={[1]="AdvanceStep",[2]={["QuestName"]="WhiteLotus1",["Step"]=l}}spawn(function()
+								game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(k))end)l=l+1 end;
+						local n=1;for m=1,16 do 
+							local k={[1]="AdvanceStep",[2]={["QuestName"]="RedLotus1",["Step"]=n}}spawn(function()
+								game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(k))end)n=n+1 end end;repeat wait()spawn(function()AutoQuest()end)until
+					game:GetService("Players").LocalPlayer.PlayerData.Stats.Level.Value == 350 
+					wait(0.0000009)
+				end
+				wait(0.0000009)
+			end
+			wait(0.0000009)
+		end
+	end)
+	script.Parent.Kyoshi.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = "NewGame",
+			[2] = {
+				["Selections"] = {
+					["Hair 2"] = "Chestnut",
+					["Hair"] = "Scene",
+					["Special"] = "None",
+					["Face"] = "11",
+					["Special2"] = "None",
+					["Hair Color"] = "White",
+					["Facial Hair"] = "Bald",
+					["Shirt"] = "1",
+					["Skin"] = "Light orange",
+					["Pants"] = "1",
+					["Elements"] = "None",
+					["Facial Hair Color"] = "White",
+					["Hair 2 Color"] = "Black"
+				}
+			}
+		}
+	
+		game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(args))
+	
+		local A_1 = "Kyoshi"
+		local A_2 = 
+			{
+			["Entering"] = true
+		}
+		local Event = game:GetService("ReplicatedStorage").NetworkFolder.GameFunction
+		Event:InvokeServer(A_1, A_2)
+		local A_1 = "Chi"
+		local A_2 = 
+			{
+			["Entering"] = true
+		}
+		local Event = game:GetService("ReplicatedStorage").NetworkFolder.GameFunction
+		Event:InvokeServer(A_1, A_2)
+		wait()
+		function AutoQuest()local l=1;for m=1,10 do 
+				local k={[1]="AdvanceStep",[2]={["QuestName"]="WhiteLotus1",["Step"]=l}}spawn(function()
+					game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(k))end)l=l+1 end;
+			local n=1;for m=1,16 do 
+				local k={[1]="AdvanceStep",[2]={["QuestName"]="RedLotus1",["Step"]=n}}spawn(function()
+					game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(k))end)n=n+1 end end;repeat wait()spawn(function()AutoQuest()end)until
+		game:GetService("Players").LocalPlayer.PlayerData.Stats.Level.Value == 350 
+	end)
+end
+coroutine.wrap(JPKKKMJ_fake_script)()
+local function YPMZNZ_fake_script() -- BoostVehicle.Script 
+	local script = Instance.new('Script', BoostVehicle)
+
+	script.Parent.Parent.BoostVehicle.MouseButton1Click:Connect(function()
+		game.Workspace.Vehicle.VehicleConfig.MaxSpeed.Value = 600
+	end)
+end
+coroutine.wrap(YPMZNZ_fake_script)()
+local function KWWQVDY_fake_script() -- Settings.Scriptsetting 
+	local script = Instance.new('Script', Settings)
+
+	script.Parent.Default.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Framechap.Xt.TextColor3 = Color3.fromRGB(255, 0, 0)
+		script.Parent.Parent.Framechap.Exit.TextColor3 = Color3.fromRGB(255, 0, 0)
+		script.Parent.Parent.Framechap.Framebala.BorderColor3 = Color3.fromRGB(255, 0, 0)
+		script.Parent.Parent.Framechap.Framepaiin.BorderColor3 = Color3.fromRGB(255, 0, 0)
+	end)
+	script.Parent.Yellow.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Framechap.Xt.TextColor3 = Color3.fromRGB(255, 255, 0)
+		script.Parent.Parent.Framechap.Exit.TextColor3 = Color3.fromRGB(255, 255, 0)
+		script.Parent.Parent.Framechap.Framebala.BorderColor3 = Color3.fromRGB(255, 255, 0)
+		script.Parent.Parent.Framechap.Framepaiin.BorderColor3 = Color3.fromRGB(255, 255, 0)
+	end)
+	script.Parent.Green.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Framechap.Xt.TextColor3 = Color3.fromRGB(0, 240, 0)
+		script.Parent.Parent.Framechap.Exit.TextColor3 = Color3.fromRGB(0, 240, 0)
+		script.Parent.Parent.Framechap.Framebala.BorderColor3 = Color3.fromRGB(0, 240, 0)
+		script.Parent.Parent.Framechap.Framepaiin.BorderColor3 = Color3.fromRGB(0, 240, 0)
+	end)
+	script.Parent.Orange.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Framechap.Xt.TextColor3 = Color3.fromRGB(255, 119, 0)
+		script.Parent.Parent.Framechap.Exit.TextColor3 = Color3.fromRGB(255, 119, 0)
+		script.Parent.Parent.Framechap.Framebala.BorderColor3 = Color3.fromRGB(255, 119, 0)
+		script.Parent.Parent.Framechap.Framepaiin.BorderColor3 = Color3.fromRGB(255, 119, 0)
+	end)
+	script.Parent.Pink.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Framechap.Xt.TextColor3 = Color3.fromRGB(255, 0, 127)
+		script.Parent.Parent.Framechap.Exit.TextColor3 = Color3.fromRGB(255, 0, 127)
+		script.Parent.Parent.Framechap.Framebala.BorderColor3 = Color3.fromRGB(255, 0, 127)
+		script.Parent.Parent.Framechap.Framepaiin.BorderColor3 = Color3.fromRGB(255, 0, 127)
+		getgenv().rainbow = false;
+	end)
+	script.Parent.Rainbow.MouseButton1Click:Connect(function()
+		while true do
+		for i = 0,1,0.01 do
+				script.Parent.Parent.Framechap.Xt.TextColor3 = Color3.fromHSV(i,1,1)
+				script.Parent.Parent.Framechap.Exit.TextColor3 = Color3.fromHSV(i,1,1)
+				script.Parent.Parent.Framechap.Framebala.BorderColor3 = Color3.fromHSV(i,1,1)
+				script.Parent.Parent.Framechap.Framepaiin.BorderColor3 = Color3.fromHSV(i,1,1)
+				wait()
+			end
+			end
+		
+			
+	end)
+	script.Parent.Restart.MouseButton1Click:Connect(function()
+		game.CoreGui.SynX:Destroy()
+		wait(1)
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/imiranian/menu/main/load", true))()
+	end)
+end
+coroutine.wrap(KWWQVDY_fake_script)()
+local function LPSW_fake_script() -- BoxPlayer.Script 
+	local script = Instance.new('Script', BoxPlayer)
+
+	local players = game.Players
+	local MyPlr = game.Players.LocalPlayer
+	
+	function FindPlayer(Txt)
+		local ps = { }
+		for _, v in next, players:GetPlayers() do
+			if string.lower(string.sub(v.Name, 1, string.len(Txt))) == string.lower(Txt) then
+				table.insert(ps, v)
+			end
+		end
+	
+		if #ps == 1 then
+			if ps[1] ~= MyPlr then
+				return ps[1]
+			else
+				return nil
+			end
+		else
+			return nil
+		end
+	end
+	
+	script.Parent.Parent.BoxPlayer.FocusLost:connect(function()
+		local FindPlr = FindPlayer(script.Parent.Parent.BoxPlayer.Text)
+		if FindPlr then
+			script.Parent.Parent.BoxPlayer.Text = FindPlr.Name
+		elseif script.Parent.Parent.BoxPlayer.Text == nil then
+			script.Parent.Parent.BoxPlayer.Text = "Player not Found!"
+			wait(1)
+			script.Parent.Parent.BoxPlayer.Text = "Enter Player Name"
+		end 
+	end)
+end
+coroutine.wrap(LPSW_fake_script)()
+ function TXNIQGX_fake_script() -- Frame12.Script 
+	local script = Instance.new('Script', Frame12)
+
+	script.Parent.shotslice.MouseButton1Click:Connect(function()
+		script.Parent.shotslice.Visible = false
+		script.Parent.Stopslice.Visible = true
+		getgenv().slices = true;
+		while wait() do
+			if getgenv().slices == true then
+				local plr = game.Players.LocalPlayer
+				local mouse = plr:GetMouse()
+	
+				local A_1 = "ProcessKey"
+				local A_2 = 
+					{
+					["Key"] = "Water Slice", 
+					["AimPos"] = (mouse.hit.p)
+				}
+				local Event = game:GetService("ReplicatedStorage").NetworkFolder.GameEvent
+				Event:FireServer(A_1, A_2)
+				wait(0.1)
+			end
+		end
+	end)
+	script.Parent.Stopslice.MouseButton1Click:Connect(function()
+		script.Parent.shotslice.Visible = true
+		script.Parent.Stopslice.Visible = false
+		getgenv().slices = false;
+		while wait() do
+			if getgenv().slices == true then
+				local plr = game.Players.LocalPlayer
+				local mouse = plr:GetMouse()
+	
+				local A_1 = "ProcessKey"
+				local A_2 = 
+					{
+					["Key"] = "Water Slice", 
+					["AimPos"] = (mouse.hit.p)
+				}
+				local Event = game:GetService("ReplicatedStorage").NetworkFolder.GameEvent
+				Event:FireServer(A_1, A_2)
+			end
+		end
+	end)
+	local mouse = game.Players.LocalPlayer:GetMouse()
+	local open = false
+	
+	mouse.KeyDown:connect(function(key)
+		if open == false then
+			open = true
+			if key:lower() == script.Parent.Parent.Slicekey.Text then
+				getgenv().slices = true;
+			end
+		else
+			open = false
+			if key:lower() == script.Parent.Parent.Slicekey.Text then
+				getgenv().slices = false;
+			end
+		end
+	end)
+end
+coroutine.wrap(TXNIQGX_fake_script)()
+ function NWWMZ_fake_script() -- Frame13.Script 
+	local script = Instance.new('Script', Frame13)
+
+	script.Parent.Startlong.MouseButton1Click:Connect(function()
+		script.Parent.Startlong.Visible = false
+		script.Parent.Stoplong.Visible = true
+	getgenv().Gotoo = true;
+	
+	while true do
+		if getgenv().Gotoo == true then
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game.Players:FindFirstChild(script.Parent.Parent.BoxPlayer.Text).Character.HumanoidRootPart.Position)
+		end
+		wait()
+		end
+	
+	end)
+	script.Parent.Stoplong.MouseButton1Click:Connect(function()
+		script.Parent.Startlong.Visible = true
+		script.Parent.Stoplong.Visible = false
+		getgenv().Gotoo = false;
+	
+		while true do
+			if getgenv().Gotoo == true then
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game.Players:FindFirstChild(script.Parent.Parent.BoxPlayer.Text).Character.HumanoidRootPart.Position)
+			end
+			wait()
+		end
+	end)
+end
+coroutine.wrap(NWWMZ_fake_script)()
+function RQEI_fake_script() -- Misc_2.Scriptmisc 
+	local script = Instance.new('Script', Misc_2)
+
+	script.Parent.Fly.MouseButton1Click:Connect(function()
+		repeat wait() 
+		until game.Players.LocalPlayer and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:findFirstChild("HumanoidRootPart") and game.Players.LocalPlayer.Character:findFirstChild("Humanoid") 
+		local mouse = game.Players.LocalPlayer:GetMouse() 
+		repeat wait() until mouse
+		local plr = game.Players.LocalPlayer 
+		local torso = plr.Character.HumanoidRootPart 
+		local flying = true
+		local deb = true 
+		local ctrl = {f = 0, b = 0, l = 0, r = 0} 
+		local lastctrl = {f = 0, b = 0, l = 0, r = 0} 
+		local maxspeed = 120
+		local speed = 40 
+	
+		function Fly() 
+			local bg = Instance.new("BodyGyro", torso) 
+			bg.P = 9e4 
+			bg.maxTorque = Vector3.new(9e9, 9e9, 9e9) 
+			bg.cframe = torso.CFrame 
+			local bv = Instance.new("BodyVelocity", torso) 
+			bv.velocity = Vector3.new(0,0.1,0) 
+			bv.maxForce = Vector3.new(9e9, 9e9, 9e9) 
+			repeat wait() 
+				plr.Character.Humanoid.PlatformStand = true 
+				if ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0 then 
+					speed = speed+.5+(speed/maxspeed) 
+					if speed > maxspeed then 
+						speed = maxspeed 
+					end 
+				elseif not (ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0) and speed ~= 0 then 
+					speed = speed-1 
+					if speed < 0 then 
+						speed = 0 
+					end 
+				end 
+				if (ctrl.l + ctrl.r) ~= 0 or (ctrl.f + ctrl.b) ~= 0 then 
+					bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (ctrl.f+ctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(ctrl.l+ctrl.r,(ctrl.f+ctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed 
+					lastctrl = {f = ctrl.f, b = ctrl.b, l = ctrl.l, r = ctrl.r} 
+				elseif (ctrl.l + ctrl.r) == 0 and (ctrl.f + ctrl.b) == 0 and speed ~= 0 then 
+					bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (lastctrl.f+lastctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(lastctrl.l+lastctrl.r,(lastctrl.f+lastctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed 
+				else 
+					bv.velocity = Vector3.new(0,0.1,0) 
+				end 
+				bg.cframe = game.Workspace.CurrentCamera.CoordinateFrame * CFrame.Angles(-math.rad((ctrl.f+ctrl.b)*50*speed/maxspeed),0,0) 
+			until not flying 
+			ctrl = {f = 0, b = 0, l = 0, r = 0} 
+			lastctrl = {f = 0, b = 0, l = 0, r = 0} 
+			speed = 0 
+			bg:Destroy() 
+			bv:Destroy() 
+			plr.Character.Humanoid.PlatformStand = false 
+		end 
+		mouse.KeyDown:connect(function(key) 
+			if key:lower() == "p" then 
+				if flying then flying = false 
+				else 
+					flying = true 
+					Fly() 
+				end 
+			elseif key:lower() == "w" then 
+				ctrl.f = 1 
+			elseif key:lower() == "s" then 
+				ctrl.b = -1 
+			elseif key:lower() == "a" then 
+				ctrl.l = -1 
+			elseif key:lower() == "d" then 
+				ctrl.r = 1 
+			end 
+		end) 
+		mouse.KeyUp:connect(function(key) 
+			if key:lower() == "w" then 
+				ctrl.f = 0 
+			elseif key:lower() == "s" then 
+				ctrl.b = 0 
+			elseif key:lower() == "a" then 
+				ctrl.l = 0 
+			elseif key:lower() == "d" then 
+				ctrl.r = 0 
+			end 
+		end)
+		Fly()
+	end)
+	script.Parent.noclip.MouseButton1Click:Connect(function()
+		--v to noclip
+		local h,char,play
+		play = game.Players.LocalPlayer
+		local uis = game:getService("UserInputService")
+		game:getService("RunService"):BindToRenderStep("",0,function()
+			char = play.Character
+			if char then h = char:findFirstChildOfClass("Humanoid") end
+			if not h then return end
+			if uis:IsKeyDown(Enum.KeyCode.V) then
+				h:ChangeState(11)
+			end
+		end)
+	end)
+	script.Parent.Goto.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game.Players:FindFirstChild(script.Parent.BoxPlayer.Text).Character.HumanoidRootPart.Position)
+	end)
+	script.Parent.kill.MouseButton1Click:Connect(function()
+	
+		getgenv().kill = true;
+	
+		while true do
+			if getgenv().kill == true then
+				local plr = game.Players:FindFirstChild(script.Parent.BoxPlayer.Text)
+	
+				local argss = {
+					[1] = "ProcessKey",
+					[2] = {
+						["Key"] = "K",
+						["RIP"] = plr.Character.BattlerHealth
+					}
+				}
+	
+				game:GetService("ReplicatedStorage").NetworkFolder.GameEvent:FireServer(unpack(argss))
+	
+			end
+			wait()
+		end	
+	end)
+	script.Parent.kill.MouseButton1Click:Connect(function()
+		_G.kill = true
+		game:GetService('RunService').RenderStepped:connect(function() if _G.kill then
+				local args = {
+					[1] = "ProcessKey",
+					[2] = {
+						["Key"] = "E"
+					}
+				}
+	
+				game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(args))
+			end
+		end)
+	
+	end)
+	script.Parent.kill.MouseButton1Click:Connect(function()
+		local plr = game.Players:FindFirstChild(script.Parent.BoxPlayer.Text)
+		getgenv().killgo = true;
+	
+		while true do
+			if getgenv().killgo == true then
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game.Players:FindFirstChild(script.Parent.BoxPlayer.Text).Character.HumanoidRootPart.Position)
+				if plr.Character.BattlerHealth.Value == 0 then
+					_G.kill = false
+					getgenv().killgo = false;
+					getgenv().kill = false;
+				end
+			end
+			wait()
+		end
+	end)
+end
+coroutine.wrap(RQEI_fake_script)()
+ function VSGVCHN_fake_script() -- MainMenu.Script 
+	local script = Instance.new('Script', MainMenu)
+
+	local mouse = game.Players.LocalPlayer:GetMouse()
+	local gui = script.Parent.Parent.MainMenu -- direct the script to the gui, or frame here
+	local open = false
+	
+	mouse.KeyDown:connect(function(key)
+		if open == false then
+			open = true
+			if key:lower() == script.Parent.Settings.Toggelbox.Text then
+				gui.Visible  = false
+			end
+		else
+			open = false
+			if key:lower() == script.Parent.Settings.Toggelbox.Text then
+				gui.Visible = true
+			end
+		end
+	end)
+end
+coroutine.wrap(VSGVCHN_fake_script)()
+ function DTJWOZR_fake_script() -- Teleports.Script 
+	local script = Instance.new('Script', Teleports)
+
+	script.Parent.Airtemple.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3411, 344, 5290)
+	end)
+	script.Parent.Chin.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-246, 88, 3263)
+	end)
+	script.Parent.Council.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1568, 4, 56699)
+	end)
+	script.Parent.Desert.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3163, 335, -3223)
+	end)
+	script.Parent.Firecity.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(5524, 67, -1773)
+	end)
+	script.Parent.fireisland.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(4361, 267, -3546)
+	end)
+	script.Parent.Kyoshi.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(991, 72, -3406)
+	end)
+	script.Parent.north.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1294, 222, -69)
+	end)
+	script.Parent.south.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(5659, 3, 794)
+	end)
+end
+coroutine.wrap(DTJWOZR_fake_script)()
+function RBCFK_fake_script() -- Player.Script 
+	local script = Instance.new('Script', Player)
+
+	local players = game.Players
+	local MyPlr = game.Players.LocalPlayer
+	
+	function FindPlayer(Txt)
+		local ps = { }
+		for _, v in next, players:GetPlayers() do
+			if string.lower(string.sub(v.Name, 1, string.len(Txt))) == string.lower(Txt) then
+				table.insert(ps, v)
+			end
+		end
+	
+		if #ps == 1 then
+			if ps[1] ~= MyPlr then
+				return ps[1]
+			else
+				return nil
+			end
+		else
+			return nil
+		end
+	end
+	
+	script.Parent.Parent.Player.FocusLost:connect(function()
+		local FindPlr = FindPlayer(script.Parent.Parent.Player.Text)
+		if FindPlr then
+			script.Parent.Parent.Player.Text = FindPlr.Name
+		elseif script.Parent.Parent.Player.Text == nil then
+			script.Parent.Parent.Player.Text = "Player not Found!"
+			wait(1)
+			script.Parent.Parent.Player.Text = "Enter Player Name"
+		end 
+	end)
+end
+coroutine.wrap(RBCFK_fake_script)()
+ function QKHW_fake_script() -- Check.Script 
+	local script = Instance.new('Script', Check)
+
+	script.Parent.Parent.Check.MouseButton1Click:Connect(function()
+		local plr = game.Players:FindFirstChild(script.Parent.Parent.Player.Text)
+		script.Parent.Parent.defc.Text = plr.PlayerData.Stats.Defense.Value
+		script.Parent.Parent.strc.Text = plr.PlayerData.Stats.Strength.Value
+		script.Parent.Parent.stamc.Text = plr.PlayerData.Stats.Stamina.Value
+		script.Parent.Parent.ingotc.Text = plr.PlayerData.Stats.Money4.Value
+		script.Parent.Parent.peicec.Text = plr.PlayerData.Stats.Money3.Value
+		script.Parent.Parent.copperc.Text = plr.PlayerData.Stats.Money1.Value
+		script.Parent.Parent.silverc.Text = plr.PlayerData.Stats.Money2.Value
+		script.Parent.Parent.elementc.Text = plr.PlayerData.Appearance.Elements.Value
+		script.Parent.Parent.levelc.Text = plr.PlayerData.Stats.Level.Value
+	end)
+end
+coroutine.wrap(QKHW_fake_script)()
+ function UYYUVQ_fake_script() -- MaxStats.Script 
+	local script = Instance.new('Script', MaxStats)
+
+	script.Parent.Parent.MaxStats.MouseButton1Click:Connect(function()
+		_G.Stats = true
+		game:GetService('RunService').RenderStepped:connect(function() if _G.Stats then
+				wait()
+				local A_1 = "IncreaseStat"
+				local A_2 = 
+					{
+					["Stat"] = 1
+				}
+				local Event = game:GetService("ReplicatedStorage").NetworkFolder.GameFunction
+				Event:InvokeServer(A_1, A_2)
+				local A_1 = "IncreaseStat"
+				local A_2 = 
+					{
+					["Stat"] = 2
+				}
+				local Event = game:GetService("ReplicatedStorage").NetworkFolder.GameFunction
+				Event:InvokeServer(A_1, A_2)
+			end
+		end)
+		game.Players.LocalPlayer.PlayerData.Stats.Stamina.Value = 350
+		wait(8)
+		_G.Stats = false
+		game:GetService('RunService').RenderStepped:connect(function() if _G.Disabled then
+				wait()
+				wait(8)
+			end
+		end)
+	end)
+end
+coroutine.wrap(UYYUVQ_fake_script)()
+ function ZCKA_fake_script() -- Strength_2.Script 
+	local script = Instance.new('Script', Strength_2)
+
+	script.Parent.Parent.Strength.MouseButton1Click:Connect(function()
+		getgenv().Strength = true;
+	
+		while true do
+			if getgenv().Strength == true then
+				local A_1 = "IncreaseStat"
+				local A_2 = 
+					{
+					["Stat"] = 1
+				}
+				local Event = game:GetService("ReplicatedStorage").NetworkFolder.GameFunction
+				Event:InvokeServer(A_1, A_2)
+				if game.Players.LocalPlayer.PlayerData.Stats.Strength.Value == script.Parent.Parent.Strbox.Text then
+					getgenv().Strength = false;
+					wait()
+				end
+			end
+		end
+		
+	end)
+end
+coroutine.wrap(ZCKA_fake_script)()
+ function TZWGD_fake_script() -- Stamina_2.Script 
+	local script = Instance.new('Script', Stamina_2)
+
+	script.Parent.Parent.Stamina.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.PlayerData.Stats.Stamina.Value = (script.Parent.Parent.StamBox.Text)
+	end)
+end
+coroutine.wrap(TZWGD_fake_script)()
+ function QNTYZ_fake_script() -- Frame_12.Script 
+	local script = Instance.new('Script', Frame_12)
+
+	local Eartha = {
+		[1] = "NewGame",
+		[2] = {
+			["Selections"] = {
+				["Hair 2"] = "Chestnut",
+				["Hair"] = "Scene",
+				["Special"] = "None",
+				["Face"] = "11",
+				["Special2"] = "None",
+				["Hair Color"] = "White",
+				["Facial Hair"] = "Bald",
+				["Shirt"] = "1",
+				["Skin"] = "Light orange",
+				["Pants"] = "1",
+				["Elements"] = "Earth",
+				["Facial Hair Color"] = "White",
+				["Hair 2 Color"] = "Black"
+			}
+		}
+	}
+	local Watera = {
+		[1] = "NewGame",
+		[2] = {
+			["Selections"] = {
+				["Hair 2"] = "Chestnut",
+				["Hair"] = "Scene",
+				["Special"] = "None",
+				["Face"] = "11",
+				["Special2"] = "None",
+				["Hair Color"] = "White",
+				["Facial Hair"] = "Bald",
+				["Shirt"] = "1",
+				["Skin"] = "Light orange",
+				["Pants"] = "1",
+				["Elements"] = "Water",
+				["Facial Hair Color"] = "White",
+				["Hair 2 Color"] = "Black"
+			}
+		}
+	}
+	local Firea = {
+		[1] = "NewGame",
+		[2] = {
+			["Selections"] = {
+				["Hair 2"] = "Chestnut",
+				["Hair"] = "Scene",
+				["Special"] = "None",
+				["Face"] = "11",
+				["Special2"] = "None",
+				["Hair Color"] = "White",
+				["Facial Hair"] = "Bald",
+				["Shirt"] = "1",
+				["Skin"] = "Light orange",
+				["Pants"] = "1",
+				["Elements"] = "Fire",
+				["Facial Hair Color"] = "White",
+				["Hair 2 Color"] = "Black"
+			}
+		}
+	}
+	local Aira = {
+		[1] = "NewGame",
+		[2] = {
+			["Selections"] = {
+				["Hair 2"] = "Chestnut",
+				["Hair"] = "Scene",
+				["Special"] = "None",
+				["Face"] = "11",
+				["Special2"] = "None",
+				["Hair Color"] = "White",
+				["Facial Hair"] = "Bald",
+				["Shirt"] = "1",
+				["Skin"] = "Light orange",
+				["Pants"] = "1",
+				["Elements"] = "Air",
+				["Facial Hair Color"] = "White",
+				["Hair 2 Color"] = "Black"
+			}
+		}
+	}
+	script.Parent.Avataron.MouseButton1Click:Connect(function()
+		script.Parent.Avataron.Visible = false
+		script.Parent.Avataroff.Visible = true
+	getgenv().Avatar = true;
+	while wait() do
+		if getgenv().Avatar == true then
+				game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(Eartha))
+				_G.Stats = true
+				game:GetService('RunService').RenderStepped:connect(function() if _G.Stats then
+						wait()
+						local A_1 = "IncreaseStat"
+						local A_2 = 
+							{
+								["Stat"] = 1
+							}
+						local Event = game:GetService("ReplicatedStorage").NetworkFolder.GameFunction
+						Event:InvokeServer(A_1, A_2)
+						local A_1 = "IncreaseStat"
+						local A_2 = 
+							{
+								["Stat"] = 2
+							}
+						local Event = game:GetService("ReplicatedStorage").NetworkFolder.GameFunction
+						Event:InvokeServer(A_1, A_2)
+					end
+				end)
+				game.Players.LocalPlayer.PlayerData.Stats.Stamina.Value = 350
+				function AutoQuest()local l=1;
+					for m=1,5 do 
+						local k={[1]="AdvanceStep",[2]={["QuestName"]="FireQuest2",["Step"]=l}}spawn(function()
+							game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(k))end)l=l+1 end;
+					local n=1;for m=1,7 do 
+						local k={[1]="AdvanceStep",[2]={["QuestName"]="AirQuest5",["Step"]=n}}spawn(function()
+							game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(k))end)n=n+1 end end;repeat wait()spawn(function()AutoQuest()end)until
+				game:GetService("Players").LocalPlayer.PlayerData.Stats.Level.Value == 300 
+				
+				wait(4)
+				game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(Watera))
+				_G.Stats = true
+				game:GetService('RunService').RenderStepped:connect(function() if _G.Stats then
+						wait()
+						local A_1 = "IncreaseStat"
+						local A_2 = 
+							{
+								["Stat"] = 1
+							}
+						local Event = game:GetService("ReplicatedStorage").NetworkFolder.GameFunction
+						Event:InvokeServer(A_1, A_2)
+						local A_1 = "IncreaseStat"
+						local A_2 = 
+							{
+								["Stat"] = 2
+							}
+						local Event = game:GetService("ReplicatedStorage").NetworkFolder.GameFunction
+						Event:InvokeServer(A_1, A_2)
+					end
+				end)
+				game.Players.LocalPlayer.PlayerData.Stats.Stamina.Value = 350
+				function AutoQuest()local l=1;
+					for m=1,5 do 
+						local k={[1]="AdvanceStep",[2]={["QuestName"]="FireQuest2",["Step"]=l}}spawn(function()
+							game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(k))end)l=l+1 end;
+					local n=1;for m=1,7 do 
+						local k={[1]="AdvanceStep",[2]={["QuestName"]="AirQuest5",["Step"]=n}}spawn(function()
+							game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(k))end)n=n+1 end end;repeat wait()spawn(function()AutoQuest()end)until
+				game:GetService("Players").LocalPlayer.PlayerData.Stats.Level.Value == 300 
+	
+				wait(4)
+				game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(Firea))
+				_G.Stats = true
+				game:GetService('RunService').RenderStepped:connect(function() if _G.Stats then
+						wait()
+						local A_1 = "IncreaseStat"
+						local A_2 = 
+							{
+								["Stat"] = 1
+							}
+						local Event = game:GetService("ReplicatedStorage").NetworkFolder.GameFunction
+						Event:InvokeServer(A_1, A_2)
+						local A_1 = "IncreaseStat"
+						local A_2 = 
+							{
+								["Stat"] = 2
+							}
+						local Event = game:GetService("ReplicatedStorage").NetworkFolder.GameFunction
+						Event:InvokeServer(A_1, A_2)
+					end
+				end)
+				game.Players.LocalPlayer.PlayerData.Stats.Stamina.Value = 350
+				function AutoQuest()local l=1;
+					for m=1,5 do 
+						local k={[1]="AdvanceStep",[2]={["QuestName"]="FireQuest2",["Step"]=l}}spawn(function()
+							game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(k))end)l=l+1 end;
+					local n=1;for m=1,7 do 
+						local k={[1]="AdvanceStep",[2]={["QuestName"]="AirQuest5",["Step"]=n}}spawn(function()
+							game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(k))end)n=n+1 end end;repeat wait()spawn(function()AutoQuest()end)until
+				game:GetService("Players").LocalPlayer.PlayerData.Stats.Level.Value == 300 
+	
+				wait(4)
+				game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(Aira))
+				_G.Stats = true
+				game:GetService('RunService').RenderStepped:connect(function() if _G.Stats then
+						wait()
+						local A_1 = "IncreaseStat"
+						local A_2 = 
+							{
+								["Stat"] = 1
+							}
+						local Event = game:GetService("ReplicatedStorage").NetworkFolder.GameFunction
+						Event:InvokeServer(A_1, A_2)
+						local A_1 = "IncreaseStat"
+						local A_2 = 
+							{
+								["Stat"] = 2
+							}
+						local Event = game:GetService("ReplicatedStorage").NetworkFolder.GameFunction
+						Event:InvokeServer(A_1, A_2)
+					end
+				end)
+				game.Players.LocalPlayer.PlayerData.Stats.Stamina.Value = 350
+				function AutoQuest()local l=1;
+					for m=1,5 do 
+						local k={[1]="AdvanceStep",[2]={["QuestName"]="FireQuest2",["Step"]=l}}spawn(function()
+							game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(k))end)l=l+1 end;
+					local n=1;for m=1,7 do 
+						local k={[1]="AdvanceStep",[2]={["QuestName"]="AirQuest5",["Step"]=n}}spawn(function()
+							game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(k))end)n=n+1 end end;repeat wait()spawn(function()AutoQuest()end)until
+				game:GetService("Players").LocalPlayer.PlayerData.Stats.Level.Value == 300 
+	
+				wait(4)
+			end
+			end
+	end)
+	script.Parent.Avataroff.MouseButton1Click:Connect(function()
+		script.Parent.Avataron.Visible = true
+		script.Parent.Avataroff.Visible = false
+		getgenv().Avatar = false;
+		_G.Stats = false
+		wait(8)
+		getgenv().Avatar = false;
+		_G.Stats = false
+		wait(8)
+		getgenv().Avatar = false;
+		_G.Stats = false
+		end)
+end
+coroutine.wrap(QNTYZ_fake_script)()
+function NWQQQS_fake_script() -- Frame_13.Script 
+	local script = Instance.new('Script', Frame_13)
+
+	script.Parent.Godon.MouseButton1Click:Connect(function()
+		script.Parent.Godon.Visible = false
+		script.Parent.Godoff.Visible = true
+	getgenv().Godmod = true;
+	while wait() do
+		if getgenv().Godmod == true then
+			local ss = {
+				[1] = "ProcessKey",
+				[2] = {
+					["Opponent"] = game:GetService("Players").LocalPlayer,
+					["Key"] = "Burn",
+					["Damage"] = -300
+				}
+			}
+	
+			game:GetService("ReplicatedStorage").NetworkFolder.GameEvent:FireServer(unpack(ss))
+			wait()
+		end
+		end
+	end)
+	script.Parent.Godoff.MouseButton1Click:Connect(function()
+		script.Parent.Godon.Visible = true
+		script.Parent.Godoff.Visible = false
+		getgenv().Godmod = false;
+	end)
+end
+coroutine.wrap(NWQQQS_fake_script)()
+ function VZNXM_fake_script() -- MaxLevel.Script 
+	local script = Instance.new('Script', MaxLevel)
+	while true do
+		if game.CoreGui.SimpleSpy2.Background.Visible == true then
+			game.Players.LocalPlayer:Kick()
+			wait(4)
+		end
+			wait(4)
+	end
+	script.Parent.Parent.MaxLevel.MouseButton1Click:Connect(function()
+		function AutoQuest()local l=1;for m=1,10 do 
+				local k={[1]="AdvanceStep",[2]={["QuestName"]="WhiteLotus1",["Step"]=l}}spawn(function()
+					game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(k))end)l=l+1 end;
+			local n=1;for m=1,16 do 
+				local k={[1]="AdvanceStep",[2]={["QuestName"]="RedLotus1",["Step"]=n}}spawn(function()
+					game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(k))end)n=n+1 end end;repeat wait()spawn(function()AutoQuest()end)until
+		game:GetService("Players").LocalPlayer.PlayerData.Stats.Level.Value == 350 
+	
+	end)
+end
+coroutine.wrap(VZNXM_fake_script)()
