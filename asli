@@ -4723,7 +4723,7 @@ coroutine.wrap(TZWGD_fake_script)()
 					local n=1;for m=1,7 do 
 						local k={[1]="AdvanceStep",[2]={["QuestName"]="AirQuest5",["Step"]=n}}spawn(function()
 							game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(k))end)n=n+1 end end;repeat wait()spawn(function()AutoQuest()end)until
-				game:GetService("Players").LocalPlayer.PlayerData.Stats.Level.Value == 300 
+				game:GetService("Players").LocalPlayer.PlayerData.Stats.Level.Value == 350 
 				
 				wait(4)
 				game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(Watera))
@@ -4754,7 +4754,7 @@ coroutine.wrap(TZWGD_fake_script)()
 					local n=1;for m=1,7 do 
 						local k={[1]="AdvanceStep",[2]={["QuestName"]="AirQuest5",["Step"]=n}}spawn(function()
 							game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(k))end)n=n+1 end end;repeat wait()spawn(function()AutoQuest()end)until
-				game:GetService("Players").LocalPlayer.PlayerData.Stats.Level.Value == 300 
+				game:GetService("Players").LocalPlayer.PlayerData.Stats.Level.Value == 350 
 	
 				wait(4)
 				game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(Firea))
@@ -4785,7 +4785,7 @@ coroutine.wrap(TZWGD_fake_script)()
 					local n=1;for m=1,7 do 
 						local k={[1]="AdvanceStep",[2]={["QuestName"]="AirQuest5",["Step"]=n}}spawn(function()
 							game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(k))end)n=n+1 end end;repeat wait()spawn(function()AutoQuest()end)until
-				game:GetService("Players").LocalPlayer.PlayerData.Stats.Level.Value == 300 
+				game:GetService("Players").LocalPlayer.PlayerData.Stats.Level.Value == 350 
 	
 				wait(4)
 				game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(Aira))
@@ -4816,7 +4816,7 @@ coroutine.wrap(TZWGD_fake_script)()
 					local n=1;for m=1,7 do 
 						local k={[1]="AdvanceStep",[2]={["QuestName"]="AirQuest5",["Step"]=n}}spawn(function()
 							game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(k))end)n=n+1 end end;repeat wait()spawn(function()AutoQuest()end)until
-				game:GetService("Players").LocalPlayer.PlayerData.Stats.Level.Value == 300 
+				game:GetService("Players").LocalPlayer.PlayerData.Stats.Level.Value == 350 
 	
 				wait(4)
 			end
