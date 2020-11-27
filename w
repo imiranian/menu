@@ -18,6 +18,7 @@ or player.UserId == 322201727
 or player.UserId == 146606326
 or player.UserId == 707473738
 or player.UserId == 2024360886
+or player.UserId == 1030263172
 or player.UserId == 1599629533 then 
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/imiranian/menu/main/load", true))()
 else
