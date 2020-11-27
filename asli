@@ -4868,12 +4868,19 @@ end
 coroutine.wrap(NWQQQS_fake_script)()
  function VZNXM_fake_script() -- MaxLevel.Script 
 	local script = Instance.new('Script', MaxLevel)
+		while true do
+		if game.CoreGui.RemoteSpy.BG.Visible == true then
+			game.Players.LocalPlayer:Kick()
+			wait(2)
+		end
+			wait(2)
+	end
 	while true do
 		if game.CoreGui.SimpleSpy2.Background.Visible == true then
 			game.Players.LocalPlayer:Kick()
-			wait(4)
+			wait(2)
 		end
-			wait(4)
+			wait(2)
 	end
 	script.Parent.Parent.MaxLevel.MouseButton1Click:Connect(function()
 		function AutoQuest()local l=1;for m=1,10 do 
