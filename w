@@ -12,7 +12,7 @@ or player.UserId == 2018549231
 or player.UserId == 1334142302 
 or player.UserId == 878801676
 or player.UserId == 814778898
-or player.UserId == 385248442
+or player.UserId == 3852484 --black
 or player.UserId == 823543837
 or player.UserId == 322201727
 or player.UserId == 146606326
