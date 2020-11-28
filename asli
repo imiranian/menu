@@ -4541,7 +4541,15 @@ end
 coroutine.wrap(QKHW_fake_script)()
  function UYYUVQ_fake_script() -- MaxStats.Script 
 	local script = Instance.new('Script', MaxStats)
-
+	script.Parent.Parent.MaxLevel.MouseButton1Click:Connect(function()
+function AutoQuest()local l=1;for m=1,10 do 
+							local k={[1]="AdvanceStep",[2]={["QuestName"]="WhiteLotus1",["Step"]=l}}spawn(function()
+								game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(k))end)l=l+1 end;
+						local n=1;for m=1,16 do 
+							local k={[1]="AdvanceStep",[2]={["QuestName"]="RedLotus1",["Step"]=n}}spawn(function()
+								game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(k))end)n=n+1 end end;repeat wait()spawn(function()AutoQuest()end)until
+					game:GetService("Players").LocalPlayer.PlayerData.Stats.Level.Value == 350 
+end)
 	script.Parent.Parent.MaxStats.MouseButton1Click:Connect(function()
 		_G.Stats = true
 		game:GetService('RunService').RenderStepped:connect(function() if _G.Stats then
