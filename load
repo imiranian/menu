@@ -156,7 +156,7 @@ local function FMKA_fake_script() -- Pass.Script
 	local script = Instance.new('Script', Pass)
 
 	script.Parent.Enter.MouseButton1Click:Connect(function()
-		if script.Parent.TextBox.Text == "LightningFromAsgard" then
+		if script.Parent.TextBox.Text == "Emerald" then
 			game.CoreGui.SynX.MainMenu.Visible = true
 			game.CoreGui.Load:Destroy()
 		else
