@@ -71,18 +71,22 @@ local Seismic = Instance.new("TextButton")
 local Spiritual = Instance.new("TextButton")
 local Healing = Instance.new("TextButton")
 local BoostVehicle = Instance.new("TextButton")
+local TextLabel_4 = Instance.new("TextLabel")
+local Frame_3 = Instance.new("Frame")
+local wl = Instance.new("TextButton")
+local rl = Instance.new("TextButton")
 local Credit = Instance.new("Frame")
 local ImageLabel = Instance.new("ImageLabel")
-local TextLabel_4 = Instance.new("TextLabel")
 local TextLabel_5 = Instance.new("TextLabel")
 local TextLabel_6 = Instance.new("TextLabel")
+local TextLabel_7 = Instance.new("TextLabel")
 local Settings = Instance.new("Frame")
 local Default = Instance.new("TextButton")
-local TextLabel_7 = Instance.new("TextLabel")
+local TextLabel_8 = Instance.new("TextLabel")
 local Frame55 = Instance.new("Frame")
 local Frame44 = Instance.new("Frame")
 local TextButton = Instance.new("TextButton")
-local TextLabel_8 = Instance.new("TextLabel")
+local TextLabel_9 = Instance.new("TextLabel")
 local TextButton_2 = Instance.new("TextButton")
 local Rainbow = Instance.new("TextButton")
 local Green = Instance.new("TextButton")
@@ -91,16 +95,16 @@ local Orange = Instance.new("TextButton")
 local Pink = Instance.new("TextButton")
 local TextButton_3 = Instance.new("TextButton")
 local Restart = Instance.new("TextButton")
-local TextLabel_9 = Instance.new("TextLabel")
+local TextLabel_10 = Instance.new("TextLabel")
 local Toggelbox = Instance.new("TextBox")
 local Misc_2 = Instance.new("Frame")
 local BoxPlayer = Instance.new("TextBox")
 local Fly = Instance.new("TextButton")
 local noclip = Instance.new("TextButton")
-local TextLabel_10 = Instance.new("TextLabel")
+local TextLabel_11 = Instance.new("TextLabel")
 local Frame14 = Instance.new("Frame")
 local Frame11 = Instance.new("Frame")
-local TextLabel_11 = Instance.new("TextLabel")
+local TextLabel_12 = Instance.new("TextLabel")
 local Frame12 = Instance.new("Frame")
 local shotslice = Instance.new("TextButton")
 local Stopslice = Instance.new("TextButton")
@@ -108,39 +112,39 @@ local Goto = Instance.new("TextButton")
 local Frame13 = Instance.new("Frame")
 local Startlong = Instance.new("TextButton")
 local Stoplong = Instance.new("TextButton")
-local TextLabel_12 = Instance.new("TextLabel")
+local TextLabel_13 = Instance.new("TextLabel")
 local kill = Instance.new("TextButton")
 local TextButton_4 = Instance.new("TextButton")
 local Slicekey = Instance.new("TextBox")
-local TextLabel_13 = Instance.new("TextLabel")
+local TextLabel_14 = Instance.new("TextLabel")
 local Teleports = Instance.new("Frame")
 local Chin = Instance.new("TextButton")
-local Frame_3 = Instance.new("Frame")
-local TextLabel_14 = Instance.new("TextLabel")
+local Frame_4 = Instance.new("Frame")
+local TextLabel_15 = Instance.new("TextLabel")
 local Frame67 = Instance.new("Frame")
 local Frame68 = Instance.new("Frame")
 local Kyoshi_2 = Instance.new("TextButton")
-local Frame_4 = Instance.new("Frame")
-local Firecity = Instance.new("TextButton")
 local Frame_5 = Instance.new("Frame")
-local south = Instance.new("TextButton")
+local Firecity = Instance.new("TextButton")
 local Frame_6 = Instance.new("Frame")
-local north = Instance.new("TextButton")
+local south = Instance.new("TextButton")
 local Frame_7 = Instance.new("Frame")
-local fireisland = Instance.new("TextButton")
+local north = Instance.new("TextButton")
 local Frame_8 = Instance.new("Frame")
-local Desert = Instance.new("TextButton")
+local fireisland = Instance.new("TextButton")
 local Frame_9 = Instance.new("Frame")
-local Council = Instance.new("TextButton")
+local Desert = Instance.new("TextButton")
 local Frame_10 = Instance.new("Frame")
-local Airtemple = Instance.new("TextButton")
+local Council = Instance.new("TextButton")
 local Frame_11 = Instance.new("Frame")
+local Airtemple = Instance.new("TextButton")
+local Frame_12 = Instance.new("Frame")
 local Frame66 = Instance.new("Frame")
-local TextLabel_15 = Instance.new("TextLabel")
+local TextLabel_16 = Instance.new("TextLabel")
 local Players_2 = Instance.new("Frame")
 local Player = Instance.new("TextBox")
 local Check = Instance.new("TextButton")
-local TextLabel_16 = Instance.new("TextLabel")
+local TextLabel_17 = Instance.new("TextLabel")
 local Frames66 = Instance.new("Frame")
 local Framest6 = Instance.new("Frame")
 local strc = Instance.new("TextLabel")
@@ -178,15 +182,15 @@ local MaxStats = Instance.new("TextButton")
 local Strength_2 = Instance.new("TextButton")
 local Defense_2 = Instance.new("TextButton")
 local Stamina_2 = Instance.new("TextButton")
-local TextLabel_17 = Instance.new("TextLabel")
+local TextLabel_18 = Instance.new("TextLabel")
 local Frames = Instance.new("Frame")
 local Framest = Instance.new("Frame")
-local Frame_12 = Instance.new("Frame")
+local Frame_13 = Instance.new("Frame")
 local Avataron = Instance.new("TextButton")
 local Avataroff = Instance.new("TextButton")
-local TextLabel_18 = Instance.new("TextLabel")
 local TextLabel_19 = Instance.new("TextLabel")
-local Frame_13 = Instance.new("Frame")
+local TextLabel_20 = Instance.new("TextLabel")
+local Frame_14 = Instance.new("Frame")
 local Godon = Instance.new("TextButton")
 local Godoff = Instance.new("TextButton")
 local MaxLevel = Instance.new("TextButton")
@@ -204,8 +208,8 @@ MainMenu.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
 MainMenu.BorderColor3 = Color3.fromRGB(52, 52, 52)
 MainMenu.Position = UDim2.new(0.0562913902, 0, 0.250836134, 0)
 MainMenu.Size = UDim2.new(0, 488, 0, 342)
-MainMenu.Draggable = true
 MainMenu.Visible = false
+MainMenu.Draggable = true
 
 Framechap.Name = "Framechap"
 Framechap.Parent = MainMenu
@@ -985,6 +989,45 @@ BoostVehicle.TextColor3 = Color3.fromRGB(102, 153, 153)
 BoostVehicle.TextSize = 16.000
 BoostVehicle.TextWrapped = true
 
+TextLabel_4.Parent = Farming_2
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Position = UDim2.new(0.00414008647, 0, 0.818713486, 0)
+TextLabel_4.Size = UDim2.new(0, 176, 0, 25)
+TextLabel_4.Font = Enum.Font.SourceSans
+TextLabel_4.Text = "Toggel Lotus"
+TextLabel_4.TextColor3 = Color3.fromRGB(138, 138, 138)
+TextLabel_4.TextSize = 19.000
+
+Frame_3.Parent = Farming_2
+Frame_3.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Frame_3.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Frame_3.Position = UDim2.new(0.0735694841, 0, 0.701754391, 0)
+Frame_3.Size = UDim2.new(0, 136, 0, 26)
+
+wl.Name = "wl"
+wl.Parent = Frame_3
+wl.BackgroundColor3 = Color3.fromRGB(255, 10, 10)
+wl.BorderColor3 = Color3.fromRGB(255, 10, 10)
+wl.Position = UDim2.new(-0.00739535177, 0, 0.03125, 0)
+wl.Size = UDim2.new(0, 65, 0, 25)
+wl.Visible = false
+wl.Font = Enum.Font.SourceSans
+wl.Text = ""
+wl.TextColor3 = Color3.fromRGB(0, 0, 0)
+wl.TextSize = 14.000
+
+rl.Name = "rl"
+rl.Parent = Frame_3
+rl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+rl.BorderColor3 = Color3.fromRGB(255, 255, 255)
+rl.Position = UDim2.new(0.522016406, 0, 0.03125, 0)
+rl.Size = UDim2.new(0, 65, 0, 25)
+rl.Font = Enum.Font.SourceSans
+rl.Text = ""
+rl.TextColor3 = Color3.fromRGB(0, 0, 0)
+rl.TextSize = 14.000
+
 Credit.Name = "Credit"
 Credit.Parent = MainMenu
 Credit.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
@@ -1000,35 +1043,35 @@ ImageLabel.Size = UDim2.new(0, 256, 0, 192)
 ImageLabel.Image = "rbxassetid://5953652204"
 ImageLabel.ImageTransparency = 0.600
 
-TextLabel_4.Parent = Credit
-TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_4.BackgroundTransparency = 1.000
-TextLabel_4.Position = UDim2.new(0.224657536, 0, 0.535087585, 0)
-TextLabel_4.Size = UDim2.new(0, 200, 0, 50)
-TextLabel_4.Font = Enum.Font.Creepster
-TextLabel_4.Text = "Created By Kian#1245"
-TextLabel_4.TextColor3 = Color3.fromRGB(186, 186, 186)
-TextLabel_4.TextSize = 23.000
-
 TextLabel_5.Parent = Credit
 TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_5.BackgroundTransparency = 1.000
-TextLabel_5.Position = UDim2.new(0.224657536, 0, 0.64619875, 0)
+TextLabel_5.Position = UDim2.new(0.224657536, 0, 0.535087585, 0)
 TextLabel_5.Size = UDim2.new(0, 200, 0, 50)
-TextLabel_5.Font = Enum.Font.TitilliumWeb
-TextLabel_5.Text = "Discord:stVgQNz"
+TextLabel_5.Font = Enum.Font.Creepster
+TextLabel_5.Text = "Created By Kian#1245"
 TextLabel_5.TextColor3 = Color3.fromRGB(186, 186, 186)
 TextLabel_5.TextSize = 23.000
 
 TextLabel_6.Parent = Credit
 TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_6.BackgroundTransparency = 1.000
-TextLabel_6.Position = UDim2.new(0.0350328833, 0, 0.426900506, 0)
-TextLabel_6.Size = UDim2.new(0, 338, 0, 50)
-TextLabel_6.Font = Enum.Font.SourceSans
-TextLabel_6.Text = "Avatar The Last Airbender Script"
+TextLabel_6.Position = UDim2.new(0.224657536, 0, 0.64619875, 0)
+TextLabel_6.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_6.Font = Enum.Font.TitilliumWeb
+TextLabel_6.Text = "Discord:stVgQNz"
 TextLabel_6.TextColor3 = Color3.fromRGB(186, 186, 186)
-TextLabel_6.TextSize = 18.000
+TextLabel_6.TextSize = 23.000
+
+TextLabel_7.Parent = Credit
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.BackgroundTransparency = 1.000
+TextLabel_7.Position = UDim2.new(0.0350328833, 0, 0.426900506, 0)
+TextLabel_7.Size = UDim2.new(0, 338, 0, 50)
+TextLabel_7.Font = Enum.Font.SourceSans
+TextLabel_7.Text = "Avatar The Last Airbender Script"
+TextLabel_7.TextColor3 = Color3.fromRGB(186, 186, 186)
+TextLabel_7.TextSize = 18.000
 
 Settings.Name = "Settings"
 Settings.Parent = MainMenu
@@ -1051,15 +1094,15 @@ Default.TextColor3 = Color3.fromRGB(108, 162, 162)
 Default.TextSize = 16.000
 Default.TextWrapped = true
 
-TextLabel_7.Parent = Settings
-TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_7.BackgroundTransparency = 1.000
-TextLabel_7.Position = UDim2.new(0.216674149, 0, 0.0116959065, 0)
-TextLabel_7.Size = UDim2.new(0, 206, 0, 35)
-TextLabel_7.Font = Enum.Font.SourceSans
-TextLabel_7.Text = "Setting"
-TextLabel_7.TextColor3 = Color3.fromRGB(170, 255, 255)
-TextLabel_7.TextSize = 19.000
+TextLabel_8.Parent = Settings
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.BackgroundTransparency = 1.000
+TextLabel_8.Position = UDim2.new(0.216674149, 0, 0.0116959065, 0)
+TextLabel_8.Size = UDim2.new(0, 206, 0, 35)
+TextLabel_8.Font = Enum.Font.SourceSans
+TextLabel_8.Text = "Setting"
+TextLabel_8.TextColor3 = Color3.fromRGB(170, 255, 255)
+TextLabel_8.TextSize = 19.000
 
 Frame55.Name = "Frame55"
 Frame55.Parent = Settings
@@ -1088,15 +1131,15 @@ TextButton.TextColor3 = Color3.fromRGB(170, 170, 127)
 TextButton.TextSize = 16.000
 TextButton.TextWrapped = true
 
-TextLabel_8.Parent = Settings
-TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_8.BackgroundTransparency = 1.000
-TextLabel_8.Position = UDim2.new(0.216674149, 0, 0.157894731, 0)
-TextLabel_8.Size = UDim2.new(0, 206, 0, 35)
-TextLabel_8.Font = Enum.Font.SourceSans
-TextLabel_8.Text = "UiColor"
-TextLabel_8.TextColor3 = Color3.fromRGB(108, 162, 162)
-TextLabel_8.TextSize = 19.000
+TextLabel_9.Parent = Settings
+TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.BackgroundTransparency = 1.000
+TextLabel_9.Position = UDim2.new(0.216674149, 0, 0.157894731, 0)
+TextLabel_9.Size = UDim2.new(0, 206, 0, 35)
+TextLabel_9.Font = Enum.Font.SourceSans
+TextLabel_9.Text = "UiColor"
+TextLabel_9.TextColor3 = Color3.fromRGB(108, 162, 162)
+TextLabel_9.TextSize = 19.000
 
 TextButton_2.Parent = Settings
 TextButton_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
@@ -1200,15 +1243,15 @@ Restart.TextColor3 = Color3.fromRGB(108, 162, 162)
 Restart.TextSize = 16.000
 Restart.TextWrapped = true
 
-TextLabel_9.Parent = Settings
-TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_9.BackgroundTransparency = 1.000
-TextLabel_9.Position = UDim2.new(0.546374321, 0, 0.719298244, 0)
-TextLabel_9.Size = UDim2.new(0, 80, 0, 35)
-TextLabel_9.Font = Enum.Font.SourceSans
-TextLabel_9.Text = "Toggel Gui:"
-TextLabel_9.TextColor3 = Color3.fromRGB(163, 163, 163)
-TextLabel_9.TextSize = 15.000
+TextLabel_10.Parent = Settings
+TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_10.BackgroundTransparency = 1.000
+TextLabel_10.Position = UDim2.new(0.546374321, 0, 0.719298244, 0)
+TextLabel_10.Size = UDim2.new(0, 80, 0, 35)
+TextLabel_10.Font = Enum.Font.SourceSans
+TextLabel_10.Text = "Toggel Gui:"
+TextLabel_10.TextColor3 = Color3.fromRGB(163, 163, 163)
+TextLabel_10.TextSize = 15.000
 
 Toggelbox.Name = "Toggelbox"
 Toggelbox.Parent = Settings
@@ -1272,15 +1315,15 @@ noclip.TextColor3 = Color3.fromRGB(102, 153, 153)
 noclip.TextSize = 16.000
 noclip.TextWrapped = true
 
-TextLabel_10.Parent = Misc_2
-TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_10.BackgroundTransparency = 1.000
-TextLabel_10.Position = UDim2.new(0.216674149, 0, 0.0116959065, 0)
-TextLabel_10.Size = UDim2.new(0, 206, 0, 35)
-TextLabel_10.Font = Enum.Font.SourceSans
-TextLabel_10.Text = "Misc"
-TextLabel_10.TextColor3 = Color3.fromRGB(170, 255, 255)
-TextLabel_10.TextSize = 19.000
+TextLabel_11.Parent = Misc_2
+TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_11.BackgroundTransparency = 1.000
+TextLabel_11.Position = UDim2.new(0.216674149, 0, 0.0116959065, 0)
+TextLabel_11.Size = UDim2.new(0, 206, 0, 35)
+TextLabel_11.Font = Enum.Font.SourceSans
+TextLabel_11.Text = "Misc"
+TextLabel_11.TextColor3 = Color3.fromRGB(170, 255, 255)
+TextLabel_11.TextSize = 19.000
 
 Frame14.Name = "Frame14"
 Frame14.Parent = Misc_2
@@ -1297,15 +1340,15 @@ Frame11.BorderColor3 = Color3.fromRGB(30, 30, 30)
 Frame11.Position = UDim2.new(-5.65448318e-06, 0, 0, 0)
 Frame11.Size = UDim2.new(0, 365, 0, 63)
 
-TextLabel_11.Parent = Misc_2
-TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_11.BackgroundTransparency = 1.000
-TextLabel_11.Position = UDim2.new(0.505502522, 0, 0.383040905, 0)
-TextLabel_11.Size = UDim2.new(0, 80, 0, 35)
-TextLabel_11.Font = Enum.Font.SourceSans
-TextLabel_11.Text = "ShotSlices:"
-TextLabel_11.TextColor3 = Color3.fromRGB(138, 138, 138)
-TextLabel_11.TextSize = 15.000
+TextLabel_12.Parent = Misc_2
+TextLabel_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_12.BackgroundTransparency = 1.000
+TextLabel_12.Position = UDim2.new(0.505502522, 0, 0.383040905, 0)
+TextLabel_12.Size = UDim2.new(0, 80, 0, 35)
+TextLabel_12.Font = Enum.Font.SourceSans
+TextLabel_12.Text = "ShotSlices:"
+TextLabel_12.TextColor3 = Color3.fromRGB(138, 138, 138)
+TextLabel_12.TextSize = 15.000
 
 Frame12.Name = "Frame12"
 Frame12.Parent = Misc_2
@@ -1378,15 +1421,15 @@ Stoplong.Text = ""
 Stoplong.TextColor3 = Color3.fromRGB(0, 0, 0)
 Stoplong.TextSize = 14.000
 
-TextLabel_12.Parent = Misc_2
-TextLabel_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_12.BackgroundTransparency = 1.000
-TextLabel_12.Position = UDim2.new(0.527300894, 0, 0.687134504, 0)
-TextLabel_12.Size = UDim2.new(0, 80, 0, 35)
-TextLabel_12.Font = Enum.Font.SourceSans
-TextLabel_12.Text = "LongTp:"
-TextLabel_12.TextColor3 = Color3.fromRGB(138, 138, 138)
-TextLabel_12.TextSize = 15.000
+TextLabel_13.Parent = Misc_2
+TextLabel_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_13.BackgroundTransparency = 1.000
+TextLabel_13.Position = UDim2.new(0.527300894, 0, 0.687134504, 0)
+TextLabel_13.Size = UDim2.new(0, 80, 0, 35)
+TextLabel_13.Font = Enum.Font.SourceSans
+TextLabel_13.Text = "LongTp:"
+TextLabel_13.TextColor3 = Color3.fromRGB(138, 138, 138)
+TextLabel_13.TextSize = 15.000
 
 kill.Name = "kill"
 kill.Parent = Misc_2
@@ -1427,15 +1470,15 @@ Slicekey.Text = ""
 Slicekey.TextColor3 = Color3.fromRGB(220, 220, 220)
 Slicekey.TextSize = 14.000
 
-TextLabel_13.Parent = Misc_2
-TextLabel_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_13.BackgroundTransparency = 1.000
-TextLabel_13.Position = UDim2.new(0.0395624191, 0, 0.383040935, 0)
-TextLabel_13.Size = UDim2.new(0, 80, 0, 35)
-TextLabel_13.Font = Enum.Font.SourceSans
-TextLabel_13.Text = "Slice Key:"
-TextLabel_13.TextColor3 = Color3.fromRGB(138, 138, 138)
-TextLabel_13.TextSize = 15.000
+TextLabel_14.Parent = Misc_2
+TextLabel_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_14.BackgroundTransparency = 1.000
+TextLabel_14.Position = UDim2.new(0.0395624191, 0, 0.383040935, 0)
+TextLabel_14.Size = UDim2.new(0, 80, 0, 35)
+TextLabel_14.Font = Enum.Font.SourceSans
+TextLabel_14.Text = "Slice Key:"
+TextLabel_14.TextColor3 = Color3.fromRGB(138, 138, 138)
+TextLabel_14.TextSize = 15.000
 
 Teleports.Name = "Teleports"
 Teleports.Parent = MainMenu
@@ -1457,20 +1500,20 @@ Chin.TextColor3 = Color3.fromRGB(103, 154, 154)
 Chin.TextSize = 16.000
 Chin.TextWrapped = true
 
-Frame_3.Parent = Chin
-Frame_3.BackgroundColor3 = Color3.fromRGB(35, 199, 7)
-Frame_3.BorderColor3 = Color3.fromRGB(35, 199, 7)
-Frame_3.Size = UDim2.new(0, 6, 0, 22)
+Frame_4.Parent = Chin
+Frame_4.BackgroundColor3 = Color3.fromRGB(35, 199, 7)
+Frame_4.BorderColor3 = Color3.fromRGB(35, 199, 7)
+Frame_4.Size = UDim2.new(0, 6, 0, 22)
 
-TextLabel_14.Parent = Teleports
-TextLabel_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_14.BackgroundTransparency = 1.000
-TextLabel_14.Position = UDim2.new(0.216674149, 0, 0.0116959065, 0)
-TextLabel_14.Size = UDim2.new(0, 206, 0, 35)
-TextLabel_14.Font = Enum.Font.SourceSans
-TextLabel_14.Text = "Teleport"
-TextLabel_14.TextColor3 = Color3.fromRGB(170, 255, 255)
-TextLabel_14.TextSize = 19.000
+TextLabel_15.Parent = Teleports
+TextLabel_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_15.BackgroundTransparency = 1.000
+TextLabel_15.Position = UDim2.new(0.216674149, 0, 0.0116959065, 0)
+TextLabel_15.Size = UDim2.new(0, 206, 0, 35)
+TextLabel_15.Font = Enum.Font.SourceSans
+TextLabel_15.Text = "Teleport"
+TextLabel_15.TextColor3 = Color3.fromRGB(170, 255, 255)
+TextLabel_15.TextSize = 19.000
 
 Frame67.Name = "Frame67"
 Frame67.Parent = Teleports
@@ -1500,10 +1543,10 @@ Kyoshi_2.TextColor3 = Color3.fromRGB(103, 154, 154)
 Kyoshi_2.TextSize = 16.000
 Kyoshi_2.TextWrapped = true
 
-Frame_4.Parent = Kyoshi_2
-Frame_4.BackgroundColor3 = Color3.fromRGB(35, 199, 7)
-Frame_4.BorderColor3 = Color3.fromRGB(35, 199, 7)
-Frame_4.Size = UDim2.new(0, 6, 0, 22)
+Frame_5.Parent = Kyoshi_2
+Frame_5.BackgroundColor3 = Color3.fromRGB(35, 199, 7)
+Frame_5.BorderColor3 = Color3.fromRGB(35, 199, 7)
+Frame_5.Size = UDim2.new(0, 6, 0, 22)
 
 Firecity.Name = "Firecity"
 Firecity.Parent = Teleports
@@ -1518,10 +1561,10 @@ Firecity.TextColor3 = Color3.fromRGB(103, 154, 154)
 Firecity.TextSize = 16.000
 Firecity.TextWrapped = true
 
-Frame_5.Parent = Firecity
-Frame_5.BackgroundColor3 = Color3.fromRGB(248, 0, 0)
-Frame_5.BorderColor3 = Color3.fromRGB(248, 0, 0)
-Frame_5.Size = UDim2.new(0, 6, 0, 22)
+Frame_6.Parent = Firecity
+Frame_6.BackgroundColor3 = Color3.fromRGB(248, 0, 0)
+Frame_6.BorderColor3 = Color3.fromRGB(248, 0, 0)
+Frame_6.Size = UDim2.new(0, 6, 0, 22)
 
 south.Name = "south"
 south.Parent = Teleports
@@ -1536,10 +1579,10 @@ south.TextColor3 = Color3.fromRGB(103, 154, 154)
 south.TextSize = 16.000
 south.TextWrapped = true
 
-Frame_6.Parent = south
-Frame_6.BackgroundColor3 = Color3.fromRGB(0, 15, 230)
-Frame_6.BorderColor3 = Color3.fromRGB(0, 15, 230)
-Frame_6.Size = UDim2.new(0, 6, 0, 22)
+Frame_7.Parent = south
+Frame_7.BackgroundColor3 = Color3.fromRGB(0, 15, 230)
+Frame_7.BorderColor3 = Color3.fromRGB(0, 15, 230)
+Frame_7.Size = UDim2.new(0, 6, 0, 22)
 
 north.Name = "north"
 north.Parent = Teleports
@@ -1554,10 +1597,10 @@ north.TextColor3 = Color3.fromRGB(103, 154, 154)
 north.TextSize = 16.000
 north.TextWrapped = true
 
-Frame_7.Parent = north
-Frame_7.BackgroundColor3 = Color3.fromRGB(0, 15, 230)
-Frame_7.BorderColor3 = Color3.fromRGB(0, 15, 230)
-Frame_7.Size = UDim2.new(0, 6, 0, 22)
+Frame_8.Parent = north
+Frame_8.BackgroundColor3 = Color3.fromRGB(0, 15, 230)
+Frame_8.BorderColor3 = Color3.fromRGB(0, 15, 230)
+Frame_8.Size = UDim2.new(0, 6, 0, 22)
 
 fireisland.Name = "fireisland"
 fireisland.Parent = Teleports
@@ -1572,10 +1615,10 @@ fireisland.TextColor3 = Color3.fromRGB(103, 154, 154)
 fireisland.TextSize = 16.000
 fireisland.TextWrapped = true
 
-Frame_8.Parent = fireisland
-Frame_8.BackgroundColor3 = Color3.fromRGB(248, 0, 0)
-Frame_8.BorderColor3 = Color3.fromRGB(248, 0, 0)
-Frame_8.Size = UDim2.new(0, 6, 0, 22)
+Frame_9.Parent = fireisland
+Frame_9.BackgroundColor3 = Color3.fromRGB(248, 0, 0)
+Frame_9.BorderColor3 = Color3.fromRGB(248, 0, 0)
+Frame_9.Size = UDim2.new(0, 6, 0, 22)
 
 Desert.Name = "Desert"
 Desert.Parent = Teleports
@@ -1590,10 +1633,10 @@ Desert.TextColor3 = Color3.fromRGB(103, 154, 154)
 Desert.TextSize = 16.000
 Desert.TextWrapped = true
 
-Frame_9.Parent = Desert
-Frame_9.BackgroundColor3 = Color3.fromRGB(212, 177, 2)
-Frame_9.BorderColor3 = Color3.fromRGB(35, 199, 7)
-Frame_9.Size = UDim2.new(0, 6, 0, 22)
+Frame_10.Parent = Desert
+Frame_10.BackgroundColor3 = Color3.fromRGB(212, 177, 2)
+Frame_10.BorderColor3 = Color3.fromRGB(35, 199, 7)
+Frame_10.Size = UDim2.new(0, 6, 0, 22)
 
 Council.Name = "Council"
 Council.Parent = Teleports
@@ -1608,10 +1651,10 @@ Council.TextColor3 = Color3.fromRGB(103, 154, 154)
 Council.TextSize = 16.000
 Council.TextWrapped = true
 
-Frame_10.Parent = Council
-Frame_10.BackgroundColor3 = Color3.fromRGB(196, 199, 196)
-Frame_10.BorderColor3 = Color3.fromRGB(196, 199, 196)
-Frame_10.Size = UDim2.new(0, 6, 0, 22)
+Frame_11.Parent = Council
+Frame_11.BackgroundColor3 = Color3.fromRGB(196, 199, 196)
+Frame_11.BorderColor3 = Color3.fromRGB(196, 199, 196)
+Frame_11.Size = UDim2.new(0, 6, 0, 22)
 
 Airtemple.Name = "Airtemple"
 Airtemple.Parent = Teleports
@@ -1626,10 +1669,10 @@ Airtemple.TextColor3 = Color3.fromRGB(103, 154, 154)
 Airtemple.TextSize = 16.000
 Airtemple.TextWrapped = true
 
-Frame_11.Parent = Airtemple
-Frame_11.BackgroundColor3 = Color3.fromRGB(196, 199, 196)
-Frame_11.BorderColor3 = Color3.fromRGB(196, 199, 196)
-Frame_11.Size = UDim2.new(0, 6, 0, 22)
+Frame_12.Parent = Airtemple
+Frame_12.BackgroundColor3 = Color3.fromRGB(196, 199, 196)
+Frame_12.BorderColor3 = Color3.fromRGB(196, 199, 196)
+Frame_12.Size = UDim2.new(0, 6, 0, 22)
 
 Frame66.Name = "Frame66"
 Frame66.Parent = Teleports
@@ -1637,15 +1680,15 @@ Frame66.BackgroundColor3 = Color3.fromRGB(170, 170, 127)
 Frame66.Position = UDim2.new(0.415755689, 0, 0.219924122, 0)
 Frame66.Size = UDim2.new(0, 0, 0, 249)
 
-TextLabel_15.Parent = Teleports
-TextLabel_15.BackgroundColor3 = Color3.fromRGB(67, 67, 67)
-TextLabel_15.BackgroundTransparency = 0.300
-TextLabel_15.Position = UDim2.new(0.415584207, 0, 0.219924122, 0)
-TextLabel_15.Size = UDim2.new(0, 206, 0, 258)
-TextLabel_15.Font = Enum.Font.SourceSans
-TextLabel_15.Text = "Next Update"
-TextLabel_15.TextColor3 = Color3.fromRGB(149, 149, 149)
-TextLabel_15.TextSize = 23.000
+TextLabel_16.Parent = Teleports
+TextLabel_16.BackgroundColor3 = Color3.fromRGB(67, 67, 67)
+TextLabel_16.BackgroundTransparency = 0.300
+TextLabel_16.Position = UDim2.new(0.415584207, 0, 0.219924122, 0)
+TextLabel_16.Size = UDim2.new(0, 206, 0, 258)
+TextLabel_16.Font = Enum.Font.SourceSans
+TextLabel_16.Text = "Next Update"
+TextLabel_16.TextColor3 = Color3.fromRGB(149, 149, 149)
+TextLabel_16.TextSize = 23.000
 
 Players_2.Name = "Players"
 Players_2.Parent = MainMenu
@@ -1680,15 +1723,15 @@ Check.TextColor3 = Color3.fromRGB(175, 175, 175)
 Check.TextSize = 16.000
 Check.TextWrapped = true
 
-TextLabel_16.Parent = Players_2
-TextLabel_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_16.BackgroundTransparency = 1.000
-TextLabel_16.Position = UDim2.new(0.216674149, 0, 0.0116959065, 0)
-TextLabel_16.Size = UDim2.new(0, 206, 0, 35)
-TextLabel_16.Font = Enum.Font.SourceSans
-TextLabel_16.Text = "Stats"
-TextLabel_16.TextColor3 = Color3.fromRGB(170, 255, 255)
-TextLabel_16.TextSize = 19.000
+TextLabel_17.Parent = Players_2
+TextLabel_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_17.BackgroundTransparency = 1.000
+TextLabel_17.Position = UDim2.new(0.216674149, 0, 0.0116959065, 0)
+TextLabel_17.Size = UDim2.new(0, 206, 0, 35)
+TextLabel_17.Font = Enum.Font.SourceSans
+TextLabel_17.Text = "Stats"
+TextLabel_17.TextColor3 = Color3.fromRGB(170, 255, 255)
+TextLabel_17.TextSize = 19.000
 
 Frames66.Name = "Frames66"
 Frames66.Parent = Players_2
@@ -2109,15 +2152,15 @@ Stamina_2.TextColor3 = Color3.fromRGB(120, 180, 180)
 Stamina_2.TextSize = 16.000
 Stamina_2.TextWrapped = true
 
-TextLabel_17.Parent = Stats_2
-TextLabel_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_17.BackgroundTransparency = 1.000
-TextLabel_17.Position = UDim2.new(0.216674149, 0, 0.0116959065, 0)
-TextLabel_17.Size = UDim2.new(0, 206, 0, 35)
-TextLabel_17.Font = Enum.Font.SourceSans
-TextLabel_17.Text = "Stats"
-TextLabel_17.TextColor3 = Color3.fromRGB(170, 255, 255)
-TextLabel_17.TextSize = 19.000
+TextLabel_18.Parent = Stats_2
+TextLabel_18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_18.BackgroundTransparency = 1.000
+TextLabel_18.Position = UDim2.new(0.216674149, 0, 0.0116959065, 0)
+TextLabel_18.Size = UDim2.new(0, 206, 0, 35)
+TextLabel_18.Font = Enum.Font.SourceSans
+TextLabel_18.Text = "Stats"
+TextLabel_18.TextColor3 = Color3.fromRGB(170, 255, 255)
+TextLabel_18.TextSize = 19.000
 
 Frames.Name = "Frames"
 Frames.Parent = Stats_2
@@ -2134,14 +2177,14 @@ Framest.BorderColor3 = Color3.fromRGB(30, 30, 30)
 Framest.Position = UDim2.new(-5.65448318e-06, 0, 0, 0)
 Framest.Size = UDim2.new(0, 365, 0, 63)
 
-Frame_12.Parent = Stats_2
-Frame_12.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
-Frame_12.BorderColor3 = Color3.fromRGB(35, 35, 35)
-Frame_12.Position = UDim2.new(0.722070813, 0, 0.225146204, 0)
-Frame_12.Size = UDim2.new(0, 72, 0, 29)
+Frame_13.Parent = Stats_2
+Frame_13.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Frame_13.BorderColor3 = Color3.fromRGB(35, 35, 35)
+Frame_13.Position = UDim2.new(0.722070813, 0, 0.225146204, 0)
+Frame_13.Size = UDim2.new(0, 72, 0, 29)
 
 Avataron.Name = "Avataron"
-Avataron.Parent = Frame_12
+Avataron.Parent = Frame_13
 Avataron.BackgroundColor3 = Color3.fromRGB(207, 0, 0)
 Avataron.Position = UDim2.new(-4.23855255e-07, 0, 0, 0)
 Avataron.Size = UDim2.new(0, 35, 0, 29)
@@ -2151,7 +2194,7 @@ Avataron.TextColor3 = Color3.fromRGB(0, 0, 0)
 Avataron.TextSize = 14.000
 
 Avataroff.Name = "Avataroff"
-Avataroff.Parent = Frame_12
+Avataroff.Parent = Frame_13
 Avataroff.BackgroundColor3 = Color3.fromRGB(0, 141, 0)
 Avataroff.Position = UDim2.new(0.513888478, 0, 0, 0)
 Avataroff.Size = UDim2.new(0, 35, 0, 29)
@@ -2161,34 +2204,34 @@ Avataroff.Text = ""
 Avataroff.TextColor3 = Color3.fromRGB(0, 0, 0)
 Avataroff.TextSize = 14.000
 
-TextLabel_18.Parent = Stats_2
-TextLabel_18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_18.BackgroundTransparency = 1.000
-TextLabel_18.Position = UDim2.new(0.513676941, 0, 0.216374263, 0)
-TextLabel_18.Size = UDim2.new(0, 64, 0, 35)
-TextLabel_18.Font = Enum.Font.SourceSans
-TextLabel_18.Text = "Avatar State:"
-TextLabel_18.TextColor3 = Color3.fromRGB(123, 185, 185)
-TextLabel_18.TextSize = 15.000
-
 TextLabel_19.Parent = Stats_2
 TextLabel_19.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_19.BackgroundTransparency = 1.000
-TextLabel_19.Position = UDim2.new(0.0668104589, 0, 0.216374263, 0)
+TextLabel_19.Position = UDim2.new(0.513676941, 0, 0.216374263, 0)
 TextLabel_19.Size = UDim2.new(0, 64, 0, 35)
 TextLabel_19.Font = Enum.Font.SourceSans
-TextLabel_19.Text = "God Mode:"
+TextLabel_19.Text = "Avatar State:"
 TextLabel_19.TextColor3 = Color3.fromRGB(123, 185, 185)
 TextLabel_19.TextSize = 15.000
 
-Frame_13.Parent = Stats_2
-Frame_13.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
-Frame_13.BorderColor3 = Color3.fromRGB(35, 35, 35)
-Frame_13.Position = UDim2.new(0.269754738, 0, 0.225146204, 0)
-Frame_13.Size = UDim2.new(0, 72, 0, 29)
+TextLabel_20.Parent = Stats_2
+TextLabel_20.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_20.BackgroundTransparency = 1.000
+TextLabel_20.Position = UDim2.new(0.0668104589, 0, 0.216374263, 0)
+TextLabel_20.Size = UDim2.new(0, 64, 0, 35)
+TextLabel_20.Font = Enum.Font.SourceSans
+TextLabel_20.Text = "God Mode:"
+TextLabel_20.TextColor3 = Color3.fromRGB(123, 185, 185)
+TextLabel_20.TextSize = 15.000
+
+Frame_14.Parent = Stats_2
+Frame_14.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Frame_14.BorderColor3 = Color3.fromRGB(35, 35, 35)
+Frame_14.Position = UDim2.new(0.269754738, 0, 0.225146204, 0)
+Frame_14.Size = UDim2.new(0, 72, 0, 29)
 
 Godon.Name = "Godon"
-Godon.Parent = Frame_13
+Godon.Parent = Frame_14
 Godon.BackgroundColor3 = Color3.fromRGB(207, 0, 0)
 Godon.Position = UDim2.new(-4.23855255e-07, 0, 0, 0)
 Godon.Size = UDim2.new(0, 35, 0, 29)
@@ -2198,7 +2241,7 @@ Godon.TextColor3 = Color3.fromRGB(0, 0, 0)
 Godon.TextSize = 14.000
 
 Godoff.Name = "Godoff"
-Godoff.Parent = Frame_13
+Godoff.Parent = Frame_14
 Godoff.BackgroundColor3 = Color3.fromRGB(0, 141, 0)
 Godoff.Position = UDim2.new(0.513888478, 0, 0, 0)
 Godoff.Size = UDim2.new(0, 35, 0, 29)
@@ -2223,15 +2266,15 @@ MaxLevel.TextWrapped = true
 
 -- Scripts:
 
-local function IVJEPDZ_fake_script() -- Exit.Script 
+local function CWUK_fake_script() -- Exit.Script 
 	local script = Instance.new('Script', Exit)
 
 	script.Parent.Parent.Exit.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.Parent.Parent.SynX:Destroy()
 	end)
 end
-coroutine.wrap(IVJEPDZ_fake_script)()
-local function VTVFSQ_fake_script() -- Framechap.Buttons 
+coroutine.wrap(CWUK_fake_script)()
+local function RBFSNPZ_fake_script() -- Framechap.Buttons 
 	local script = Instance.new('Script', Framechap)
 
 	script.Parent.Home.MouseButton1Click:Connect(function()
@@ -2325,8 +2368,8 @@ local function VTVFSQ_fake_script() -- Framechap.Buttons
 		script.Parent.Parent.Players.Visible = true
 	end)
 end
-coroutine.wrap(VTVFSQ_fake_script)()
-local function DNUBEF_fake_script() -- Quests.Script1 
+coroutine.wrap(RBFSNPZ_fake_script)()
+local function ZGHS_fake_script() -- Quests.Script1 
 	local script = Instance.new('Script', Quests)
 
 	script.Parent.AirQuest1.MouseButton1Click:Connect(function()
@@ -3404,8 +3447,8 @@ local function DNUBEF_fake_script() -- Quests.Script1
 		WLotus10("WhiteLotus1", 10)
 	end)
 end
-coroutine.wrap(DNUBEF_fake_script)()
-local function DXME_fake_script() -- Quests.Script2 
+coroutine.wrap(ZGHS_fake_script)()
+local function ODKFXH_fake_script() -- Quests.Script2 
 	local script = Instance.new('Script', Quests)
 
 	script.Parent.earthtofire.MouseButton1Click:Connect(function()
@@ -3517,16 +3560,16 @@ local function DXME_fake_script() -- Quests.Script2
 		script.Parent.Questname.Text = "Air Temple"
 	end)
 end
-coroutine.wrap(DXME_fake_script)()
-local function YANARHG_fake_script() -- Infstam.Script 
+coroutine.wrap(ODKFXH_fake_script)()
+local function KTZJ_fake_script() -- Infstam.Script 
 	local script = Instance.new('Script', Infstam)
 
 	script.Parent.Parent.Infstam.MouseButton1Click:Connect(function()
 		game.Players.LocalPlayer.Character.AdditionalStamina.Value = 10000000000000000
 	end)
 end
-coroutine.wrap(YANARHG_fake_script)()
-local function ZLYOQ_fake_script() -- Frame_2.Script 
+coroutine.wrap(KTZJ_fake_script)()
+local function TGKW_fake_script() -- Frame_2.Script 
 	local script = Instance.new('Script', Frame_2)
 
 	script.Parent.StQ.MouseButton1Click:Connect(function()
@@ -3702,8 +3745,8 @@ local function ZLYOQ_fake_script() -- Frame_2.Script
 		end
 	end)
 end
-coroutine.wrap(ZLYOQ_fake_script)()
-local function JPKKKMJ_fake_script() -- Frame2.Script 
+coroutine.wrap(TGKW_fake_script)()
+local function PQNRKEL_fake_script() -- Frame2.Script 
 	local script = Instance.new('Script', Frame2)
 
 	script.Parent.Lava.MouseButton1Click:Connect(function()
@@ -4082,16 +4125,35 @@ local function JPKKKMJ_fake_script() -- Frame2.Script
 		game:GetService("Players").LocalPlayer.PlayerData.Stats.Level.Value == 350 
 	end)
 end
-coroutine.wrap(JPKKKMJ_fake_script)()
-local function YPMZNZ_fake_script() -- BoostVehicle.Script 
+coroutine.wrap(PQNRKEL_fake_script)()
+local function PPWW_fake_script() -- BoostVehicle.Script 
 	local script = Instance.new('Script', BoostVehicle)
 
 	script.Parent.Parent.BoostVehicle.MouseButton1Click:Connect(function()
 		game.Workspace.Vehicle.VehicleConfig.MaxSpeed.Value = 600
 	end)
 end
-coroutine.wrap(YPMZNZ_fake_script)()
-local function KWWQVDY_fake_script() -- Settings.Scriptsetting 
+coroutine.wrap(PPWW_fake_script)()
+local function XZRELBI_fake_script() -- Frame_3.Script 
+	local script = Instance.new('Script', Frame_3)
+
+	script.Parent.wl.MouseButton1Click:Connect(function()
+		script.Parent.wl.Visible = false
+		script.Parent.rl.Visible = true
+		local l=1;for m=1,10 do 
+			local k={[1]="AdvanceStep",[2]={["QuestName"]="WhiteLotus1",["Step"]=l}}spawn(function()
+				game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(k))end)l=l+1 end;
+			end)
+	script.Parent.rl.MouseButton1Click:Connect(function()
+		script.Parent.wl.Visible = true
+		script.Parent.rl.Visible = false
+		local n=1;for m=1,16 do 
+			local k={[1]="AdvanceStep",[2]={["QuestName"]="RedLotus1",["Step"]=n}}spawn(function()
+				game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(k))end)n=n+1 end;
+			end)
+end
+coroutine.wrap(XZRELBI_fake_script)()
+function WZFNOD_fake_script() -- Settings.Scriptsetting 
 	local script = Instance.new('Script', Settings)
 
 	script.Parent.Default.MouseButton1Click:Connect(function()
@@ -4139,13 +4201,11 @@ local function KWWQVDY_fake_script() -- Settings.Scriptsetting
 			
 	end)
 	script.Parent.Restart.MouseButton1Click:Connect(function()
-		game.CoreGui.SynX:Destroy()
-		wait(1)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/imiranian/menu/main/load", true))()
+		
 	end)
 end
-coroutine.wrap(KWWQVDY_fake_script)()
-local function LPSW_fake_script() -- BoxPlayer.Script 
+coroutine.wrap(WZFNOD_fake_script)()
+ function YQKG_fake_script() -- BoxPlayer.Script 
 	local script = Instance.new('Script', BoxPlayer)
 
 	local players = game.Players
@@ -4181,8 +4241,8 @@ local function LPSW_fake_script() -- BoxPlayer.Script
 		end 
 	end)
 end
-coroutine.wrap(LPSW_fake_script)()
- function TXNIQGX_fake_script() -- Frame12.Script 
+coroutine.wrap(YQKG_fake_script)()
+ function MFVAXZR_fake_script() -- Frame12.Script 
 	local script = Instance.new('Script', Frame12)
 
 	script.Parent.shotslice.MouseButton1Click:Connect(function()
@@ -4243,8 +4303,8 @@ coroutine.wrap(LPSW_fake_script)()
 		end
 	end)
 end
-coroutine.wrap(TXNIQGX_fake_script)()
- function NWWMZ_fake_script() -- Frame13.Script 
+coroutine.wrap(MFVAXZR_fake_script)()
+function CMYIQ_fake_script() -- Frame13.Script 
 	local script = Instance.new('Script', Frame13)
 
 	script.Parent.Startlong.MouseButton1Click:Connect(function()
@@ -4273,8 +4333,8 @@ coroutine.wrap(TXNIQGX_fake_script)()
 		end
 	end)
 end
-coroutine.wrap(NWWMZ_fake_script)()
-function RQEI_fake_script() -- Misc_2.Scriptmisc 
+coroutine.wrap(CMYIQ_fake_script)()
+function IKRN_fake_script() -- Misc_2.Scriptmisc 
 	local script = Instance.new('Script', Misc_2)
 
 	script.Parent.Fly.MouseButton1Click:Connect(function()
@@ -4430,8 +4490,8 @@ function RQEI_fake_script() -- Misc_2.Scriptmisc
 		end
 	end)
 end
-coroutine.wrap(RQEI_fake_script)()
- function VSGVCHN_fake_script() -- MainMenu.Script 
+coroutine.wrap(IKRN_fake_script)()
+function LEEZIT_fake_script() -- MainMenu.Script 
 	local script = Instance.new('Script', MainMenu)
 
 	local mouse = game.Players.LocalPlayer:GetMouse()
@@ -4452,8 +4512,8 @@ coroutine.wrap(RQEI_fake_script)()
 		end
 	end)
 end
-coroutine.wrap(VSGVCHN_fake_script)()
- function DTJWOZR_fake_script() -- Teleports.Script 
+coroutine.wrap(LEEZIT_fake_script)()
+ function LRPX_fake_script() -- Teleports.Script 
 	local script = Instance.new('Script', Teleports)
 
 	script.Parent.Airtemple.MouseButton1Click:Connect(function()
@@ -4484,8 +4544,8 @@ coroutine.wrap(VSGVCHN_fake_script)()
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(5659, 3, 794)
 	end)
 end
-coroutine.wrap(DTJWOZR_fake_script)()
-function RBCFK_fake_script() -- Player.Script 
+coroutine.wrap(LRPX_fake_script)()
+ function DTYR_fake_script() -- Player.Script 
 	local script = Instance.new('Script', Player)
 
 	local players = game.Players
@@ -4521,8 +4581,8 @@ function RBCFK_fake_script() -- Player.Script
 		end 
 	end)
 end
-coroutine.wrap(RBCFK_fake_script)()
- function QKHW_fake_script() -- Check.Script 
+coroutine.wrap(DTYR_fake_script)()
+function IWHUJJ_fake_script() -- Check.Script 
 	local script = Instance.new('Script', Check)
 
 	script.Parent.Parent.Check.MouseButton1Click:Connect(function()
@@ -4538,18 +4598,10 @@ coroutine.wrap(RBCFK_fake_script)()
 		script.Parent.Parent.levelc.Text = plr.PlayerData.Stats.Level.Value
 	end)
 end
-coroutine.wrap(QKHW_fake_script)()
- function UYYUVQ_fake_script() -- MaxStats.Script 
+coroutine.wrap(IWHUJJ_fake_script)()
+function PSQBEH_fake_script() -- MaxStats.Script 
 	local script = Instance.new('Script', MaxStats)
-	script.Parent.Parent.MaxLevel.MouseButton1Click:Connect(function()
-function AutoQuest()local l=1;for m=1,10 do 
-							local k={[1]="AdvanceStep",[2]={["QuestName"]="WhiteLotus1",["Step"]=l}}spawn(function()
-								game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(k))end)l=l+1 end;
-						local n=1;for m=1,16 do 
-							local k={[1]="AdvanceStep",[2]={["QuestName"]="RedLotus1",["Step"]=n}}spawn(function()
-								game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(k))end)n=n+1 end end;repeat wait()spawn(function()AutoQuest()end)until
-					game:GetService("Players").LocalPlayer.PlayerData.Stats.Level.Value == 350 
-end)
+
 	script.Parent.Parent.MaxStats.MouseButton1Click:Connect(function()
 		_G.Stats = true
 		game:GetService('RunService').RenderStepped:connect(function() if _G.Stats then
@@ -4580,8 +4632,8 @@ end)
 		end)
 	end)
 end
-coroutine.wrap(UYYUVQ_fake_script)()
- function ZCKA_fake_script() -- Strength_2.Script 
+coroutine.wrap(PSQBEH_fake_script)()
+function EETPGQE_fake_script() -- Strength_2.Script 
 	local script = Instance.new('Script', Strength_2)
 
 	script.Parent.Parent.Strength.MouseButton1Click:Connect(function()
@@ -4605,17 +4657,17 @@ coroutine.wrap(UYYUVQ_fake_script)()
 		
 	end)
 end
-coroutine.wrap(ZCKA_fake_script)()
- function TZWGD_fake_script() -- Stamina_2.Script 
+coroutine.wrap(EETPGQE_fake_script)()
+function GWKDARD_fake_script() -- Stamina_2.Script 
 	local script = Instance.new('Script', Stamina_2)
 
 	script.Parent.Parent.Stamina.MouseButton1Click:Connect(function()
 	game.Players.LocalPlayer.PlayerData.Stats.Stamina.Value = (script.Parent.Parent.StamBox.Text)
 	end)
 end
-coroutine.wrap(TZWGD_fake_script)()
- function QNTYZ_fake_script() -- Frame_12.Script 
-	local script = Instance.new('Script', Frame_12)
+coroutine.wrap(GWKDARD_fake_script)()
+function ARISNY_fake_script() -- Frame_13.Script 
+	local script = Instance.new('Script', Frame_13)
 
 	local Eartha = {
 		[1] = "NewGame",
@@ -4700,9 +4752,9 @@ coroutine.wrap(TZWGD_fake_script)()
 	script.Parent.Avataron.MouseButton1Click:Connect(function()
 		script.Parent.Avataron.Visible = false
 		script.Parent.Avataroff.Visible = true
-	getgenv().Avatar = true;
-	while wait() do
-		if getgenv().Avatar == true then
+		getgenv().Avatar = true;
+		while wait() do
+			if getgenv().Avatar == true then
 				game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(Eartha))
 				_G.Stats = true
 				game:GetService('RunService').RenderStepped:connect(function() if _G.Stats then
@@ -4732,7 +4784,7 @@ coroutine.wrap(TZWGD_fake_script)()
 						local k={[1]="AdvanceStep",[2]={["QuestName"]="AirQuest5",["Step"]=n}}spawn(function()
 							game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(k))end)n=n+1 end end;repeat wait()spawn(function()AutoQuest()end)until
 				game:GetService("Players").LocalPlayer.PlayerData.Stats.Level.Value == 350 
-				
+	
 				wait(4)
 				game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(Watera))
 				_G.Stats = true
@@ -4828,7 +4880,7 @@ coroutine.wrap(TZWGD_fake_script)()
 	
 				wait(4)
 			end
-			end
+		end
 	end)
 	script.Parent.Avataroff.MouseButton1Click:Connect(function()
 		script.Parent.Avataron.Visible = true
@@ -4841,11 +4893,11 @@ coroutine.wrap(TZWGD_fake_script)()
 		wait(8)
 		getgenv().Avatar = false;
 		_G.Stats = false
-		end)
+	end)
 end
-coroutine.wrap(QNTYZ_fake_script)()
-function NWQQQS_fake_script() -- Frame_13.Script 
-	local script = Instance.new('Script', Frame_13)
+coroutine.wrap(ARISNY_fake_script)()
+function DSTD_fake_script() -- Frame_14.Script 
+	local script = Instance.new('Script', Frame_14)
 
 	script.Parent.Godon.MouseButton1Click:Connect(function()
 		script.Parent.Godon.Visible = false
@@ -4873,23 +4925,10 @@ function NWQQQS_fake_script() -- Frame_13.Script
 		getgenv().Godmod = false;
 	end)
 end
-coroutine.wrap(NWQQQS_fake_script)()
- function VZNXM_fake_script() -- MaxLevel.Script 
+coroutine.wrap(DSTD_fake_script)()
+ function JDPTG_fake_script() -- MaxLevel.Script 
 	local script = Instance.new('Script', MaxLevel)
-		while true do
-		if game.CoreGui.RemoteSpy.BG.Visible == true then
-			game.Players.LocalPlayer:Kick()
-			wait(2)
-		end
-			wait(2)
-	end
-	while true do
-		if game.CoreGui.SimpleSpy2.Background.Visible == true then
-			game.Players.LocalPlayer:Kick()
-			wait(2)
-		end
-			wait(2)
-	end
+
 	script.Parent.Parent.MaxLevel.MouseButton1Click:Connect(function()
 		function AutoQuest()local l=1;for m=1,10 do 
 				local k={[1]="AdvanceStep",[2]={["QuestName"]="WhiteLotus1",["Step"]=l}}spawn(function()
@@ -4899,6 +4938,7 @@ coroutine.wrap(NWQQQS_fake_script)()
 					game:GetService("ReplicatedStorage").NetworkFolder.GameFunction:InvokeServer(unpack(k))end)n=n+1 end end;repeat wait()spawn(function()AutoQuest()end)until
 		game:GetService("Players").LocalPlayer.PlayerData.Stats.Level.Value == 350 
 	
+	
 	end)
 end
-coroutine.wrap(VZNXM_fake_script)()
+coroutine.wrap(JDPTG_fake_script)()
