@@ -12,5 +12,5 @@ or player.UserId == 1030263172 -- iilris
 or player.UserId == 468082196 then -- Daniel 
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/imiranian/menu/main/load", true))()
 else
-	game.Players.LocalPlayer:Kick(You are not whitelist)
+	game.Players.LocalPlayer:Kick("You Are Not Whitelist")
 end
