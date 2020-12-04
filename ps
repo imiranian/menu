@@ -1,0 +1,72 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Pass = Instance.new("ScreenGui")
+local Pass_2 = Instance.new("Frame")
+local ImageLabel = Instance.new("ImageLabel")
+local Frame = Instance.new("Frame")
+local TextBox = Instance.new("TextBox")
+local Enter = Instance.new("TextButton")
+
+--Properties:
+
+Pass.Name = "Pass"
+Pass.Parent = game.CoreGui
+
+Pass_2.Name = "Pass"
+Pass_2.Parent = Pass
+Pass_2.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+Pass_2.BorderColor3 = Color3.fromRGB(52, 52, 52)
+Pass_2.Position = UDim2.new(0.297185421, 0, 0.225752503, 0)
+Pass_2.Size = UDim2.new(0, 488, 0, 341)
+Pass_2.Draggable = true
+
+ImageLabel.Parent = Pass_2
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BorderColor3 = Color3.fromRGB(52, 52, 52)
+ImageLabel.Position = UDim2.new(0.200819671, 0, 0.00292397663, 0)
+ImageLabel.Size = UDim2.new(0, 292, 0, 223)
+ImageLabel.Image = "rbxassetid://5953652204"
+
+Frame.Parent = Pass_2
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.Position = UDim2.new(0.122950815, 0, 0.52338326, 0)
+Frame.Size = UDim2.new(0, 369, 0, 1)
+
+TextBox.Parent = Pass_2
+TextBox.BackgroundColor3 = Color3.fromRGB(86, 86, 86)
+TextBox.BorderColor3 = Color3.fromRGB(86, 86, 86)
+TextBox.Position = UDim2.new(0.190573767, 0, 0.653958917, 0)
+TextBox.Size = UDim2.new(0, 297, 0, 38)
+TextBox.Font = Enum.Font.SourceSans
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextBox.TextSize = 17.000
+
+Enter.Name = "Enter"
+Enter.Parent = Pass_2
+Enter.BackgroundColor3 = Color3.fromRGB(191, 0, 0)
+Enter.BorderColor3 = Color3.fromRGB(191, 0, 0)
+Enter.Position = UDim2.new(0.295081973, 0, 0.82404691, 0)
+Enter.Size = UDim2.new(0, 200, 0, 29)
+Enter.Font = Enum.Font.SourceSans
+Enter.Text = "Enter"
+Enter.TextColor3 = Color3.fromRGB(238, 238, 238)
+Enter.TextSize = 15.000
+
+-- Scripts:
+
+local function RBZQ_fake_script() -- Pass_2.Script 
+	local script = Instance.new('Script', Pass_2)
+
+	script.Parent.Enter.MouseButton1Click:Connect(function()
+		if script.Parent.TextBox.Text == "Valhalla.SynX" then
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/imiranian/menu/main/Load", true))()
+		else
+			game.Players.LocalPlayer:Kick("KeyIsWrong")
+		end
+	end)
+end
+coroutine.wrap(RBZQ_fake_script)()
