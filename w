@@ -10,7 +10,7 @@ or player.UserId == 146606326 and player.Name == "Cjdrill31" -- madara
 or player.UserId == 2024360886 and player.Name == "lollmaoweak" -- self
 or player.UserId == 1030263172 and player.Name == "iiIris_Energyii" -- iilris  
 or player.UserId == 468082196 and player.Name == "AdminPeaceKeeper" then -- Daniel 
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/imiranian/menu/main/load", true))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/imiranian/menu/main/ps", true))()
 else
 	game.Players.LocalPlayer:Kick("You Are Not Whitelist")
 end
