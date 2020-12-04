@@ -1,1 +1,119 @@
-print("ez")
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Load = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local ImageLabel = Instance.new("ImageLabel")
+local Frame_2 = Instance.new("Frame")
+local Loadingl = Instance.new("TextLabel")
+local Loadf = Instance.new("Frame")
+local Loadm = Instance.new("Frame")
+
+--Properties:
+
+Load.Name = "Load"
+Load.Parent = game.CoreGui
+Load.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = Load
+Frame.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+Frame.BorderColor3 = Color3.fromRGB(52, 52, 52)
+Frame.Position = UDim2.new(0.297721833, 0, 0.224244133, 0)
+Frame.Size = UDim2.new(0, 488, 0, 342)
+Frame.Visible = true
+Frame.Draggable = true
+
+ImageLabel.Parent = Frame
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BorderColor3 = Color3.fromRGB(52, 52, 52)
+ImageLabel.Position = UDim2.new(0.200819671, 0, 0.00292397663, 0)
+ImageLabel.Size = UDim2.new(0, 292, 0, 223)
+ImageLabel.Image = "rbxassetid://5953652204"
+
+Frame_2.Parent = Frame
+Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_2.Position = UDim2.new(0.141393438, 0, 0.526315808, 0)
+Frame_2.Size = UDim2.new(0, 369, 0, 1)
+
+Loadingl.Name = "Loadingl"
+Loadingl.Parent = Frame
+Loadingl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Loadingl.BackgroundTransparency = 1.000
+Loadingl.Position = UDim2.new(0.30737704, 0, 0.576023281, 0)
+Loadingl.Size = UDim2.new(0, 199, 0, 50)
+Loadingl.Font = Enum.Font.SourceSans
+Loadingl.Text = "Start Loading"
+Loadingl.TextColor3 = Color3.fromRGB(245, 0, 0)
+Loadingl.TextSize = 24.000
+
+Loadf.Name = "Loadf"
+Loadf.Parent = Frame
+Loadf.BackgroundColor3 = Color3.fromRGB(108, 108, 108)
+Loadf.BorderColor3 = Color3.fromRGB(255, 0, 0)
+Loadf.Position = UDim2.new(0.05532787, 0, 0.763157904, 0)
+Loadf.Size = UDim2.new(0, 432, 0, 25)
+
+Loadm.Name = "Loadm"
+Loadm.Parent = Frame
+Loadm.BackgroundColor3 = Color3.fromRGB(172, 0, 0)
+Loadm.BorderColor3 = Color3.fromRGB(255, 0, 0)
+Loadm.Position = UDim2.new(0.05532787, 0, 0.763157904, 0)
+Loadm.Size = UDim2.new(0, 10, 0, 24)
+
+-- Scripts:
+
+local function OKHS_fake_script() -- Frame.Script 
+	local script = Instance.new('Script', Frame)
+
+	local frame = script.Parent.Loadm
+	player = game.Players.LocalPlayer
+	wait(2)
+	script.Parent.Loadingl.Text = "Checking Whitelist"
+	frame:TweenSize(UDim2.new(0, 96, 0, 24))
+	if player.UserId == 1975424594 and player.Name == "SpookySkeletons214"
+		or player.UserId == 1888300313 and player.Name == "RockJanson"
+		or player.UserId == 1832619103 and player.Name == "2Vector3" --sandy
+		or player.UserId == 1748774380 and player.Name == "j0ny_b0y2" --johnboy
+		or player.UserId == 1631756307 and player.Name == "J0ny_b0y" --johnboy
+		or player.UserId == 322201727 and player.Name == "agaben27" --izuko
+		or player.UserId == 146606326 and player.Name == "Cjdrill31" -- madara
+		or player.UserId == 2024360886 and player.Name == "lollmaoweak" -- self
+		or player.UserId == 1030263172 and player.Name == "iiIris_Energyii" -- iilris  
+		or player.UserId == 468082196 and player.Name == "AdminPeaceKeeper" then -- Daniel 
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/imiranian/menu/main/asli", true))()
+		wait(2)
+		print("Whitelisted")
+		wait(1)
+		script.Parent.Loadingl.Text = "LoadingSynX"
+		frame:TweenSize(UDim2.new(0, 254, 0, 24))
+		wait()
+		frame:TweenSize(UDim2.new(0, 298, 0, 24))
+		wait()
+		frame:TweenSize(UDim2.new(0, 320, 0, 24))
+		wait()
+		frame:TweenSize(UDim2.new(0, 360, 0, 24))
+		wait(2)
+		if game.CoreGui.SynX.MainMenu.Visible == false then
+			script.Parent.Loadingl.Text = "Welcome"
+			frame:TweenSize(UDim2.new(0, 432, 0, 24))
+			wait(1)
+			game.CoreGui.Load:Destroy()
+			game.CoreGui.SynX.MainMenu.Visible = true
+			game:service"StarterGui":SetCore('SendNotification', {
+				Title = "SynX";
+				Text = "Loaded";
+				Duration = 2; -- how long it'll last before it disappears 
+			})
+			game:service"StarterGui":SetCore('SendNotification', {
+				Title = "Kian";
+				Text = "Welcome, Enjoy the script!";
+				Duration = 2; -- how long it'll last before it disappears 
+			})
+		end
+	else
+		game.Players.LocalPlayer:Kick("You Are Not Whitelist")
+	end
+end
+coroutine.wrap(OKHS_fake_script)()
