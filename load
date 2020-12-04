@@ -84,21 +84,21 @@ local function OKHS_fake_script() -- Frame.Script
 		or player.UserId == 468082196 and player.Name == "AdminPeaceKeeper" then -- Daniel 
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/imiranian/menu/main/asli", true))()
 		wait(2)
-		print("Whitelisted")
+		script.parent.Loadingl.Text = "Whitelisted"
 		wait(1)
 		script.Parent.Loadingl.Text = "LoadingSynX"
 		frame:TweenSize(UDim2.new(0, 254, 0, 24))
-		wait()
+		wait(0.01)
 		frame:TweenSize(UDim2.new(0, 298, 0, 24))
-		wait()
+		wait(0.01)
 		frame:TweenSize(UDim2.new(0, 320, 0, 24))
-		wait()
+		wait(0.01)
 		frame:TweenSize(UDim2.new(0, 360, 0, 24))
 		wait(2)
 		if game.CoreGui.SynX.MainMenu.Visible == false then
 			script.Parent.Loadingl.Text = "Welcome"
 			frame:TweenSize(UDim2.new(0, 432, 0, 24))
-			wait(1)
+			wait(2)
 			game.CoreGui.Load:Destroy()
 			game.CoreGui.SynX.MainMenu.Visible = true
 			game:service"StarterGui":SetCore('SendNotification', {
