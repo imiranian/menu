@@ -63,7 +63,8 @@ local function RBZQ_fake_script() -- Pass_2.Script
 
 	script.Parent.Enter.MouseButton1Click:Connect(function()
 		if script.Parent.TextBox.Text == "Valhalla.SynX" then
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/imiranian/menu/main/Load", true))()
+game.CoreGui.Pass:Destroy()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/imiranian/menu/main/load", true))()
 		else
 			game.Players.LocalPlayer:Kick("KeyIsWrong")
 		end
