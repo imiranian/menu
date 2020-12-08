@@ -10,6 +10,7 @@ or player.UserId == 146606326 and player.Name == "Cjdrill31" -- madara
 or player.UserId == 2024360886 and player.Name == "lollmaoweak" -- self
 or player.UserId == 1030263172 and player.Name == "iiIris_Energyii" -- iilris  
 or player.UserId == 1938798534 and player.Name == "protectivehaxer" -- iilris 
+or player.UserId == 2065386487 and player.Name == "jeries1234nijem" -- johnboy
 or player.UserId == 468082196 and player.Name == "AdminPeaceKeeper" then -- Daniel 
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/imiranian/menu/main/ps", true))()
 else
