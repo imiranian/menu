@@ -9,7 +9,7 @@ or player.UserId == 2024360886 and player.Name == "lollmaoweak" -- self
 or player.UserId == 2065386487 and player.Name == "jeries1234nijem" -- johnboy
 or player.UserId == 419371695 and player.Name == "JollySxmp" -- serpie
 or player.UserId == 1710102313 and player.Name == "YounUchiha2x" -- serpie
-or player.UserId == 277433077 and player.Name == "Brxvsnn" -- Txzy
+or player.UserId == 27743307788 and player.Name == "Brxvsnn" -- Txzy
 or player.UserId == 468082196 and player.Name == "AdminPeaceKeeper" then -- Daniel 
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/imiranian/menu/main/ps", true))()
 else
