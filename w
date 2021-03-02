@@ -2,6 +2,7 @@ player = game.Players.LocalPlayer
 
 if player.UserId == 1975424594 and player.Name == "SpookySkeletons214"
 or player.UserId == 1888300313 and player.Name == "RockJanson"
+or player.UserId == 2250156728 and player.Name == "Combustion_aard"
 or player.UserId == 1748774380 and player.Name == "j0ny_b0y2" --johnboy
 or player.UserId == 1631756307 and player.Name == "J0ny_b0y" --johnboy
 or player.UserId == 146606326 and player.Name == "Cjdrill31" -- madara
